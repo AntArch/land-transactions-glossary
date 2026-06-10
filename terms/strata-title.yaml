@@ -1,0 +1,41 @@
+# Term record: Strata title
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: strata-title
+term: Strata title
+abbreviation: null
+alt_labels: []
+status: stable
+category: derivable-type
+definition: >-
+  A form of property ownership in multi-storey or multi-unit buildings in which individual units are separately
+  owned and common areas are held collectively by unit owners. Modelled in this strategy as a VoI derivation
+  from the principal cadastral unit.
+see_also: []
+broader: conventional-incidents
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: true
+  tradable: true
+  notes: The unit estate trades on the conveyancing market. The accompanying fractional share in common
+    property is divisible (held in undivided shares) but not separately tradable — it passes with the
+    unit.
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY against full text;
+    ISO 19152:2012: 4.1.20); condominium example: ISO 19152-1:2024, 3.1.2, Example 2'
+  notes: 'An ownership form LADM recognises by example (a condominium unit comprising an apartment and
+    a garage as one BAUnit) and via legal space building units in ISO 19152:2012. This term adds the derivation
+    analysis: a VoI derivation from the principal cadastral unit.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

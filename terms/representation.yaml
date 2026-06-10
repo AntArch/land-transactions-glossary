@@ -1,0 +1,32 @@
+# Term record: Representation
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: representation
+term: Representation
+abbreviation: null
+alt_labels: []
+status: stable
+category: legal-concept
+definition: >-
+  The legally recognised authority of one party (agent, attorney, company signatory) to act on behalf
+  of another in land transactions. The ecosystem must model and verify representation consistently so
+  that "who can act for whom?" can be answered auditably at every submission.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Group party (3.1.7) and party-member structures cover collective holding, not agency. Acting-on-behalf-of
+    (attorneys, signatories) is unmodelled; party detail is external to LADM scope.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

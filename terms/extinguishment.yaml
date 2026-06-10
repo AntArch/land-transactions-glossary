@@ -1,0 +1,40 @@
+# Term record: Extinguishment
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: extinguishment
+term: Extinguishment
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-operation
+definition: >-
+  The public-law counterpart of *absorption*: the cessation of a privilege (permit, licence, or time-limited
+  approval) on expiry, revocation, or breach of conditions. Unlike absorption, extinguishment does not
+  reintegrate anything into a parent bundle: the privilege simply ceases to exist in the holder's hands,
+  and the holder reverts to their prior position of no-privilege. The authority's power to grant further
+  authorisations is unaffected. See *Absorption*, *Allocated incidents*, *Variation of Incidents*.
+see_also:
+- absorption
+- allocated-incidents
+- voi
+broader: termination
+counterpart_of: derivation
+contrasted_with:
+- absorption
+- rescission
+composed_of: []
+applies_to:
+- allocated-incidents
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'As with absorption: LADM expresses cessation only as a closed version (endLifespanVersion);
+    it does not distinguish termination forms by incident type.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

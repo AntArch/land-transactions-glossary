@@ -1,0 +1,37 @@
+# Term record: VoP (Variation of Party)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: vop
+term: VoP (Variation of Party)
+abbreviation: VoP
+alt_labels:
+- Variation of Party
+status: stable
+category: transaction-primitive
+definition: >-
+  The primitive that varies who holds a right/incident. Where the right is *divisible*, the holding is a fraction
+  and a VoP may subdivide it (a part transfer creating co-ownership) or consolidate it (re-uniting co-owners'
+  shares); for an indivisible right a VoP transfers the whole or nothing. The whole-or-part transfer of
+  a holding from one party to another is its familiar pattern, the *transfer of party*. A VoP can act
+  on a tradable right as an independent object; in addition, every derived right receives at least one
+  allocating VoP at grant (the alienation pattern), even when it is not tradable thereafter.
+see_also: []
+broader: transaction-primitive
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: No LADM counterpart as an operation. Its fractional form lands on Edition II's new 'fraction'
+    type (3.1.5) for co-ownership shares; the transfer itself is visible in LADM only as successive versions
+    of the party-RRR association.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

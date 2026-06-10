@@ -1,0 +1,43 @@
+# Term record: Easement / servitude
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: easement-servitude
+term: Easement / servitude
+abbreviation: null
+alt_labels:
+- Easement
+- Servitude
+status: stable
+category: derivable-type
+definition: >-
+  A right to use another party's land for a specific, defined purpose (e.g., access, drainage, utility
+  corridor). Derived by a VoI and allocated once to the benefiting party by the alienation pattern; being
+  appurtenant, it is referenceable but not tradable onward. Thereafter it runs with the land, moving only
+  when the parcel it benefits is transferred.
+see_also: []
+broader: conventional-incidents
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: false
+  tradable: false
+  notes: 'Servient owner bears the correlative duty (to suffer the use / not interfere). Appurtenant:
+    allocated once at grant, thereafter passes with the benefiting parcel — referenceable but not tradable.'
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY against full text;
+    ISO 19152:2012: 4.1.20); appurtenance pattern: ISO 19152-1:2024, 3.1.2, Note 2'
+  notes: An LADM right; notably, BAUnit Note 2 describes exactly this glossary's appurtenance behaviour
+    — a BAUnit acting as proxy party to hold an easement as an appurtenance to another BAUnit. This term
+    adds the derivation/allocation analysis (VoI + single allocating VoP, not tradable onward).
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

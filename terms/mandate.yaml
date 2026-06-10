@@ -1,0 +1,31 @@
+# Term record: Mandate
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: mandate
+term: Mandate
+abbreviation: null
+alt_labels: []
+status: stable
+category: governance-concept
+definition: >-
+  The legal authority conferred on an agency to perform a specific public function. In this strategy,
+  agencies improve services within their existing mandate; no transfer of mandates between agencies is
+  required.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Agency mandates are institutional context, not LADM content.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

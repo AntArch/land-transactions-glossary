@@ -1,0 +1,49 @@
+# Term record: Responsibility
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: responsibility
+term: Responsibility
+abbreviation: null
+alt_labels: []
+status: stable
+category: legal-concept
+definition: >-
+  A positive duty (the holder must perform rather than merely refrain) that may run with land or party
+  (e.g., a development contribution, an affordable-housing condition, a maintenance obligation). In Hohfeldian
+  terms, a responsibility is the landowners' duty that results from a claim-right held by a third
+  party; it differs from a *restriction* only in the direction of the obligation (positive vs negative).
+  A responsibility may arise as a component of a reserved incident (imposed by statutory or plan-making
+  process) or a conventional incident (a positive covenant in a private instrument). Its discharge status
+  is determined by *assessment* and may be enforced as a charge on default. See *Restriction*, *Reserved
+  incidents*, *Hohfeldian analysis*.
+see_also:
+- restriction
+- reserved-incidents
+- hohfeldian-analysis
+broader: null
+counterpart_of: null
+contrasted_with:
+- restriction
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: duty
+  correlative: claim-right
+  divisible: null
+  tradable: null
+  notes: Positive duty (must perform), taken from the burdened party's side; the claim-right 
+    is held by a third party. Differs from restriction only in the direction of the obligation.
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''responsibility'' (sub-clause >3.1.10, VERIFY against
+    full text; ISO 19152:2012: 4.1.18)'
+  notes: 'LADM: formal or informal obligation to do something. This term keeps that core and adds the
+    Hohfeldian reading (duty-pole with a third-party claim-right pole), the symmetry with restriction
+    (direction of obligation only), and discharge determination via assessment.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

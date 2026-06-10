@@ -1,0 +1,36 @@
+# Term record: High-velocity land change
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: high-velocity-land-change
+term: High-velocity land change
+abbreviation: null
+alt_labels: []
+status: stable
+category: operating-context
+definition: >-
+  The operating condition of a large-scale programme in which frequent, overlapping subdivision, consolidation,
+  and re-plotting of cadastral units must proceed simultaneously with high-volume permitting and the management
+  of complex public-law constraints. The term defines the environment that motivates the ecosystem architecture
+  and the transactional primitives (VoP, VoL, VoI) proposed in this paper. See *VoL*, *VoP*, *VoI*, *PLR*.
+see_also:
+- vol
+- vop
+- voi
+- plr
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Operating-condition term specific to this portfolio.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

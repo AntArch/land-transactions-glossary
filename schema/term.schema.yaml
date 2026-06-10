@@ -1,0 +1,97 @@
+# JSON Schema (expressed in YAML) for files in /terms/.
+# CI validates every term file against this schema on every push and pull request.
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: "Glossary term record"
+type: object
+required: [id, term, status, definition, history]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+    description: "Slug; must equal the filename without .yaml. Never changes once published."
+  term:
+    type: string
+    description: "Display name as it appears in documents."
+  abbreviation:
+    type: [string, "null"]
+    description: "Short form used in running text (e.g. VoI, PLR). Emitted as skos:notation/altLabel."
+  alt_labels:
+    type: array
+    items: { type: string }
+    description: "Synonyms and expansions (e.g. 'Variation of Incidents'). Emitted as skos:altLabel."
+  status:
+    enum: [draft, stable, deprecated]
+    description: "deprecated terms remain published (identifiers are durable) with a pointer to their successor."
+  category:
+    enum: [jural-position, incident-type, derivable-type, transaction-primitive,
+           transaction-operation, register-operation, transaction-pattern,
+           acceptance-principle, type-property, register-concept, ladm-construct,
+           platform-service, design-principle, governance-concept, legal-concept,
+           analytical-framework, operating-context, standard, technology, null]
+    description: "Facet the term belongs to; drives site grouping and SKOS collections."
+  definition:
+    type: string
+    minLength: 20
+    description: "Markdown. Cross-references to other terms are written *Like This*."
+  see_also:
+    type: array
+    items: { type: string, pattern: "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    description: "ids of related terms. Build fails if an id does not exist."
+  broader:
+    type: [string, "null"]
+    pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+    description: "id of the parent concept (skos:broader). Build derives skos:narrower inversely and rejects cycles."
+  counterpart_of:
+    type: [string, "null"]
+    pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+    description: "The operation/position this term is the stated counterpart of (e.g. absorption -> derivation)."
+  contrasted_with:
+    type: array
+    items: { type: string, pattern: "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    description: "Terms the definition explicitly distinguishes this one from. Kept symmetric by convention."
+  composed_of:
+    type: array
+    items: { type: string, pattern: "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    description: "Constituent terms for composite concepts (e.g. alienation -> [voi, vop])."
+  applies_to:
+    type: array
+    items: { enum: [conventional-incidents, reserved-incidents, allocated-incidents] }
+    description: "For operations whose form is matched to incident type (e.g. absorption -> conventional)."
+  replaced_by:
+    type: string
+    description: "id of successor term; required when status is deprecated."
+  hohfeldian_signature:
+    type: [object, "null"]
+    additionalProperties: false
+    properties:
+      jural_position: { enum: [claim-right, privilege, power, immunity, duty, no-right, no-privilege, liability, disability, null] }
+      correlative:    { enum: [claim-right, privilege, power, immunity, duty, no-right, no-privilege, liability, disability, null] }
+      divisible:      { type: [boolean, "null"] }
+      tradable:       { type: [boolean, "null"] }
+      notes:          { type: [string, "null"] }
+  ladm_mapping:
+    type: [object, "null"]
+    additionalProperties: false
+    properties:
+      relation:         { enum: [equivalent, refines, extends, conflicts-with, no-counterpart, null] }
+      iso_19152_clause: { type: [string, "null"], description: "e.g. 'ISO 19152-1:2024, 3.1.2'" }
+      notes:            { type: [string, "null"] }
+  citations:
+    type: array
+    items: { type: string }
+    description: "BibTeX keys cited in the definition; resolve against the portfolio's references.bib."
+  source:
+    type: [string, "null"]
+  history:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [version, date, change]
+      additionalProperties: false
+      properties:
+        version: { type: string, pattern: "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+        date:    { type: string, pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+        change:  { type: string }
+        issue:   { type: [string, "null"], description: "URL of the GitHub issue that proposed this change." }

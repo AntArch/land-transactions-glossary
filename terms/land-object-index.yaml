@@ -1,0 +1,38 @@
+# Term record: Land Object index
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: land-object-index
+term: Land Object index
+abbreviation: null
+alt_labels: []
+status: stable
+category: platform-service
+definition: >-
+  A shared service that mints stable, persistent cross-agency identifiers for land objects and resolves
+  any identifier to the authoritative service that owns it. It does not consolidate geometry; it provides
+  a single resolution point so that rights and permits can unambiguously reference "what land" regardless
+  of which custodian holds the authoritative geometry. New identifiers are published only after the relevant
+  authority service has validated and committed the corresponding spatial change. See *Cadastral index*,
+  *Identifier*, *Once-only principle*.
+see_also:
+- cadastral-index
+- identifier
+- once-only-principle
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Service concept: mints and resolves cross-agency identifiers (cf. Oid, 3.1.10) without consolidating
+    geometry. LADM defines the identifier, not the resolution infrastructure.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

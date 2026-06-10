@@ -1,0 +1,754 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix glos: <https://w3id.org/land-transactions/glossary/> .
+
+<https://w3id.org/land-transactions/glossary> a skos:ConceptScheme ;
+    dct:title "Glossary and definitions"@en ;
+    dct:description "The single-source terminology for the land-transactions portfolio"@en ;
+    dct:creator "Anthony Beck" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2026-06-10"^^xsd:date ;
+    dct:hasVersion "1.0.0" .
+
+glos:absorption a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Absorption"@en ;
+    dct:type "transaction-operation" ;
+    skos:broader glos:termination ;
+    skos:definition "The termination form for conventional incidents: the separated claim-right is reintegrated into its parent bundle on expiry, surrender, or satisfaction of the obligation it secured. For the corresponding operation on allocated incidents (public-law privileges), see Extinguishment; for reserved incidents (PLRs), see Rescission. The counterpart of derivation."@en ;
+    skos:related glos:extinguishment ;
+    skos:related glos:rescission ;
+    skos:related glos:conventional-incidents ;
+    skos:related glos:derivation ;
+    dct:hasVersion "1.0.0" .
+
+glos:acceptance-criteria a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Acceptance criteria"@en ;
+    dct:type "acceptance-principle" ;
+    skos:narrower glos:admissibility-principle ;
+    skos:narrower glos:capacity-principle ;
+    skos:narrower glos:consent-principle ;
+    skos:narrower glos:power-principle ;
+    skos:narrower glos:specificity-principle ;
+    skos:definition "The conditions a transaction submission must satisfy before it is routed to a decision officer. Applied as automated gates at the pre-submission stage under five principles: specificity (a well-formedness check) and capacity, power, consent, and admissibility (validity checks). Applied in a fail-fast order, automated gating prevents avoidable rework without removing officer discretion. There are five gates; professional capability is a limb of capacity."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:administrative-unit a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Administrative unit"@en ;
+    dct:type "ladm-construct" ;
+    skos:narrower glos:cadastral-unit ;
+    skos:definition "In LADM, the object representing the rights package associated with a parcel: it defines what is held and under what conditions. Combined with a spatial unit (geometry), it forms the complete representation of a land object."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1.2 (basic administrative unit) — Narrower than BAUnit: the glossary definition assumes association with a parcel (one spatial unit), whereas a BAUnit comprises zero or more spatial units and need not be cadastral. Substance otherwise aligned: the rights package against which unique, homogeneous RRRs are recorded."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:admissibility-principle a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Admissibility principle"@en ;
+    dct:type "acceptance-principle" ;
+    skos:broader glos:acceptance-criteria ;
+    skos:definition "One of the five acceptance criteria (a validity check). Requires that the resulting state of a transaction is itself lawful: the right type is within the jurisdiction's recognised set (numerus clausus), mandatory rules are satisfied, any plan hierarchy is conformed to, and applicable PLRs are not breached. Distinct from power (provenance of authority) and specificity (clarity of description), which it relieves of carrying outcome-legality."@en ;
+    skos:related glos:power-principle ;
+    skos:related glos:specificity-principle ;
+    dct:hasVersion "1.0.0" .
+
+glos:alienation a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Alienation"@en ;
+    dct:type "transaction-pattern" ;
+    skos:definition "Alienation is the VoI + VoP composite (derive the incident, then allocate it by transfer), not a single primitive. It is the necessary minimal pattern for bringing any derived conventional incident into a holder's hands: a derivation alone leaves the incident within the grantor's holding, so at least one allocating transfer must follow. See Variation of Incidents, Variation of Party."@en ;
+    skos:related glos:voi ;
+    skos:related glos:vop ;
+    dct:hasVersion "1.0.0" .
+
+glos:allocated-incidents a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Allocated incidents"@en ;
+    dct:type "incident-type" ;
+    skos:broader glos:incident ;
+    skos:narrower glos:permit ;
+    skos:definition "Public-law authorisations (permits, licences, and time-limited approvals) vested by agencies exercising statutory powers. One of three incident types in the typology used by this paper, alongside conventional incidents and reserved incidents. In Hohfeldian terms, the issuing authority exercises a power to vest a privilege in the applicant from the authority's own jural position. The applicant receives something; they do not recover something that was always theirs. Modelled as a VoI derivation with explicit parameterisation of effective period, conditions, and discharge triggers. See Derivation, Variation of Incidents."@en ;
+    skos:related glos:derivation ;
+    skos:related glos:voi ;
+    skos:related glos:conventional-incidents ;
+    skos:related glos:reserved-incidents ;
+    skos:note "LADM mapping (refines): ISO 19152-5:2025, term 'permit'; cf. ISO 19152-1:2024, 3.1, term 'right' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20) — Part 5 introduces 'permit' (permission granted to a party to undertake an otherwise restricted activity). This term refines that: it generalises to all statutory authorisations, supplies the Hohfeldian characterisation (privilege vested from the authority's own jural position, not a lifted restriction), and parameterises lifecycle (effective period, conditions, discharge triggers). Core LADM RRR does not distinguish privilege from claim-right."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:amendment a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Amendment"@en ;
+    dct:type "transaction-operation" ;
+    skos:broader glos:voi ;
+    skos:definition "A change to the terms of an existing right relationship (a lease extension, a rent review, a change to an easement's scope) where holder, land, and the right's existence are unchanged. Modelled as a continuing version of the same right relationship under its durable identifier (not as absorption followed by a fresh derivation) so that continuity-dependent facts (commencement date, accrued priority, qualifying periods) survive."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 6.3.1 (VersionedObject) — Realised in LADM as a new version of the same RRR instance under its identifier — which is exactly the continuing-version semantics this term mandates. LADM supplies the mechanism but does not name the operation or contrast it with terminate-and-re-derive."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:api a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "API (Application Programming Interface)"@en ;
+    skos:altLabel "Application Programming Interface"@en ;
+    skos:notation "API" ;
+    dct:type "technology" ;
+    skos:definition "A defined contract through which one software service requests information or actions from another. An API-first design means authoritative services expose their data and functions through stable, documented, machine-readable interfaces that other systems can reliably consume."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:assessment a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Assessment"@en ;
+    dct:type "register-operation" ;
+    skos:definition "The second write operation of the ecosystem, alongside transactional variation. The authorised determination of a derived fact about a land object (value, use-class, or compliance/discharge status) as at a date, on a stated basis, contestable through the dispute pathway. Assessment ascribes a fact; it does not change entitlement and it does not alter the land object."@en ;
+    skos:note "LADM mapping (extends): ISO 19152-4:2025 (valuation information) — Part 4 covers the determination of assessed values on a stated basis at a date — the value limb of this term. This term extends that pattern to two further derived facts (use-class and compliance/discharge status) and makes contestability through the dispute pathway part of the concept."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:authoritative-custodian a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Authoritative custodian"@en ;
+    dct:type "governance-concept" ;
+    skos:definition "The agency with the mandate to define, maintain, publish, and correct a given dataset or service. Other agencies reference the custodian's data rather than maintaining diverging local copies. See also: once-only principle, shadow infrastructure."@en ;
+    skos:related glos:once-only-principle ;
+    skos:related glos:shadow-infrastructure ;
+    dct:hasVersion "1.0.0" .
+
+glos:bitemporality a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Bitemporality"@en ;
+    dct:type "register-concept" ;
+    skos:definition "The recording of two independent timelines on every version of a right or derived fact: valid time (when the fact holds in reality which is the basis on which limitation and qualifying periods run) and transaction time (when the register recorded it which is the basis for audit and indemnity)."@en ;
+    skos:note "LADM mapping (equivalent): ISO 19152-1:2024, 6.3.1 (VersionedObject) — Edition II explicitly supports the bi-temporal model: VersionedObject carries system-time lifespans (begin/endLifespanVersion = transaction time) and a second optional set of real-world temporal attributes (begin/endRealWorldLifespanVersion, acceptance = valid time). Terminology differs (lifespan/real-world vs transaction/valid time) but the model is the same; this glossary additionally states what runs on each timeline (limitation/qualifying periods vs audit/indemnity)."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:bpmn a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "BPMN (Business Process Modelling Notation)"@en ;
+    skos:altLabel "Business Process Modelling Notation"@en ;
+    skos:notation "BPMN" ;
+    dct:type "standard" ;
+    skos:definition "A standardised graphical notation for representing business processes. Used in this paper to illustrate the permit creation workflow and the agency interactions it depends upon."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:bundle-of-rights a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Bundle of rights"@en ;
+    dct:type "analytical-framework" ;
+    skos:definition "The analysis of property ownership as a collection of separable jural incidents (to possess, use, manage, derive income, transmit, and hold residuary character) rather than a single, indivisible entitlement, following Honoré. These incidents normally travel together but can be separated, constrained, or reallocated individually. This paper uses incident as the preferred general term to capture this compound structure. See Conventional incidents, Incident, Hohfeldian analysis."@en ;
+    skos:related glos:conventional-incidents ;
+    skos:related glos:incident ;
+    skos:related glos:hohfeldian-analysis ;
+    dct:references "honore_ownership_1961" ;
+    dct:hasVersion "1.0.0" .
+
+glos:cadastral-index a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Cadastral index"@en ;
+    dct:type "platform-service" ;
+    skos:definition "A register of cadastral units providing stable identifiers, geometry, version history, and topology. The backbone service that all other workflows reference to identify unambiguously \"what land\" is involved in a transaction or permit."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:cadastral-unit a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Cadastral unit (CU)"@en ;
+    skos:altLabel "CU"@en ;
+    skos:notation "CU" ;
+    dct:type "ladm-construct" ;
+    skos:broader glos:administrative-unit ;
+    skos:definition "The administrative object in LADM representing a parcel of land. It carries stable identifiers, is associated with spatial geometry, and provides the reference point for rights, restrictions, and transactions."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1.2 (basic administrative unit) — The cadastral specialisation of BAUnit: a registered administrative entity with stable identifiers and associated spatial geometry. BAUnit is wider — it admits zero spatial units (registry without cadastral map) and non-cadastral tenure."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:capability a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Capability"@en ;
+    dct:type "legal-concept" ;
+    skos:broader glos:capacity-principle ;
+    skos:definition "\"Capability\" denotes the professional-competence aspect of capacity (the professional registration and certification of supporting parties (e.g., surveyors, conveyancers, certifying engineers)) required for a given transaction type. It is evaluated by the capacity principle. See Capacity principle."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:capacity-principle a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Capacity principle"@en ;
+    dct:type "acceptance-principle" ;
+    skos:broader glos:acceptance-criteria ;
+    skos:narrower glos:capability ;
+    skos:definition "One of the five acceptance criteria (a validity check). Requires that parties are legally and professionally capable of granting or receiving rights. Capacity has two limbs: personal competence (age, legal competence, inhibitions, sanctions, insolvency freezes and other restrictions on party capacity in the jurisdiction) and professional competence (the registration and certification requirements applicable to supporting parties). Professional \"capability\" is the second limb of this gate, not a separate criterion. See Capability."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:claim-right a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Claim-right"@en ;
+    dct:type "jural-position" ;
+    skos:definition "In Hohfeldian analysis, the jural position of a holder who is entitled to a specific performance from a correlative duty-bearer. An entitlement enforceable against an identified party. Distinguished from a privilege, which merely permits the holder to act without imposing a duty on others. In this paper, conventional private-law incidents (leases, mortgages, easements) create claim-rights in their holders; duty-correlative reserved incidents (planning obligations, restrictive covenants) instantiate the authority's or beneficiary's claim-right with the landowner's duty as its correlative. See Hohfeldian analysis, Privilege, No-privilege."@en ;
+    skos:related glos:hohfeldian-analysis ;
+    skos:related glos:privilege ;
+    skos:related glos:no-privilege ;
+    dct:hasVersion "1.0.0" .
+
+glos:consent-principle a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Consent principle"@en ;
+    dct:type "acceptance-principle" ;
+    skos:broader glos:acceptance-criteria ;
+    skos:definition "One of the five acceptance criteria (a validity check). Requires that where private rights are affected the right-holder's consent is demonstrated and validated, including verification of any authorised representation."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:conventional-incidents a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Conventional incidents"@en ;
+    dct:type "incident-type" ;
+    skos:broader glos:incident ;
+    skos:narrower glos:easement-servitude ;
+    skos:narrower glos:praedial-right ;
+    skos:narrower glos:security ;
+    skos:narrower glos:strata-title ;
+    skos:definition "Private-law rights over land created and transferred through conveyancing (e.g., ownership, lease, easement, mortgage). Distinguished from reserved incidents, which are public-law constraints imposed by the state."@en ;
+    skos:related glos:reserved-incidents ;
+    skos:related glos:allocated-incidents ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'right' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20) — Narrower than LADM 'right' (formal or informal entitlement): restricted to private-law claim-rights created and transferred through conveyancing, excluding informal/customary tenure and the public-law incidents this typology assigns to the reserved and allocated classes."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:conveyancing a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Conveyancing"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "The legal process of transferring, creating, or varying property rights between parties."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:dealing a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Dealing"@en ;
+    dct:type "register-concept" ;
+    skos:definition "Used in two distinct senses. (1) Tradability sense: an onward market transfer of a tradable right after its initial allocation: the subsequent independent trading of freehold, leasehold, mortgage, or strata interests. Every dealing is a transaction, but not every transaction is a dealing: the initial grant of a right is a transaction (alienation) but not a dealing in this sense. (2) Land registration sense: a registered act or instrument that alters an entry in the title register, the technical meaning in deeds and title-registration systems. Where context does not disambiguate, \"transaction\" is the preferred general term. See Tradable, Transaction primitive, Alienation."@en ;
+    skos:related glos:tradable ;
+    skos:related glos:transaction-primitive ;
+    skos:related glos:alienation ;
+    dct:hasVersion "1.0.0" .
+
+glos:derivation a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Derivation"@en ;
+    dct:type "transaction-operation" ;
+    skos:broader glos:voi ;
+    skos:definition "One of the two directions of a Variation of Incidents: the establishment of a new jural incident from an authorised source. For conventional incidents, it carves a claim-right (lease, easement, security, strata interest) from a parent bundle, leaving a residual interest. For reserved incidents, it establishes a restriction or responsibility through a statutory or plan-making process. For allocated incidents, it creates a privilege through the exercise of statutory power. The counterpart of termination. Conventional derivation is recursive for certain incidents; allocated incidents are not (a permit cannot be sub-permitted)."@en ;
+    skos:related glos:conventional-incidents ;
+    skos:related glos:reserved-incidents ;
+    skos:related glos:allocated-incidents ;
+    skos:related glos:termination ;
+    dct:hasVersion "1.0.0" .
+
+glos:development-control a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Development control"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "The regulatory function governing what can be built or changed on land, typically administered through a permitting or planning system."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:divisible a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Divisible"@en ;
+    dct:type "type-property" ;
+    skos:definition "A type-level property of a right: whether it can be held in undivided fractional shares (co-ownership), and therefore whether the fractional (part) form of a Variation of Party is available to it. Independent of tradable: the shared areas of a real-estate complex are divisible (held in fractional shares) yet not tradable. Declared in the numerus clausus; restrictable per instance by a recorded term."@en ;
+    skos:related glos:tradable ;
+    skos:note "LADM mapping (extends): ISO 19152-1:2024, 3.1.5 (fraction) — Edition II introduces 'fraction' as the data type for co-ownership shares — the instance-level expression of divisibility. This term adds the type-level rule LADM does not model: whether a right type admits fractional holding at all (declared in the numerus clausus, restrictable per instance)."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:durable-identifier a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Durable identifier"@en ;
+    dct:type "register-concept" ;
+    skos:broader glos:identifier ;
+    skos:definition "A stable identity for a right or spatial unit that persists across variations. Versions of the entity hang from it, so that continuity-dependent facts (commencement date, accrued priority, qualifying periods) survive a variation. A variation produces a new version under the same durable identifier rather than a new entity."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1.10 (object identifier); 6.3.1 (VersionedObject) — Oid provides generic object identification; VersionedObject hangs versions from an identified object. This term makes the combination a requirement: the identifier must persist across variations precisely so that continuity-dependent facts survive."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:easement-servitude a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Easement / servitude"@en ;
+    skos:altLabel "Easement"@en ;
+    skos:altLabel "Servitude"@en ;
+    dct:type "derivable-type" ;
+    skos:broader glos:conventional-incidents ;
+    skos:definition "A right to use another party's land for a specific, defined purpose (e.g., access, drainage, utility corridor). Derived by a VoI and allocated once to the benefiting party by the alienation pattern; being appurtenant, it is referenceable but not tradable onward. Thereafter it runs with the land, moving only when the parcel it benefits is transferred."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'right' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20); appurtenance pattern: ISO 19152-1:2024, 3.1.2, Note 2 — An LADM right; notably, BAUnit Note 2 describes exactly this glossary's appurtenance behaviour — a BAUnit acting as proxy party to hold an easement as an appurtenance to another BAUnit. This term adds the derivation/allocation analysis (VoI + single allocating VoP, not tradable onward)."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:encumbrance a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Encumbrance"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "A right held by a third party that limits (or burdens) a landowners property, limiting the owner's freedom to use  it or transfer its title. While it does not stop the property from being sold, it can diminish its value or impose  ongoing obligations."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:event-driven-architecture a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Event-driven architecture"@en ;
+    dct:type "technology" ;
+    skos:definition "An integration pattern in which services publish notifications when their state changes, allowing subscribing systems to react without polling. Used in this strategy to propagate parcel changes, restriction updates, and rights events across the ecosystem."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:extinguishment a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Extinguishment"@en ;
+    dct:type "transaction-operation" ;
+    skos:broader glos:termination ;
+    skos:definition "The public-law counterpart of absorption: the cessation of a privilege (permit, licence, or time-limited approval) on expiry, revocation, or breach of conditions. Unlike absorption, extinguishment does not reintegrate anything into a parent bundle: the privilege simply ceases to exist in the holder's hands, and the holder reverts to their prior position of no-privilege. The authority's power to grant further authorisations is unaffected. See Absorption, Allocated incidents, Variation of Incidents."@en ;
+    skos:related glos:absorption ;
+    skos:related glos:allocated-incidents ;
+    skos:related glos:voi ;
+    skos:related glos:rescission ;
+    skos:related glos:derivation ;
+    dct:hasVersion "1.0.0" .
+
+glos:good-root-of-title a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Good root of title"@en ;
+    dct:type "register-concept" ;
+    skos:definition "The point in a chain of transactions from which title is traced and on the basis of which subsequent dealings are validated. In a deeds-register tradition, the choice of root determines what the register guarantees; in a title-by-registration system, registration itself provides the root and a state guarantee displaces the need to trace further back. The two register traditions are two projections of one ordered transaction log differentiated by the position of good root of title. See Amendment, Bitemporality, Priority."@en ;
+    skos:related glos:amendment ;
+    skos:related glos:bitemporality ;
+    skos:related glos:priority ;
+    dct:references "beck_effect_2022" ;
+    dct:hasVersion "1.0.0" .
+
+glos:high-velocity-land-change a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "High-velocity land change"@en ;
+    dct:type "operating-context" ;
+    skos:definition "The operating condition of a large-scale programme in which frequent, overlapping subdivision, consolidation, and re-plotting of cadastral units must proceed simultaneously with high-volume permitting and the management of complex public-law constraints. The term defines the environment that motivates the ecosystem architecture and the transactional primitives (VoP, VoL, VoI) proposed in this paper. See VoL, VoP, VoI, PLR."@en ;
+    skos:related glos:vol ;
+    skos:related glos:vop ;
+    skos:related glos:voi ;
+    skos:related glos:plr ;
+    dct:hasVersion "1.0.0" .
+
+glos:hohfeldian-analysis a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Hohfeldian analysis"@en ;
+    dct:type "analytical-framework" ;
+    skos:definition "A framework for legal analysis, developed by Wesley Hohfeld, that decomposes legal relations into atomic units: claim-rights, privileges (liberties), powers, and immunities. Used in this paper to distinguish a privilege (a freedom to act, owed to no other party) from a claim-right (an entitlement enforceable against another), and to characterise the legal nature of permits as privilege-allocations from the granting authority's own jural position. See Claim-right, Immunity, No-privilege, Privilege."@en ;
+    skos:related glos:claim-right ;
+    skos:related glos:immunity ;
+    skos:related glos:no-privilege ;
+    skos:related glos:privilege ;
+    dct:hasVersion "1.0.0" .
+
+glos:iam a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "IAM (Identity and Access Management)"@en ;
+    skos:altLabel "Identity and Access Management"@en ;
+    skos:notation "IAM" ;
+    dct:type "technology" ;
+    skos:definition "The systems and processes governing digital identities, authentication (confirming who a party is), authorisation (defining what they may do), delegation and representation relationships, and the audit trail of actions taken under each identity. In this strategy, IAM is the recommended implementation vehicle for the Party and Representation service, covering representation chains, power-of-attorney delegation, company signatory verification, and audited access to transaction services."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:identifier a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Identifier"@en ;
+    dct:type "register-concept" ;
+    skos:narrower glos:durable-identifier ;
+    skos:definition "A stable, unique reference code assigned to an entity (party, parcel, restriction, permit) that persists across system updates and enables consistent, unambiguous cross-agency referencing."@en ;
+    skos:note "LADM mapping (equivalent): ISO 19152-1:2024, 3.1.10 (object identifier) — Matches Oid: a generic, stable identifier supporting object identification across parties, spatial units and RRRs. BAUnit Note 3 likewise expects a unique identifier on registration."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:immunity a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Immunity"@en ;
+    dct:type "jural-position" ;
+    skos:definition "In Hohfeldian analysis, the jural position that protects its holder from another party's power. The correlative of a disability (the other party's incapacity to alter that holder's jural position). Distinct from a privilege (freedom from a duty) and a claim-right (entitlement against a duty-bearer). Immunities arise in land administration contexts where legislative protections prevent an authority from unilaterally altering a registered right without due process. See Hohfeldian analysis, Claim-right, Privilege."@en ;
+    skos:related glos:hohfeldian-analysis ;
+    skos:related glos:claim-right ;
+    skos:related glos:privilege ;
+    dct:hasVersion "1.0.0" .
+
+glos:incident a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Incident"@en ;
+    dct:type "incident-type" ;
+    skos:narrower glos:allocated-incidents ;
+    skos:narrower glos:conventional-incidents ;
+    skos:narrower glos:reserved-incidents ;
+    skos:definition "The preferred general term in this paper for any jural position that attaches to, or is allocated over, land: adopted in preference to \"right\" to reflect the compound and separable structure of what land ownership involves. Three types are distinguished: conventional incidents (private-law claim-rights created through conveyancing), reserved incidents (public-law restrictions and responsibilities imposed by statute or plan-making), and allocated incidents (public-law privileges vested by statutory authority). The term follows Honoré's analysis of ownership as a bundle of separable standard incidents. See Bundle of rights, Conventional incidents, Reserved incidents, Allocated incidents."@en ;
+    skos:related glos:bundle-of-rights ;
+    dct:references "honore_ownership_1961" ;
+    skos:note "LADM mapping (extends): ISO 19152-1:2024, 3.1.2, Note 6 (RRR); ISO 19152-1:2024, 3.1, term 'right' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20) — Plays the role of LADM's collective 'RRR' (rights, restrictions, responsibilities) but reframes it on Honoré/Hohfeld and adds a third public-law class (allocated incidents (privileges)) that the RRR triple does not distinguish from rights."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:ladm a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "LADM (Land Administration Domain Model)"@en ;
+    skos:altLabel "Land Administration Domain Model"@en ;
+    skos:altLabel "ISO 19152"@en ;
+    skos:notation "LADM" ;
+    dct:type "standard" ;
+    skos:definition "ISO 19152; an international standard providing a conceptual model and shared vocabulary for land administration systems. Supplies the Party--Right--Land framework underpinning the VoP/VoL/VoI transaction primitives used in this strategy."@en ;
+    skos:note "LADM mapping (equivalent): ISO 19152 series; Part 1: ISO 19152-1:2024 — The glossary entry describes the standard itself. Note the 2012 single-document edition is superseded by the multi-part series (Parts 1-5 published 2024-2025)."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:land-object a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Land object"@en ;
+    dct:type "ladm-construct" ;
+    skos:definition "In LADM  the composite entity comprising an administrative unit (the rights package) and its associated spatial unit (geometry/extent). The term emphasises the spatial reference used when identifying what land is involved in a transaction or permit. Property object refers to the same entity emphasised as the first-class holder of a rights bundle from which incidents are derived or into which they are absorbed. See Administrative unit, Spatial unit, Property object."@en ;
+    skos:related glos:administrative-unit ;
+    skos:related glos:spatial-unit ;
+    skos:related glos:property-object ;
+    skos:note "LADM mapping (extends): ISO 19152-1:2024, 3.1.2 (basic administrative unit) + ISO 19152-1:2024, 3.1, term 'spatial unit' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.23) — Composite of two LADM terms — the administrative unit (rights package) and its spatial unit (geometry) — for which LADM defines no single term. Distinct from LADM 'land' (3.1.8), which is the generic spatial extent, not a unitised object."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:land-object-index a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Land Object index"@en ;
+    dct:type "platform-service" ;
+    skos:definition "A shared service that mints stable, persistent cross-agency identifiers for land objects and resolves any identifier to the authoritative service that owns it. It does not consolidate geometry; it provides a single resolution point so that rights and permits can unambiguously reference \"what land\" regardless of which custodian holds the authoritative geometry. New identifiers are published only after the relevant authority service has validated and committed the corresponding spatial change. See Cadastral index, Identifier, Once-only principle."@en ;
+    skos:related glos:cadastral-index ;
+    skos:related glos:identifier ;
+    skos:related glos:once-only-principle ;
+    dct:hasVersion "1.0.0" .
+
+glos:lifecycle-specification a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Lifecycle specification"@en ;
+    dct:type "type-property" ;
+    skos:definition "The set of properties on a jural incident that govern when it activates and when it terminates: an effective period, the conditions under which it activates, and the triggers (expiry, surrender, satisfaction of an obligation, a staged-release milestone, or statutory rescission) that cause termination. Treating lifecycle as a first-class property of each incident type means that leases, easements, securities, permits, and PLR zones share the same structural shape with different parameters, rather than requiring separate instrument logic for each. See Termination, Amendment, VoI."@en ;
+    skos:related glos:termination ;
+    skos:related glos:amendment ;
+    skos:related glos:voi ;
+    skos:note "LADM mapping (extends): ISO 19152-1:2024, 6.3.1 (VersionedObject) — VersionedObject gives every instance lifespans (system and real-world time). This term adds what LADM does not model: activation conditions and typed termination triggers (expiry, surrender, satisfaction, milestone, rescission) as first-class properties of each incident type."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:mandate a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Mandate"@en ;
+    dct:type "governance-concept" ;
+    skos:definition "The legal authority conferred on an agency to perform a specific public function. In this strategy, agencies improve services within their existing mandate; no transfer of mandates between agencies is required."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:no-privilege a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "No-privilege"@en ;
+    dct:type "jural-position" ;
+    skos:definition "In Hohfeldian analysis, the absence of a privilege: the jural position of a party that lacks the freedom to perform a given act. In this paper, no-privilege is the precise characterisation of a landowner's position with respect to a restricted activity under a public-law constraint. The landowner does not hold a duty-not-to-develop (which would imply a claim-right in another party that could be released), but rather lacks the privilege to act in the first place. A permit does not lift a restriction; the issuing authority vests a privilege from its own jural position. See Privilege, Hohfeldian analysis, Allocated incidents, Reserved incidents."@en ;
+    skos:related glos:privilege ;
+    skos:related glos:hohfeldian-analysis ;
+    skos:related glos:allocated-incidents ;
+    skos:related glos:reserved-incidents ;
+    dct:hasVersion "1.0.0" .
+
+glos:numerus-clausus a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Numerus clausus"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "Latin for \"closed number.\" The principle that only a defined set of right types can be carved from a bundle and vested to third parties; parties cannot create novel incidents with the character of property by agreement alone. In this paper, the numerus clausus is the typed registry of derivable incident types for a jurisdiction, each carrying a Hohfeldian signature (jural position, correlative, divisibility, tradability). The admissibility gate checks that a proposed transaction produces an incident within this recognised set. See Admissibility principle, Rights Ontology service, VoI."@en ;
+    skos:related glos:admissibility-principle ;
+    skos:related glos:rights-ontology-service ;
+    skos:related glos:voi ;
+    dct:hasVersion "1.0.0" .
+
+glos:once-only-principle a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Once-only principle"@en ;
+    dct:type "design-principle" ;
+    skos:definition "The design principle that authoritative information should be recorded and maintained once by the responsible custodian and reused by other agencies through governed services, rather than re-entered or re-created in local copies that may diverge. See also: authoritative custodian, shadow infrastructure."@en ;
+    skos:related glos:authoritative-custodian ;
+    skos:related glos:shadow-infrastructure ;
+    dct:hasVersion "1.0.0" .
+
+glos:party a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Party"@en ;
+    dct:type "ladm-construct" ;
+    skos:definition "In LADM, an entity (e.g., natural person, legal person, or organisation) that can hold registerable rights or act in land transactions. Parties also possess powers that determine what transactions they can lawfully initiate or consent to."@en ;
+    skos:note "LADM mapping (equivalent): ISO 19152-1:2024, 3.1, term 'party' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.13); group party: ISO 19152-1:2024, 3.1.7 — Matches LADM party (person or organisation that can hold RRRs and act in transactions); LADM adds group party (3.1.7) and party member structure. The note that parties possess powers determining what they can initiate is this glossary's Hohfeldian addition."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:pattern-library a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Pattern library"@en ;
+    dct:type "transaction-pattern" ;
+    skos:definition "A collection of documented, reusable compositions of transaction primitives (VoP, VoL, VoI) covering recurring complex scenarios (e.g., real estate complexes, utility corridors, stacked rights in multi-use buildings). Patterns allow complex workflows to be assembled from known building blocks without expanding the underlying transaction surface."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:permit a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Permit"@en ;
+    dct:type "derivable-type" ;
+    skos:broader glos:allocated-incidents ;
+    skos:definition "A time-bound authorisation issued by a public authority, conferring on the holder a lawful permission to undertake an otherwise restricted activity on specified land, subject to defined conditions and an effective period."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-5:2025, term 'permit' — Part 5 defines permit as something granted to a party giving permission to undertake an otherwise restricted activity. This term refines it: issued by a public authority, time-bound, condition-bearing, with an effective period. Aligning the LADM Part 5 concept with the allocated-incident lifecycle model."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:plan-hierarchy a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Plan hierarchy"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "The layered structure of planning and land regulation instruments (national policy, regional plan, local plan, site-level conditions) in which lower-tier instruments must conform with those above them. The admissibility gate applies at two levels: it checks that a proposed transaction conforms with applicable PLR constraints and that any plan-making instrument is consistent with the tier above it. See Admissibility principle, PLR, Reserved incidents."@en ;
+    skos:related glos:admissibility-principle ;
+    skos:related glos:plr ;
+    skos:related glos:reserved-incidents ;
+    skos:note "LADM mapping (refines): ISO 19152-5:2025 (plan unit / plan block / plan group) — Part 5 models the structural hierarchy of spatial plans. This term adds the normative rule the structure exists to enforce (lower-tier instruments must conform with those above) and routes that rule through the admissibility gate."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:plr a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "PLR (Public Law Restriction)"@en ;
+    skos:altLabel "Public Law Restriction"@en ;
+    skos:notation "PLR" ;
+    dct:type "derivable-type" ;
+    skos:broader glos:reserved-incidents ;
+    skos:definition "A restriction, constraint, or responsibility imposed on land or its use by legislation, regulation, or planning instrument (e.g., planning zones, heritage designations, environmental buffers, safety exclusion zones). Treated in this strategy as first-class, spatially queryable objects with defined authority, versioning, and applicability conditions. See also: reserved incidents."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'restriction' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.19); spatial plans: ISO 19152-5:2025 — The public-law subset of LADM restriction (and responsibility), made first-class: defined authority, versioning, spatial queryability and applicability conditions. Part 5 supplies the spatial-plan instruments that create many PLRs; the requirement that PLRs be spatially queryable objects subject to VoL is this portfolio's addition."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:poa a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "PoA (Power of Attorney)"@en ;
+    skos:altLabel "Power of Attorney"@en ;
+    skos:notation "PoA" ;
+    dct:type "legal-concept" ;
+    skos:broader glos:representation ;
+    skos:definition "A legal instrument by which a principal authorises a named attorney to act on their behalf for defined purposes. In this strategy, a PoA is a representation instrument: the attorney holds no independent power, so the power and capacity acceptance checks run against the principal. The Party and Representation service must verify that the PoA is valid, current, and covers the proposed transaction type; an enduring PoA additionally requires confirmation that capacity was present at execution. See Representation, Capacity principle, Power principle."@en ;
+    skos:related glos:capacity-principle ;
+    skos:related glos:power-principle ;
+    dct:hasVersion "1.0.0" .
+
+glos:power a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Power (legal)"@en ;
+    skos:altLabel "legal"@en ;
+    dct:type "jural-position" ;
+    skos:definition "The legal capacity to effect a specific change in a Party--Right--Land relationship. Private-law powers derive from rights held (a party can only grant what it has); public-law powers derive from legislative or regulatory authority. Verification of power is a prerequisite for any valid transaction."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:power-principle a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Power principle"@en ;
+    dct:type "acceptance-principle" ;
+    skos:broader glos:acceptance-criteria ;
+    skos:definition "One of the five acceptance criteria (a validity check). Requires that every transaction be supported by the granter's legal power, whether derived from rights held or from legislative empowerment."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:praedial-right a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Praedial right"@en ;
+    dct:type "derivable-type" ;
+    skos:broader glos:conventional-incidents ;
+    skos:definition "A right that attaches to land rather than to a person, and runs with the land when it is transferred. A praedial relationship means that one parcel holds rights in another parcel, with those rights passing automatically to whoever owns the benefiting parcel."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'right' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20); appurtenance: ISO 19152-1:2024, 3.1.2, Note 2 — An LADM right with the run-with-the-land behaviour that BAUnit Note 2 captures structurally: a BAUnit may act as proxy party to hold a right (e.g. easement) as an appurtenance to another BAUnit — i.e. parcel-holds-right-in-parcel, exactly this term's praedial relationship."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:priority a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Priority"@en ;
+    dct:type "register-concept" ;
+    skos:definition "The ranking between competing rights over the same land object (typically securities). A property of the relationship between rights, not of any single right: the default order derives from valid time (first in time) and is overridden by explicit subordination, postponement, or tacking transactions. A change of priority is itself a first-class, validated transaction."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:privilege a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Privilege"@en ;
+    dct:type "jural-position" ;
+    skos:definition "In Hohfeldian analysis, a freedom to perform an act without owing a duty to any other party to refrain from it. Distinguished from a claim-right. In this paper, issuing a permit is characterised as the authority allocating a privilege from its own jural position to the applicant. It is not restoring a pre-existing entitlement to someone from whom it was withheld."@en ;
+    skos:related glos:claim-right ;
+    dct:hasVersion "1.0.0" .
+
+glos:property-object a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Property object"@en ;
+    dct:type "ladm-construct" ;
+    skos:definition "A legal construct comprising an administrative unit (the rights package) and its associated spatial unit (geometry). This is considered specifically as the first-class holder of a rights bundle. Distinguished from land object (which emphasises the spatial reference) in contexts where rights are being derived from or absorbed back into the bundle: a VoI absorption takes a separated right back into the property object's bundle rather than simply referencing the land's spatial extent."@en ;
+    skos:related glos:land-object ;
+    skos:related glos:administrative-unit ;
+    skos:related glos:spatial-unit ;
+    skos:note "LADM mapping (extends): ISO 19152-1:2024, 3.1.2 (basic administrative unit) + ISO 19152-1:2024, 3.1, term 'spatial unit' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.23) — Same composite as land-object (no single LADM term), emphasised as the first-class holder of the rights bundle from which incidents are derived and into which they are absorbed. BAUnit Note 2's proxy-party pattern shows LADM already treating the unit as capable of holding rights."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:real-estate-complex a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Real estate complex"@en ;
+    dct:type "transaction-pattern" ;
+    skos:definition "A multi-unit development (block of flats, mixed-use compound) in which individual units are separately owned and common areas are held collectively by unit owners. Modelled in this strategy as a documented composition of VoL, VoI and VoP transactions (see Appendix 1 of the conceptual foundation)."@en ;
+    skos:related glos:vol ;
+    skos:related glos:voi ;
+    skos:related glos:vop ;
+    dct:hasVersion "1.0.0" .
+
+glos:referenceable a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Referenceable"@en ;
+    dct:type "type-property" ;
+    skos:definition "The property, required of every first-class object (party, parcel, right, PLR, permit), of carrying a durable or at least trusted, authoritative, versioned identifier so that other services can depend on it. The foundation for the once-only principle."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:representation a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Representation"@en ;
+    dct:type "legal-concept" ;
+    skos:narrower glos:poa ;
+    skos:definition "The legally recognised authority of one party (agent, attorney, company signatory) to act on behalf of another in land transactions. The ecosystem must model and verify representation consistently so that \"who can act for whom?\" can be answered auditably at every submission."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:rescission a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Rescission"@en ;
+    dct:type "transaction-operation" ;
+    skos:broader glos:termination ;
+    skos:definition "The termination form for reserved incidents: a PLR or other public-law restriction is brought to an end through the same statutory or regulatory process that created it. The counterpart of its derivation. Distinguished from extinguishment (which applies to allocated incidents/privileges) and absorption (which applies to conventional incidents). See Termination, Variation of Incidents."@en ;
+    skos:related glos:voi ;
+    skos:related glos:absorption ;
+    skos:related glos:extinguishment ;
+    skos:related glos:reserved-incidents ;
+    skos:related glos:derivation ;
+    dct:hasVersion "1.0.0" .
+
+glos:reserved-incidents a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Reserved incidents"@en ;
+    dct:type "incident-type" ;
+    skos:broader glos:incident ;
+    skos:narrower glos:plr ;
+    skos:definition "Public-law constraints imposed by the state that limit what the holder of conventional property rights may do with land (e.g., planning controls, environmental restrictions). Permits may enable activities that would otherwise be restricted under reserved incidents. See also: PLR."@en ;
+    skos:related glos:conventional-incidents ;
+    skos:related glos:allocated-incidents ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'restriction' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.19) and ISO 19152-1:2024, 3.1, term 'responsibility' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.18) — The public-law subset of LADM restrictions and responsibilities — those imposed by statute or plan-making rather than private instrument. LADM does not partition RRRs by legal source; this typology does, because derivation and termination pathways differ by source."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:responsibility a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Responsibility"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "A positive duty (the holder must perform rather than merely refrain) that may run with land or party (e.g., a development contribution, an affordable-housing condition, a maintenance obligation). In Hohfeldian terms, a responsibility is the landowners' duty that results from a claim-right held by a third party; it differs from a restriction only in the direction of the obligation (positive vs negative). A responsibility may arise as a component of a reserved incident (imposed by statutory or plan-making process) or a conventional incident (a positive covenant in a private instrument). Its discharge status is determined by assessment and may be enforced as a charge on default. See Restriction, Reserved incidents, Hohfeldian analysis."@en ;
+    skos:related glos:restriction ;
+    skos:related glos:reserved-incidents ;
+    skos:related glos:hohfeldian-analysis ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'responsibility' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.18) — LADM: formal or informal obligation to do something. This term keeps that core and adds the Hohfeldian reading (duty-pole with a third-party claim-right pole), the symmetry with restriction (direction of obligation only), and discharge determination via assessment."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:restriction a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Restriction"@en ;
+    dct:type "legal-concept" ;
+    skos:definition "A negative duty (the holder must refrain) imposed on land or its use. In Hohfeldian terms a restriction is the landowners' duty that results from a claim-right held by a third party; it differs from a responsibility only in the direction of the obligation (negative vs positive). A duty-correlative restriction (a restrictive covenant, a planning obligation owed to an identified body) is released when that holder waives or is satisfied; a disability-type restriction (a development right reserved to the authority) leaves the landowner in a position of no-privilege that a permit does not lift but a privilege-allocation supplies. See Responsibility, Reserved incidents, No-privilege."@en ;
+    skos:related glos:responsibility ;
+    skos:related glos:reserved-incidents ;
+    skos:related glos:no-privilege ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'restriction' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.19) — LADM: formal or informal obligation to refrain. This term keeps the duty-correlative core but flags an edge LADM's obligation-framing obscures: disability-type 'restrictions' (development rights reserved to the authority) are not duties at all — the landowner is in no-privilege, which is why a permit allocates a privilege rather than releasing anything."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:rights-ontology-service a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Rights Ontology service"@en ;
+    dct:type "platform-service" ;
+    skos:definition "A proposed platform service holding the typed numerus clausus for a jurisdiction: the schema of permissible incident types, each with its Hohfeldian signature, the power requirements for each transaction type, capacity rules, and admissibility constraints. Separating the rules governing what rights may exist from the register recording what rights do exist allows the rule set to be versioned independently as legal regimes evolve. See Numerus clausus, Admissibility principle, VoI."@en ;
+    skos:related glos:numerus-clausus ;
+    skos:related glos:admissibility-principle ;
+    skos:related glos:voi ;
+    dct:hasVersion "1.0.0" .
+
+glos:security a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Security"@en ;
+    dct:type "derivable-type" ;
+    skos:broader glos:conventional-incidents ;
+    skos:definition "A right granted over land to secure a financial obligation (e.g., a mortgage or charge). Derived by a VoI; it is discharged and absorbed back into the parent cadastral unit when the underlying obligation is met."@en ;
+    skos:note "LADM mapping (conflicts-with): ISO 19152:2012 (LA_Mortgage, modelled as a special restriction of the ownership right); cf. ISO 19152-1:2024, 3.1, term 'restriction' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.19) — Deliberate divergence: this framework models a security as a conventional incident — the creditor's claim-right carved from the parent bundle by VoI and absorbed on discharge — whereas ISO 19152:2012 modelled mortgage as a restriction on the owner's right. The two views attach the object to different poles of the relation; the divergence is intentional and should be surfaced in the SWG mapping."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:shadow-infrastructure a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Shadow infrastructure"@en ;
+    dct:type "governance-concept" ;
+    skos:definition "Workaround systems or local data copies created by downstream agencies when authoritative services do not provide the identifier stability, versioning, or quality those agencies need. Shadow infrastructures diverge from the authoritative source over time and undermine the once-only principle."@en ;
+    skos:related glos:once-only-principle ;
+    dct:hasVersion "1.0.0" .
+
+glos:spatial-unit a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Spatial unit"@en ;
+    dct:type "ladm-construct" ;
+    skos:definition "In LADM, the geometric extent component of a land object. Combined with an administrative unit (the rights package), it fully represents what practitioners informally call a \"parcel.\""@en ;
+    skos:note "LADM mapping (equivalent): ISO 19152-1:2024, 3.1, term 'spatial unit' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.23) — Matches LADM spatial unit: the geometric extent component which, with the administrative unit, represents the parcel."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:specificity-principle a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Specificity principle"@en ;
+    dct:type "acceptance-principle" ;
+    skos:broader glos:acceptance-criteria ;
+    skos:definition "One of the five acceptance criteria, and the only well-formedness check (the others test validity). Requires that a transaction unambiguously identifies: the subject (the Party--Right--Land state being changed), the transformation (VoP, VoL, or VoI), and the variables (the parameters needed to evaluate and enact the change)."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:strata-title a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Strata title"@en ;
+    dct:type "derivable-type" ;
+    skos:broader glos:conventional-incidents ;
+    skos:definition "A form of property ownership in multi-storey or multi-unit buildings in which individual units are separately owned and common areas are held collectively by unit owners. Modelled in this strategy as a VoI derivation from the principal cadastral unit."@en ;
+    skos:note "LADM mapping (refines): ISO 19152-1:2024, 3.1, term 'right' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20); condominium example: ISO 19152-1:2024, 3.1.2, Example 2 — An ownership form LADM recognises by example (a condominium unit comprising an apartment and a garage as one BAUnit) and via legal space building units in ISO 19152:2012. This term adds the derivation analysis: a VoI derivation from the principal cadastral unit."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:termination a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Termination"@en ;
+    dct:type "transaction-operation" ;
+    skos:broader glos:voi ;
+    skos:narrower glos:absorption ;
+    skos:narrower glos:extinguishment ;
+    skos:narrower glos:rescission ;
+    skos:definition "The ending direction of a Variation of Incidents: the operation that closes an existing jural incident. Termination takes a form matched to the incident type. Absorption applies to conventional incidents: the separated claim-right is reintegrated into its parent bundle (on expiry, surrender, or satisfaction of the obligation it secured). Extinguishment applies to allocated incidents (public-law privileges): the privilege simply ceases to exist in the holder's hands (on expiry, revocation, or breach of conditions), with nothing returning to any parent holding. Rescission applies to reserved incidents: a PLR is brought to an end through the same statutory or regulatory process that created it. All three forms are first-class operations; recording a derivation without a termination pathway leaves dangling encumbrances. See Absorption, Extinguishment, Derivation, Variation of Incidents."@en ;
+    skos:related glos:derivation ;
+    skos:related glos:conventional-incidents ;
+    skos:related glos:reserved-incidents ;
+    skos:related glos:allocated-incidents ;
+    dct:hasVersion "1.0.0" .
+
+glos:tradable a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Tradable"@en ;
+    dct:type "type-property" ;
+    skos:definition "A type-level property of a derived right: whether it can undergo subsequent, independent transfers on a market after its initial allocation. The conveyancing market transacts tradable rights (freehold, leasehold, strata, mortgage), which demands persistent, chain-traceable, priority-bearing identifiers. Tradability governs onward dealing only. Every derived right is allocated once by the alienation pattern regardless of tradability; a non-tradable right (an easement) is allocated at grant and thereafter passes appurtenant to its parent. Independent of divisible; tradability implies referenceability, but not the reverse. Restrictable per instance by a recorded term (e.g., a non-assignability covenant)."@en ;
+    skos:related glos:divisible ;
+    dct:hasVersion "1.0.0" .
+
+glos:transaction-primitive a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "Transaction primitive"@en ;
+    dct:type "transaction-primitive" ;
+    skos:narrower glos:voi ;
+    skos:narrower glos:vol ;
+    skos:narrower glos:vop ;
+    skos:definition "One of the three core, reusable state-change patterns (VoP, VoL, VoI) from which land administration workflows are composed. Each is a variation representing a subdivision or consolidation along one axis of the party--right--land triple. Treating these as primitives keeps the transaction service surface small and stable, while allowing complex scenarios to be built as documented compositions."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:voi a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "VoI (Variation of Incidents)"@en ;
+    skos:altLabel "Variation of Incidents"@en ;
+    skos:notation "VoI" ;
+    dct:type "transaction-primitive" ;
+    skos:broader glos:transaction-primitive ;
+    skos:narrower glos:amendment ;
+    skos:narrower glos:derivation ;
+    skos:narrower glos:termination ;
+    skos:definition "The primitive that creates, varies, or terminates any jural incident (conventional, reserved, or allocated) associated with a land object. Its two directions are derivation (establishing a new incident from an authorised source) and termination (closing an existing incident). Termination form is matched to incident type: absorption for conventional incidents, extinguishment for allocated incidents, rescission for reserved incidents. The recognised set covers the private-law numerus clausus, the jurisdiction's recognised PLR types, and its recognised statutory authorisation types. Conventional derivation is recursive; allocated incidents are not. For conventional incidents, VoI derivation is always followed by an allocating VoP (the alienation pattern); for allocated incidents, derivation and transfer are a single act. VoI also separates jural content changes (its domain) from spatial extent changes (VoL's domain)."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:vol a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "VoL (Variation of Land)"@en ;
+    skos:altLabel "Variation of Land"@en ;
+    skos:notation "VoL" ;
+    dct:type "transaction-primitive" ;
+    skos:broader glos:transaction-primitive ;
+    skos:definition "A generic transaction pattern that changes what land a right bundle describes through subdivision or consolidation of spatial units. Because VoL is generic, it applies to any spatially-defined right object: cadastral parcels, planning zones, environmental buffers, heritage areas, and other public-law restriction (PLR) objects. Any alteration to a PLR's spatial extent (redrawing a zone boundary, extending a buffer, splitting a heritage area) is a VoL operation subject to the same acceptance criteria as a cadastral subdivision. A boundary determination that fixes, adjusts, or re-defines authoritative geometry is a VoL. VoL is the operational workhorse of high-velocity land change; it requires geometry integrity checks (no gaps or overlaps), recognised survey inputs, and versioned identifier management so that permits and rights always reference the correct spatial state."@en ;
+    dct:hasVersion "1.0.0" .
+
+glos:vop a skos:Concept ;
+    skos:inScheme <https://w3id.org/land-transactions/glossary> ;
+    skos:prefLabel "VoP (Variation of Party)"@en ;
+    skos:altLabel "Variation of Party"@en ;
+    skos:notation "VoP" ;
+    dct:type "transaction-primitive" ;
+    skos:broader glos:transaction-primitive ;
+    skos:definition "The primitive that varies who holds a right/incident. Where the right is divisible, the holding is a fraction and a VoP may subdivide it (a part transfer creating co-ownership) or consolidate it (re-uniting co-owners' shares); for an indivisible right a VoP transfers the whole or nothing. The whole-or-part transfer of a holding from one party to another is its familiar pattern, the transfer of party. A VoP can act on a tradable right as an independent object; in addition, every derived right receives at least one allocating VoP at grant (the alienation pattern), even when it is not tradable thereafter."@en ;
+    dct:hasVersion "1.0.0" .

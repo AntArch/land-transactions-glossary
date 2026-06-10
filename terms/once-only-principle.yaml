@@ -1,0 +1,35 @@
+# Term record: Once-only principle
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: once-only-principle
+term: Once-only principle
+abbreviation: null
+alt_labels: []
+status: stable
+category: design-principle
+definition: >-
+  The design principle that authoritative information should be recorded and maintained once by the responsible
+  custodian and reused by other agencies through governed services, rather than re-entered or re-created
+  in local copies that may diverge. See also: *authoritative custodian*, *shadow infrastructure*.
+see_also:
+- authoritative-custodian
+- shadow-infrastructure
+broader: null
+counterpart_of: null
+contrasted_with:
+- shadow-infrastructure
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Digital-government design principle (EU once-only/EIF lineage), not an ISO 19152 term, though
+    LADM's single-source RRR recording is compatible with it.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

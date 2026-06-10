@@ -1,0 +1,39 @@
+# Term record: Encumbrance
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: encumbrance
+term: Encumbrance
+abbreviation: null
+alt_labels: []
+status: stable
+category: legal-concept
+definition: >-
+  A right held by a third party that limits (or burdens) a landowners property, limiting the owner's freedom to use 
+  it or transfer its title. While it does not stop the property from being sold, it can diminish its value or impose 
+  ongoing obligations.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: null
+  tradable: null
+  notes: 'Umbrella term: the third party holds a claim-right against the encumbered estate. Divisibility/tradability
+    vary by the underlying incident type (mortgage tradable; restrictive covenant not).'
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Spans LADM categories rather than mapping to one: an encumbrance may be an LADM right (easement)
+    or restriction (covenant); ISO 19152:2012 modelled mortgage as a special restriction (LA_Mortgage).
+    No umbrella term is defined.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

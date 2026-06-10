@@ -1,0 +1,33 @@
+# Term record: Specificity principle
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: specificity-principle
+term: Specificity principle
+abbreviation: null
+alt_labels: []
+status: stable
+category: acceptance-principle
+definition: >-
+  One of the five acceptance criteria, and the only *well-formedness* check (the others test validity).
+  Requires that a transaction unambiguously identifies: the *subject* (the Party--Right--Land state being
+  changed), the *transformation* (VoP, VoL, or VoI), and the *variables* (the parameters needed to evaluate
+  and enact the change).
+see_also: []
+broader: acceptance-criteria
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Well-formedness gating is out of LADM scope, though the subject/transformation/variables triple
+    is articulated against the LADM Party-Right-Land frame.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

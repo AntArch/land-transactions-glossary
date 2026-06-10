@@ -1,0 +1,35 @@
+# Term record: Bitemporality
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: bitemporality
+term: Bitemporality
+abbreviation: null
+alt_labels: []
+status: stable
+category: register-concept
+definition: >-
+  The recording of two independent timelines on every version of a right or derived fact: *valid time*
+  (when the fact holds in reality which is the basis on which limitation and qualifying periods run) and
+  *transaction time* (when the register recorded it which is the basis for audit and indemnity).
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: equivalent
+  iso_19152_clause: ISO 19152-1:2024, 6.3.1 (VersionedObject)
+  notes: 'Edition II explicitly supports the bi-temporal model: VersionedObject carries system-time lifespans
+    (begin/endLifespanVersion = transaction time) and a second optional set of real-world temporal attributes
+    (begin/endRealWorldLifespanVersion, acceptance = valid time). Terminology differs (lifespan/real-world
+    vs transaction/valid time) but the model is the same; this glossary additionally states what runs
+    on each timeline (limitation/qualifying periods vs audit/indemnity).'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

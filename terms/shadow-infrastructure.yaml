@@ -1,0 +1,32 @@
+# Term record: Shadow infrastructure
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: shadow-infrastructure
+term: Shadow infrastructure
+abbreviation: null
+alt_labels: []
+status: stable
+category: governance-concept
+definition: >-
+  Workaround systems or local data copies created by downstream agencies when authoritative services do
+  not provide the identifier stability, versioning, or quality those agencies need. Shadow infrastructures
+  diverge from the authoritative source over time and undermine the once-only principle.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with:
+- once-only-principle
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Failure-mode concept of this strategy; no LADM counterpart.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

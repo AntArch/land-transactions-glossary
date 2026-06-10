@@ -1,0 +1,46 @@
+# Term record: Termination
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: termination
+term: Termination
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-operation
+definition: >-
+  The ending direction of a *Variation of Incidents*: the operation that closes an existing jural incident.
+  Termination takes a form matched to the incident type. *Absorption* applies to conventional incidents:
+  the separated claim-right is reintegrated into its parent bundle (on expiry, surrender, or satisfaction
+  of the obligation it secured). *Extinguishment* applies to allocated incidents (public-law privileges):
+  the privilege simply ceases to exist in the holder's hands (on expiry, revocation, or breach of conditions),
+  with nothing returning to any parent holding. *Rescission* applies to reserved incidents: a PLR is brought
+  to an end through the same statutory or regulatory process that created it. All three forms are first-class
+  operations; recording a derivation without a termination pathway leaves dangling encumbrances. See *Absorption*,
+  *Extinguishment*, *Derivation*, *Variation of Incidents*.
+see_also:
+- absorption
+- extinguishment
+- derivation
+- voi
+broader: voi
+counterpart_of: derivation
+contrasted_with: []
+composed_of: []
+applies_to:
+- conventional-incidents
+- reserved-incidents
+- allocated-incidents
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: LADM expresses all endings identically as a closed version (endLifespanVersion, 6.3.1); the three-form
+    typology (absorption/extinguishment/rescission matched to incident type) is this portfolio's operation-level
+    extension.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

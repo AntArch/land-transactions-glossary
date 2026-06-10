@@ -1,0 +1,37 @@
+# Term record: Alienation
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: alienation
+term: Alienation
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-pattern
+definition: >-
+  Alienation is the **VoI + VoP composite** (derive the incident, then allocate it by transfer), not a
+  single primitive. It is the *necessary minimal pattern* for bringing any derived conventional incident
+  into a holder's hands: a derivation alone leaves the incident within the grantor's holding, so at least
+  one allocating transfer must follow. See *Variation of Incidents*, *Variation of Party*.
+see_also:
+- voi
+- vop
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of:
+- voi
+- vop
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: A composite operation (VoI derivation + allocating VoP). LADM defines no transaction primitives;
+    the deed evidencing an alienation is captured as an administrative source in Part 2 (ISO 19152-2:2025).
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

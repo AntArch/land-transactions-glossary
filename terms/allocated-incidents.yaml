@@ -1,0 +1,52 @@
+# Term record: Allocated incidents
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: allocated-incidents
+term: Allocated incidents
+abbreviation: null
+alt_labels: []
+status: stable
+category: incident-type
+definition: >-
+  Public-law authorisations (permits, licences, and time-limited approvals) vested by agencies exercising
+  statutory powers. One of three incident types in the typology used by this paper, alongside *conventional
+  incidents* and *reserved incidents*. In Hohfeldian terms, the issuing authority exercises a *power*
+  to vest a *privilege* in the applicant from the authority's own jural position. The applicant receives
+  something; they do not recover something that was always theirs. Modelled as a VoI derivation with explicit
+  parameterisation of effective period, conditions, and discharge triggers. See *Derivation*, *Variation
+  of Incidents*.
+see_also:
+- derivation
+- voi
+broader: incident
+counterpart_of: null
+contrasted_with:
+- conventional-incidents
+- reserved-incidents
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: privilege
+  correlative: no-right
+  divisible: false
+  tradable: false
+  notes: Class-level signature. The authority exercises a power to vest the privilege; correlative is
+    the general no-right of others to demand the holder refrain. Defaults shown are the class norm (no
+    sub-permitting, no onward dealing); per-type declarations live in the jurisdiction's recognised authorisation
+    set.
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-5:2025, term ''permit''; cf. ISO 19152-1:2024, 3.1, term ''right'' (sub-clause
+    >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20)'
+  notes: 'Part 5 introduces ''permit'' (permission granted to a party to undertake an otherwise restricted
+    activity). This term refines that: it generalises to all statutory authorisations, supplies the Hohfeldian
+    characterisation (privilege vested from the authority''s own jural position, not a lifted restriction),
+    and parameterises lifecycle (effective period, conditions, discharge triggers). Core LADM RRR does
+    not distinguish privilege from claim-right.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

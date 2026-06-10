@@ -1,0 +1,39 @@
+# Term record: Property object
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: property-object
+term: Property object
+abbreviation: null
+alt_labels: []
+status: stable
+category: ladm-construct
+definition: >-
+  A legal construct comprising an administrative unit (the rights package) and its associated spatial
+  unit (geometry). This is considered specifically as the first-class holder of a rights bundle. Distinguished
+  from *land object* (which emphasises the spatial reference) in contexts where rights are being derived
+  from or absorbed back into the bundle: a VoI absorption takes a separated right back into the property
+  object's bundle rather than simply referencing the land's spatial extent.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with:
+- land-object
+composed_of:
+- administrative-unit
+- spatial-unit
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: extends
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1.2 (basic administrative unit) + ISO 19152-1:2024, 3.1, term
+    ''spatial unit'' (sub-clause >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.23)'
+  notes: Same composite as land-object (no single LADM term), emphasised as the first-class holder of
+    the rights bundle from which incidents are derived and into which they are absorbed. BAUnit Note 2's
+    proxy-party pattern shows LADM already treating the unit as capable of holding rights.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

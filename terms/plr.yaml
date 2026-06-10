@@ -1,0 +1,45 @@
+# Term record: PLR (Public Law Restriction)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: plr
+term: PLR (Public Law Restriction)
+abbreviation: PLR
+alt_labels:
+- Public Law Restriction
+status: stable
+category: derivable-type
+definition: >-
+  A restriction, constraint, or responsibility imposed on land or its use by legislation, regulation,
+  or planning instrument (e.g., planning zones, heritage designations, environmental buffers, safety exclusion
+  zones). Treated in this strategy as first-class, spatially queryable objects with defined authority,
+  versioning, and applicability conditions. See also: *reserved incidents*.
+see_also:
+- reserved-incidents
+broader: reserved-incidents
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: duty
+  correlative: claim-right
+  divisible: null
+  tradable: null
+  notes: 'Signature shown is for duty-correlative PLRs (claim-right pole held by the authority or beneficiary).
+    Disability-type PLRs are different: the landowner sits in no-privilege and the authority holds the
+    reserved privilege/power — there is no releasable duty/claim-right pair.'
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''restriction'' (sub-clause >3.1.10, VERIFY against full
+    text; ISO 19152:2012: 4.1.19); spatial plans: ISO 19152-5:2025'
+  notes: 'The public-law subset of LADM restriction (and responsibility), made first-class: defined authority,
+    versioning, spatial queryability and applicability conditions. Part 5 supplies the spatial-plan instruments
+    that create many PLRs; the requirement that PLRs be spatially queryable objects subject to VoL is
+    this portfolio''s addition.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

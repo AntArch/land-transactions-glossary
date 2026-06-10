@@ -1,0 +1,31 @@
+# Term record: Development control
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: development-control
+term: Development control
+abbreviation: null
+alt_labels: []
+status: stable
+category: legal-concept
+definition: >-
+  The regulatory function governing what can be built or changed on land, typically administered through
+  a permitting or planning system.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: The regulatory function sits in the spatial-plan domain addressed by ISO 19152-5:2025 (plan units/blocks,
+    permits), but the function itself is not a defined term.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

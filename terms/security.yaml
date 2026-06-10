@@ -1,0 +1,43 @@
+# Term record: Security
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: security
+term: Security
+abbreviation: null
+alt_labels: []
+status: stable
+category: derivable-type
+definition: >-
+  A right granted over land to secure a financial obligation (e.g., a mortgage or charge). Derived by
+  a VoI; it is discharged and absorbed back into the parent cadastral unit when the underlying obligation
+  is met.
+see_also: []
+broader: conventional-incidents
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: null
+  tradable: true
+  notes: Creditor's claim-right carved from the parent bundle to secure performance of an obligation;
+    discharged and absorbed on satisfaction. Tradable on the conveyancing market; priority between competing
+    securities is a property of the relationship between rights, not of the right.
+ladm_mapping:
+  relation: conflicts-with
+  iso_19152_clause: 'ISO 19152:2012 (LA_Mortgage, modelled as a special restriction of the ownership right);
+    cf. ISO 19152-1:2024, 3.1, term ''restriction'' (sub-clause >3.1.10, VERIFY against full text; ISO
+    19152:2012: 4.1.19)'
+  notes: 'Deliberate divergence: this framework models a security as a conventional incident — the creditor''s
+    claim-right carved from the parent bundle by VoI and absorbed on discharge — whereas ISO 19152:2012
+    modelled mortgage as a restriction on the owner''s right. The two views attach the object to different
+    poles of the relation; the divergence is intentional and should be surfaced in the SWG mapping.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

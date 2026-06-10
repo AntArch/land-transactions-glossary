@@ -1,0 +1,39 @@
+# Term record: Numerus clausus
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: numerus-clausus
+term: Numerus clausus
+abbreviation: null
+alt_labels: []
+status: stable
+category: legal-concept
+definition: >-
+  Latin for "closed number." The principle that only a defined set of right types can be carved from a
+  bundle and vested to third parties; parties cannot create novel incidents with the character of property
+  by agreement alone. In this paper, the numerus clausus is the typed registry of derivable incident types
+  for a jurisdiction, each carrying a Hohfeldian signature (jural position, correlative, divisibility,
+  tradability). The *admissibility* gate checks that a proposed transaction produces an incident within
+  this recognised set. See *Admissibility principle*, *Rights Ontology service*, *VoI*.
+see_also:
+- admissibility-principle
+- rights-ontology-service
+- voi
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Nearest LADM device is the code lists for RRR types (ISO 19152-1:2024, Annex C), which enumerate
+    recognised types without Hohfeldian signatures, power requirements or admissibility constraints. The
+    typed registry described here is richer than a code list.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

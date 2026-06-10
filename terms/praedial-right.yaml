@@ -1,0 +1,40 @@
+# Term record: Praedial right
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: praedial-right
+term: Praedial right
+abbreviation: null
+alt_labels: []
+status: stable
+category: derivable-type
+definition: >-
+  A right that attaches to land rather than to a person, and runs with the land when it is transferred.
+  A praedial relationship means that one parcel holds rights in another parcel, with those rights passing
+  automatically to whoever owns the benefiting parcel.
+see_also: []
+broader: conventional-incidents
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: false
+  tradable: false
+  notes: Held by whoever owns the benefiting parcel; the servient parcel's owner bears the duty. Not independently
+    tradable — passes automatically (appurtenant) with the benefiting parcel.
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY against full text;
+    ISO 19152:2012: 4.1.20); appurtenance: ISO 19152-1:2024, 3.1.2, Note 2'
+  notes: 'An LADM right with the run-with-the-land behaviour that BAUnit Note 2 captures structurally:
+    a BAUnit may act as proxy party to hold a right (e.g. easement) as an appurtenance to another BAUnit
+    — i.e. parcel-holds-right-in-parcel, exactly this term''s praedial relationship.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

@@ -1,0 +1,34 @@
+# Term record: Durable identifier
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: durable-identifier
+term: Durable identifier
+abbreviation: null
+alt_labels: []
+status: stable
+category: register-concept
+definition: >-
+  A stable identity for a right or spatial unit that *persists across variations*. Versions of the entity
+  hang from it, so that continuity-dependent facts (commencement date, accrued priority, qualifying periods)
+  survive a variation. A variation produces a new version under the same durable identifier rather than
+  a new entity.
+see_also: []
+broader: identifier
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: ISO 19152-1:2024, 3.1.10 (object identifier); 6.3.1 (VersionedObject)
+  notes: 'Oid provides generic object identification; VersionedObject hangs versions from an identified
+    object. This term makes the combination a requirement: the identifier must persist across variations
+    precisely so that continuity-dependent facts survive.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

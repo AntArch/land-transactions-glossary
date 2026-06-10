@@ -1,0 +1,35 @@
+# Term record: Capacity principle
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: capacity-principle
+term: Capacity principle
+abbreviation: null
+alt_labels: []
+status: stable
+category: acceptance-principle
+definition: >-
+  One of the five acceptance criteria (a validity check). Requires that parties are legally and professionally
+  capable of granting or receiving rights. Capacity has two limbs: *personal* competence (age, legal competence,
+  inhibitions, sanctions, insolvency freezes and other restrictions on party capacity in the jurisdiction)
+  and *professional* competence (the registration and certification requirements applicable to supporting
+  parties). Professional "capability" is the second limb of this gate, not a separate criterion. See *Capability*.
+see_also:
+- capability
+broader: acceptance-criteria
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Party capacity conditions (age, competence, inhibitions, insolvency) are not modelled in LADM;
+    party detail is expected from external registers (out of scope per Part 1, Clause 1).
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

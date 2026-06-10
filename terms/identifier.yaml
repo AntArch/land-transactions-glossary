@@ -1,0 +1,31 @@
+# Term record: Identifier
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: identifier
+term: Identifier
+abbreviation: null
+alt_labels: []
+status: stable
+category: register-concept
+definition: >-
+  A stable, unique reference code assigned to an entity (party, parcel, restriction, permit) that persists
+  across system updates and enables consistent, unambiguous cross-agency referencing.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: equivalent
+  iso_19152_clause: ISO 19152-1:2024, 3.1.10 (object identifier)
+  notes: 'Matches Oid: a generic, stable identifier supporting object identification across parties, spatial
+    units and RRRs. BAUnit Note 3 likewise expects a unique identifier on registration.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

@@ -1,0 +1,50 @@
+# Term record: Restriction
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: restriction
+term: Restriction
+abbreviation: null
+alt_labels: []
+status: stable
+category: legal-concept
+definition: >-
+  A negative duty (the holder must refrain) imposed on land or its use. In Hohfeldian terms a restriction
+  is the landowners' duty that results from a claim-right held by a third party; it differs from
+  a *responsibility* only in the direction of the obligation (negative vs positive). A duty-correlative
+  restriction (a restrictive covenant, a planning obligation owed to an identified body) is released when
+  that holder waives or is satisfied; a disability-type restriction (a development right reserved to the
+  authority) leaves the landowner in a position of *no-privilege* that a permit does not lift but a privilege-allocation
+  supplies. See *Responsibility*, *Reserved incidents*, *No-privilege*.
+see_also:
+- responsibility
+- reserved-incidents
+- no-privilege
+broader: null
+counterpart_of: null
+contrasted_with:
+- responsibility
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: duty
+  correlative: claim-right
+  divisible: null
+  tradable: null
+  notes: 'Negative duty (must refrain), taken from the burdened party''s side, for the duty-correlative
+    form. Disability-type restrictions are not duties at all: the landowner is in no-privilege and the
+    authority holds the reserved position.'
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''restriction'' (sub-clause >3.1.10, VERIFY against full
+    text; ISO 19152:2012: 4.1.19)'
+  notes: 'LADM: formal or informal obligation to refrain. This term keeps the duty-correlative core but
+    flags an edge LADM''s obligation-framing obscures: disability-type ''restrictions'' (development rights
+    reserved to the authority) are not duties at all — the landowner is in no-privilege, which is why
+    a permit allocates a privilege rather than releasing anything.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

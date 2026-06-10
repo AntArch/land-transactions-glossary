@@ -1,0 +1,33 @@
+# Term record: Cadastral index
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: cadastral-index
+term: Cadastral index
+abbreviation: null
+alt_labels: []
+status: stable
+category: platform-service
+definition: >-
+  A register of cadastral units providing stable identifiers, geometry, version history, and topology.
+  The backbone service that all other workflows reference to identify unambiguously "what land" is involved
+  in a transaction or permit.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: A service concept, not an LADM term. Functionally it operationalises the spatial unit package
+    plus identifier management (Oid, ISO 19152-1:2024, 3.1.10) as a governed register with versioned geometry
+    and topology.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

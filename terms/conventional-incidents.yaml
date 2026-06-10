@@ -1,0 +1,42 @@
+# Term record: Conventional incidents
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: conventional-incidents
+term: Conventional incidents
+abbreviation: null
+alt_labels: []
+status: stable
+category: incident-type
+definition: >-
+  Private-law rights over land created and transferred through conveyancing (e.g., ownership, lease, easement,
+  mortgage). Distinguished from *reserved incidents*, which are public-law constraints imposed by the
+  state.
+see_also: []
+broader: incident
+counterpart_of: null
+contrasted_with:
+- reserved-incidents
+- allocated-incidents
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: null
+  tradable: null
+  notes: Class-level signature. Divisibility and tradability vary by type and are declared per type in
+    the numerus clausus (e.g. lease tradable, easement not).
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY against full text;
+    ISO 19152:2012: 4.1.20)'
+  notes: 'Narrower than LADM ''right'' (formal or informal entitlement): restricted to private-law claim-rights
+    created and transferred through conveyancing, excluding informal/customary tenure and the public-law
+    incidents this typology assigns to the reserved and allocated classes.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

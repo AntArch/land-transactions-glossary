@@ -1,0 +1,47 @@
+# Term record: Claim-right
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: claim-right
+term: Claim-right
+abbreviation: null
+alt_labels: []
+status: stable
+category: jural-position
+definition: >-
+  In Hohfeldian analysis, the jural position of a holder who is entitled to a specific performance from
+  a correlative duty-bearer. An entitlement enforceable against an identified party. Distinguished from
+  a *privilege*, which merely permits the holder to act without imposing a duty on others. In this paper,
+  conventional private-law incidents (leases, mortgages, easements) create claim-rights in their holders;
+  duty-correlative reserved incidents (planning obligations, restrictive covenants) instantiate the authority's
+  or beneficiary's claim-right with the landowner's duty as its correlative. See *Hohfeldian analysis*,
+  *Privilege*, *No-privilege*.
+see_also:
+- hohfeldian-analysis
+- privilege
+- no-privilege
+broader: null
+counterpart_of: null
+contrasted_with:
+- privilege
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: null
+  tradable: null
+  notes: Abstract jural position. Divisibility and tradability are type-level properties of specific incident
+    types, not of the position itself.
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Hohfeldian analytic layer. LADM''s ''right'' (ISO 19152-1:2024, 3.1, term ''right'' (sub-clause
+    >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20)) is defined as an entitlement without decomposition
+    into jural positions; this glossary supplies that decomposition on top of the LADM vocabulary.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

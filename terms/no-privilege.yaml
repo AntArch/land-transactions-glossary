@@ -1,0 +1,50 @@
+# Term record: No-privilege
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: no-privilege
+term: No-privilege
+abbreviation: null
+alt_labels: []
+status: stable
+category: jural-position
+definition: >-
+  In Hohfeldian analysis, the absence of a privilege: the jural position of a party that lacks the freedom
+  to perform a given act. In this paper, no-privilege is the precise characterisation of a landowner's
+  position with respect to a restricted activity under a public-law constraint. The landowner does not
+  hold a duty-not-to-develop (which would imply a claim-right in another party that could be released),
+  but rather lacks the privilege to act in the first place. A permit does not lift a restriction; the
+  issuing authority vests a privilege from its own jural position. See *Privilege*, *Hohfeldian analysis*,
+  *Allocated incidents*, *Reserved incidents*.
+see_also:
+- privilege
+- hohfeldian-analysis
+- allocated-incidents
+- reserved-incidents
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: no-privilege
+  correlative: null
+  divisible: null
+  tradable: null
+  notes: 'Deliberate departure from the strict first-order table, where absence of privilege to do A is
+    equivalent to a duty not to do A (correlative: another''s claim-right). This paper uses no-privilege
+    precisely where there is no releasable private claim-right: the development right is reserved to the
+    authority, which holds the corresponding privilege/power in its own jural position. A permit supplies
+    a privilege; it does not release a duty.'
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Hohfeldian analytic layer. LADM would record the underlying situation as a restriction; the no-privilege
+    characterisation (and its consequence: a permit supplies a privilege rather than lifting a restriction)
+    is this portfolio''s analysis.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

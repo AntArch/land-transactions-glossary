@@ -1,0 +1,38 @@
+# Term record: Power (legal)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: power
+term: Power (legal)
+abbreviation: null
+alt_labels: []
+status: stable
+category: jural-position
+definition: >-
+  The legal capacity to effect a specific change in a Party--Right--Land relationship. Private-law powers
+  derive from rights held (a party can only grant what it has); public-law powers derive from legislative
+  or regulatory authority. Verification of power is a prerequisite for any valid transaction.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: power
+  correlative: liability
+  divisible: null
+  tradable: null
+  notes: 'Second-order position: the capacity to change a jural relation. ''Liability'' is the technical
+    Hohfeldian correlative (susceptibility to having one''s position changed), not culpability.'
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Hohfeldian analytic layer. LADM does not define legal power; the glossary's claim that verification
+    of power is prerequisite to any valid transaction is process, outside the LADM content model.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

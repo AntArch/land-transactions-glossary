@@ -1,0 +1,40 @@
+# Term record: VoL (Variation of Land)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: vol
+term: VoL (Variation of Land)
+abbreviation: VoL
+alt_labels:
+- Variation of Land
+status: stable
+category: transaction-primitive
+definition: >-
+  A generic transaction pattern that changes *what land* a right bundle describes through subdivision
+  or consolidation of spatial units. Because VoL is generic, it applies to any spatially-defined right
+  object: cadastral parcels, planning zones, environmental buffers, heritage areas, and other public-law
+  restriction (PLR) objects. Any alteration to a PLR's spatial extent (redrawing a zone boundary, extending
+  a buffer, splitting a heritage area) is a VoL operation subject to the same acceptance criteria as a
+  cadastral subdivision. **A boundary determination that fixes, adjusts, or re-defines authoritative geometry
+  is a VoL**. VoL is the operational workhorse of high-velocity land change; it requires geometry integrity
+  checks (no gaps or overlaps), recognised survey inputs, and versioned identifier management so that
+  permits and rights always reference the correct spatial state.
+see_also: []
+broader: transaction-primitive
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: No LADM counterpart as an operation. Its effects are representable in the spatial unit package
+    (subdivision/consolidation of spatial units, versioned geometry), and Edition II's versioned sources
+    strengthen the audit trail, but LADM names no spatial-variation operation.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

@@ -1,0 +1,35 @@
+# Term record: IAM (Identity and Access Management)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: iam
+term: IAM (Identity and Access Management)
+abbreviation: IAM
+alt_labels:
+- Identity and Access Management
+status: stable
+category: technology
+definition: >-
+  The systems and processes governing digital identities, authentication (confirming who a party is),
+  authorisation (defining what they may do), delegation and representation relationships, and the audit
+  trail of actions taken under each identity. In this strategy, IAM is the recommended implementation
+  vehicle for the *Party and Representation service*, covering representation chains, power-of-attorney
+  delegation, company signatory verification, and audited access to transaction services.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Party/identity infrastructure is explicitly outside LADM scope (Part 1, Clause 1 excludes external
+    party databases); IAM is this strategy's implementation vehicle for that external dependency.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

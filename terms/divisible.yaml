@@ -1,0 +1,35 @@
+# Term record: Divisible
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: divisible
+term: Divisible
+abbreviation: null
+alt_labels: []
+status: stable
+category: type-property
+definition: >-
+  A type-level property of a right: whether it can be held in undivided fractional shares (co-ownership),
+  and therefore whether the fractional (part) form of a *Variation of Party* is available to it. Independent
+  of *tradable*: the shared areas of a real-estate complex are divisible (held in fractional shares) yet
+  not tradable. Declared in the numerus clausus; restrictable per instance by a recorded term.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with:
+- tradable
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: extends
+  iso_19152_clause: ISO 19152-1:2024, 3.1.5 (fraction)
+  notes: 'Edition II introduces ''fraction'' as the data type for co-ownership shares — the instance-level
+    expression of divisibility. This term adds the type-level rule LADM does not model: whether a right
+    type admits fractional holding at all (declared in the numerus clausus, restrictable per instance).'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

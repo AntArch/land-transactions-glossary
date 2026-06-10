@@ -1,0 +1,32 @@
+# Term record: API (Application Programming Interface)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: api
+term: API (Application Programming Interface)
+abbreviation: API
+alt_labels:
+- Application Programming Interface
+status: stable
+category: technology
+definition: >-
+  A defined contract through which one software service requests information or actions from another.
+  An API-first design means authoritative services expose their data and functions through stable, documented,
+  machine-readable interfaces that other systems can reliably consume.
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Generic IT term; LADM is encoding-independent by design and does not define service interfaces.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

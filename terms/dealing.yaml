@@ -1,0 +1,40 @@
+# Term record: Dealing
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: dealing
+term: Dealing
+abbreviation: null
+alt_labels: []
+status: stable
+category: register-concept
+definition: >-
+  Used in two distinct senses. (1) *Tradability sense*: an onward market transfer of a tradable
+  right after its initial allocation: the subsequent independent trading of freehold, leasehold, mortgage,
+  or strata interests. Every dealing is a transaction, but not every transaction is a dealing: the initial
+  grant of a right is a transaction (alienation) but not a dealing in this sense. (2) *Land registration
+  sense*: a registered act or instrument that alters an entry in the title register, the technical meaning
+  in deeds and title-registration systems. Where context does not disambiguate, "transaction" is the preferred
+  general term. See *Tradable*, *Transaction primitive*, *Alienation*.
+see_also:
+- tradable
+- transaction-primitive
+- alienation
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Not defined in the ISO 19152 series. In the land-registration sense, a dealing corresponds to
+    a registered act evidenced by an administrative source (Part 2); the tradability sense has no LADM
+    hook because market transferability is not modelled.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

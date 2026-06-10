@@ -1,0 +1,38 @@
+# Term record: Bundle of rights
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: bundle-of-rights
+term: Bundle of rights
+abbreviation: null
+alt_labels: []
+status: stable
+category: analytical-framework
+definition: >-
+  The analysis of property ownership as a collection of separable jural incidents (to possess, use, manage,
+  derive income, transmit, and hold residuary character) rather than a single, indivisible entitlement,
+  following Honoré [-@honore_ownership_1961]. These incidents normally travel together but can be separated,
+  constrained, or reallocated individually. This paper uses *incident* as the preferred general term to
+  capture this compound structure. See *Conventional incidents*, *Incident*, *Hohfeldian analysis*.
+see_also:
+- conventional-incidents
+- incident
+- hohfeldian-analysis
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Not a defined LADM term. LADM's structure is congruent — multiple RRRs recorded against one BAUnit
+    — but LADM does not adopt Honoré's analysis of ownership as separable standard incidents.
+citations:
+- honore_ownership_1961
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

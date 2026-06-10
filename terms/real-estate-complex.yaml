@@ -1,0 +1,36 @@
+# Term record: Real estate complex
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: real-estate-complex
+term: Real estate complex
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-pattern
+definition: >-
+  A multi-unit development (block of flats, mixed-use compound) in which individual units are separately
+  owned and common areas are held collectively by unit owners. Modelled in this strategy as a documented
+  composition of VoL, VoI and VoP transactions (see Appendix 1 of the conceptual foundation).
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of:
+- vol
+- voi
+- vop
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Not a defined term, but directly recognised in examples: BAUnit 3.1.2, Example 2 cites a condominium
+    unit comprising multiple spatial units; ISO 19152:2012 modelled legal space building units. The VoL/VoI/VoP
+    composition of the complex is this portfolio''s contribution.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

@@ -1,0 +1,37 @@
+# Term record: Absorption
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: absorption
+term: Absorption
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-operation
+definition: >-
+  The termination form for conventional incidents: the separated claim-right is reintegrated into its
+  parent bundle on expiry, surrender, or satisfaction of the obligation it secured. For the corresponding
+  operation on allocated incidents (public-law privileges), see *Extinguishment*; for reserved incidents
+  (PLRs), see *Rescission*. The counterpart of *derivation*.
+see_also: []
+broader: termination
+counterpart_of: derivation
+contrasted_with:
+- extinguishment
+- rescission
+composed_of: []
+applies_to:
+- conventional-incidents
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'LADM has no operation vocabulary: the ending of an RRR is expressed only as a closed version
+    (VersionedObject endLifespanVersion, ISO 19152-1:2024, 6.3.1). Absorption as reintegration into the
+    parent bundle is not representable as a concept.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

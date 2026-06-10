@@ -1,0 +1,40 @@
+# Term record: VoI (Variation of Incidents)
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: voi
+term: VoI (Variation of Incidents)
+abbreviation: VoI
+alt_labels:
+- Variation of Incidents
+status: stable
+category: transaction-primitive
+definition: >-
+  The primitive that creates, varies, or terminates any jural incident (conventional, reserved, or allocated)
+  associated with a land object. Its two directions are *derivation* (establishing a new incident from
+  an authorised source) and *termination* (closing an existing incident). Termination form is matched
+  to incident type: *absorption* for conventional incidents, *extinguishment* for allocated incidents,
+  *rescission* for reserved incidents. The recognised set covers the private-law *numerus clausus*, the
+  jurisdiction's recognised PLR types, and its recognised statutory authorisation types. Conventional
+  derivation is recursive; allocated incidents are not. For conventional incidents, VoI derivation is
+  always followed by an allocating VoP (the *alienation* pattern); for allocated incidents, derivation
+  and transfer are a single act. VoI also separates jural content changes (its domain) from spatial extent
+  changes (VoL's domain).
+see_also: []
+broader: transaction-primitive
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'No LADM counterpart: creates/varies/terminates RRR instances that LADM can only show as version
+    chains. The recognised-set constraint corresponds loosely to RRR-type code lists (Annex C).'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

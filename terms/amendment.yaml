@@ -1,0 +1,35 @@
+# Term record: Amendment
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: amendment
+term: Amendment
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-operation
+definition: >-
+  A change to the *terms* of an existing right relationship (a lease extension, a rent review, a change
+  to an easement's scope) where holder, land, and the right's existence are unchanged. Modelled as a continuing
+  version of the same right relationship under its durable identifier (not as absorption followed by a
+  fresh derivation) so that continuity-dependent facts (commencement date, accrued priority, qualifying
+  periods) survive.
+see_also: []
+broader: voi
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: ISO 19152-1:2024, 6.3.1 (VersionedObject)
+  notes: Realised in LADM as a new version of the same RRR instance under its identifier — which is exactly
+    the continuing-version semantics this term mandates. LADM supplies the mechanism but does not name
+    the operation or contrast it with terminate-and-re-derive.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

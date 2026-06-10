@@ -1,0 +1,49 @@
+# Term record: Incident
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: incident
+term: Incident
+abbreviation: null
+alt_labels: []
+status: stable
+category: incident-type
+definition: >-
+  The preferred general term in this paper for any jural position that attaches to, or is allocated over,
+  land: adopted in preference to "right" to reflect the compound and separable structure of what land
+  ownership involves. Three types are distinguished: *conventional incidents* (private-law claim-rights
+  created through conveyancing), *reserved incidents* (public-law restrictions and responsibilities imposed
+  by statute or plan-making), and *allocated incidents* (public-law privileges vested by statutory authority).
+  The term follows Honoré's [-@honore_ownership_1961] analysis of ownership as a bundle of separable standard
+  incidents. See *Bundle of rights*, *Conventional incidents*, *Reserved incidents*, *Allocated incidents*.
+see_also:
+- bundle-of-rights
+- conventional-incidents
+- reserved-incidents
+- allocated-incidents
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: null
+  correlative: null
+  divisible: null
+  tradable: null
+  notes: Umbrella term — carries no signature of its own; each incident type (conventional, reserved,
+    allocated) bears its own signature in the numerus clausus.
+ladm_mapping:
+  relation: extends
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1.2, Note 6 (RRR); ISO 19152-1:2024, 3.1, term ''right'' (sub-clause
+    >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20)'
+  notes: Plays the role of LADM's collective 'RRR' (rights, restrictions, responsibilities) but reframes
+    it on Honoré/Hohfeld and adds a third public-law class (allocated incidents (privileges)) that the
+    RRR triple does not distinguish from rights.
+citations:
+- honore_ownership_1961
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

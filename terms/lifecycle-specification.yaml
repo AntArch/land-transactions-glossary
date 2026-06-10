@@ -1,0 +1,39 @@
+# Term record: Lifecycle specification
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: lifecycle-specification
+term: Lifecycle specification
+abbreviation: null
+alt_labels: []
+status: stable
+category: type-property
+definition: >-
+  The set of properties on a jural incident that govern when it activates and when it terminates: an effective
+  period, the conditions under which it activates, and the triggers (expiry, surrender, satisfaction of
+  an obligation, a staged-release milestone, or statutory rescission) that cause termination. Treating
+  lifecycle as a first-class property of each incident type means that leases, easements, securities,
+  permits, and PLR zones share the same structural shape with different parameters, rather than requiring
+  separate instrument logic for each. See *Termination*, *Amendment*, *VoI*.
+see_also:
+- termination
+- amendment
+- voi
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: extends
+  iso_19152_clause: ISO 19152-1:2024, 6.3.1 (VersionedObject)
+  notes: 'VersionedObject gives every instance lifespans (system and real-world time). This term adds
+    what LADM does not model: activation conditions and typed termination triggers (expiry, surrender,
+    satisfaction, milestone, rescission) as first-class properties of each incident type.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

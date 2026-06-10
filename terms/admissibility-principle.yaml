@@ -1,0 +1,37 @@
+# Term record: Admissibility principle
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: admissibility-principle
+term: Admissibility principle
+abbreviation: null
+alt_labels: []
+status: stable
+category: acceptance-principle
+definition: >-
+  One of the five acceptance criteria (a validity check). Requires that the *resulting state* of a transaction
+  is itself lawful: the right type is within the jurisdiction's recognised set (*numerus clausus*), mandatory
+  rules are satisfied, any plan hierarchy is conformed to, and applicable PLRs are not breached. Distinct
+  from *power* (provenance of authority) and *specificity* (clarity of description), which it relieves
+  of carrying outcome-legality.
+see_also: []
+broader: acceptance-criteria
+counterpart_of: null
+contrasted_with:
+- power-principle
+- specificity-principle
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: LADM records what RRRs exist; it does not model the lawfulness conditions of a proposed resulting
+    state. The recognised-set check loosely parallels constraining RRR types to code-list values (ISO
+    19152-1:2024, Annex C), but no validity concept is defined.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

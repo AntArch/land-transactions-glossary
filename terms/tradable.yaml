@@ -1,0 +1,38 @@
+# Term record: Tradable
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: tradable
+term: Tradable
+abbreviation: null
+alt_labels: []
+status: stable
+category: type-property
+definition: >-
+  A type-level property of a derived right: whether it can undergo *subsequent, independent* transfers
+  on a market *after* its initial allocation. The conveyancing market transacts tradable rights (freehold,
+  leasehold, strata, mortgage), which demands persistent, chain-traceable, priority-bearing identifiers.
+  Tradability governs *onward* dealing only. Every derived right is allocated once by the alienation pattern
+  regardless of tradability; a non-tradable right (an easement) is allocated at grant and thereafter passes
+  appurtenant to its parent. Independent of *divisible*; tradability implies referenceability, but not
+  the reverse. Restrictable per instance by a recorded term (e.g., a non-assignability covenant).
+see_also: []
+broader: null
+counterpart_of: null
+contrasted_with:
+- divisible
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Type-level market-transferability rule; LADM records transfers' outcomes but does not model whether
+    a right type admits onward dealing. Contrast 'divisible', whose instance-level expression (fraction,
+    3.1.5) Edition II does model.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

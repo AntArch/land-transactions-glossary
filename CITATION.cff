@@ -1,0 +1,25 @@
+# Citation metadata. GitHub renders a "Cite this repository" button from this file,
+# and Zenodo uses it to populate the DOI record on each release.
+cff-version: 1.2.0
+message: "If you use this glossary, please cite the specific release (version + DOI)."
+title: "Glossary and definitions: the single-source terminology for the land-transactions portfolio"
+type: dataset
+version: 1.0.0
+date-released: 2026-06-10
+license: CC-BY-4.0
+authors:
+  - family-names: Beck
+    given-names: Anthony
+    orcid: "https://orcid.org/0000-0002-2991-811X"
+    affiliation: "Cadastral Concepts Ltd"
+keywords:
+  - land administration
+  - glossary
+  - definitions
+  - LADM
+  - ISO 19152
+  - transactions
+# After the first Zenodo release, add:
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX   # the *concept* DOI (resolves to latest version)

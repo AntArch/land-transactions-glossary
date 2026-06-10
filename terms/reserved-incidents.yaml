@@ -1,0 +1,45 @@
+# Term record: Reserved incidents
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: reserved-incidents
+term: Reserved incidents
+abbreviation: null
+alt_labels: []
+status: stable
+category: incident-type
+definition: >-
+  Public-law constraints imposed by the state that limit what the holder of conventional property rights
+  may do with land (e.g., planning controls, environmental restrictions). Permits may enable activities
+  that would otherwise be restricted under reserved incidents. See also: *PLR*.
+see_also:
+- plr
+broader: incident
+counterpart_of: null
+contrasted_with:
+- conventional-incidents
+- allocated-incidents
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: null
+  tradable: null
+  notes: 'Signature shown for the duty-correlative form, taken from the holder''s side: the recorded incident
+    instantiates the authority''s or beneficiary''s claim-right with the landowner''s duty as correlative.
+    Disability-type reserved incidents instead leave the landowner in no-privilege (see *No-privilege*).'
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''restriction'' (sub-clause >3.1.10, VERIFY against full
+    text; ISO 19152:2012: 4.1.19) and ISO 19152-1:2024, 3.1, term ''responsibility'' (sub-clause >3.1.10,
+    VERIFY against full text; ISO 19152:2012: 4.1.18)'
+  notes: The public-law subset of LADM restrictions and responsibilities — those imposed by statute or
+    plan-making rather than private instrument. LADM does not partition RRRs by legal source; this typology
+    does, because derivation and termination pathways differ by source.
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

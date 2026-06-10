@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glossary and definitions — v1.0.0</title>
+<style>
+ body{font:16px/1.55 Georgia,serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#1a1a1a}
+ h1{font-size:1.6rem;margin-bottom:.2rem} .sub{color:#555;margin-top:0}
+ h2.letter{border-bottom:1px solid #ccc;color:#777;font-size:1rem;margin-top:2.2rem}
+ article.term{margin:1.4rem 0} h3{margin-bottom:.25rem;font-size:1.05rem}
+ .anchor{visibility:hidden;text-decoration:none;color:#999;margin-left:.3rem}
+ .term:hover .anchor{visibility:visible}
+ .meta{font-size:.78rem;color:#888;margin:.2rem 0 0} code{font-size:.85em}
+ .see{font-size:.88rem;color:#444;margin:.2rem 0 0}
+ .badge{font-size:.7rem;padding:.1em .5em;border-radius:.6em;vertical-align:middle}
+ .cat{font-size:.68rem;color:#777;border:1px solid #ddd;padding:.05em .5em;border-radius:.6em;vertical-align:middle;font-family:sans-serif}
+ .badge.draft{background:#ffe9b0} .badge.deprecated{background:#f3c4c4}
+ nav{font-size:.9rem;margin:1rem 0;letter-spacing:.15em}
+ .frontmatter{background:#f7f6f2;padding:1rem;border-radius:.4rem;font-size:.9rem}
+ :target{background:#fdf6d8;transition:background .6s}
+</style></head><body>
+<h1>Glossary and definitions</h1>
+<p class="sub">The single-source terminology for the land-transactions portfolio</p>
+<div class="frontmatter">
+<p><strong>Version 1.0.0</strong> · 2026-06-10 · Custodian: Anthony Beck,
+Cadastral Concepts Ltd
+(<a href="https://orcid.org/0000-0002-2991-811X">ORCID</a>)</p>
+<p>This glossary is the single source of truth for terminology across the land-transactions portfolio.
+Every other document points here and never redefines a term locally. Each term has a durable URI
+(<code>https://w3id.org/land-transactions/glossary/&lt;term-id&gt;</code>). To challenge or propose an amendment to any definition,
+<a href="https://github.com/YOUR-USERNAME/land-transactions-glossary/issues/new/choose">open an issue</a> — see the
+<a href="https://github.com/YOUR-USERNAME/land-transactions-glossary/blob/main/GOVERNANCE.md">change-control rule</a>.</p>
+<p>Exports: <a href="glossary.ttl">SKOS (Turtle)</a> · <a href="glossary.json">JSON</a> ·
+<a href="glossary.md">Markdown snapshot</a> · <a href="https://github.com/YOUR-USERNAME/land-transactions-glossary">source repository</a></p>
+</div>
+<nav><a href="#sec-A">A</a> <a href="#sec-B">B</a> <a href="#sec-C">C</a> <a href="#sec-D">D</a> <a href="#sec-E">E</a> <a href="#sec-G">G</a> <a href="#sec-H">H</a> <a href="#sec-I">I</a> <a href="#sec-L">L</a> <a href="#sec-M">M</a> <a href="#sec-N">N</a> <a href="#sec-O">O</a> <a href="#sec-P">P</a> <a href="#sec-R">R</a> <a href="#sec-S">S</a> <a href="#sec-T">T</a> <a href="#sec-V">V</a></nav>
+<h2 class="letter" id="sec-A">A</h2>
+<article class="term" id="absorption">
+  <h3>Absorption <span class="cat">transaction-operation</span>
+    <a class="anchor" href="#absorption" title="Permalink">#</a></h3>
+  <p>The termination form for conventional incidents: the separated claim-right is reintegrated into its parent bundle on expiry, surrender, or satisfaction of the obligation it secured. For the corresponding operation on allocated incidents (public-law privileges), see <a href="#extinguishment"><em>Extinguishment</em></a>; for reserved incidents (PLRs), see <a href="#rescission"><em>Rescission</em></a>. The counterpart of <a href="#derivation"><em>derivation</em></a>.</p>
+  <p class="see">Broader: <a href="#termination">Termination</a> &middot; Counterpart of: <a href="#derivation">Derivation</a> &middot; Contrast: <a href="#extinguishment">Extinguishment</a>, <a href="#rescission">Rescission</a> &middot; Applies to: <a href="#conventional-incidents">Conventional incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/absorption</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="acceptance-criteria">
+  <h3>Acceptance criteria <span class="cat">acceptance-principle</span>
+    <a class="anchor" href="#acceptance-criteria" title="Permalink">#</a></h3>
+  <p>The conditions a transaction submission must satisfy before it is routed to a decision officer. Applied as automated gates at the pre-submission stage under five principles: specificity (a well-formedness check) and capacity, power, consent, and admissibility (validity checks). Applied in a fail-fast order, automated gating prevents avoidable rework without removing officer discretion. There are five gates; professional capability is a limb of <em>capacity</em>.</p>
+  <p class="see">Narrower: <a href="#admissibility-principle">Admissibility principle</a>, <a href="#capacity-principle">Capacity principle</a>, <a href="#consent-principle">Consent principle</a>, <a href="#power-principle">Power principle</a>, <a href="#specificity-principle">Specificity principle</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/acceptance-criteria</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="administrative-unit">
+  <h3>Administrative unit <span class="cat">ladm-construct</span>
+    <a class="anchor" href="#administrative-unit" title="Permalink">#</a></h3>
+  <p>In LADM, the object representing the rights package associated with a parcel: it defines what is held and under what conditions. Combined with a spatial unit (geometry), it forms the complete representation of a land object.</p>
+  <p class="see">Narrower: <a href="#cadastral-unit">Cadastral unit (CU)</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/administrative-unit</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="admissibility-principle">
+  <h3>Admissibility principle <span class="cat">acceptance-principle</span>
+    <a class="anchor" href="#admissibility-principle" title="Permalink">#</a></h3>
+  <p>One of the five acceptance criteria (a validity check). Requires that the <em>resulting state</em> of a transaction is itself lawful: the right type is within the jurisdiction&#x27;s recognised set (<a href="#numerus-clausus"><em>numerus clausus</em></a>), mandatory rules are satisfied, any plan hierarchy is conformed to, and applicable PLRs are not breached. Distinct from <a href="#power"><em>power</em></a> (provenance of authority) and <em>specificity</em> (clarity of description), which it relieves of carrying outcome-legality.</p>
+  <p class="see">Broader: <a href="#acceptance-criteria">Acceptance criteria</a> &middot; Contrast: <a href="#power-principle">Power principle</a>, <a href="#specificity-principle">Specificity principle</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/admissibility-principle</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="alienation">
+  <h3>Alienation <span class="cat">transaction-pattern</span>
+    <a class="anchor" href="#alienation" title="Permalink">#</a></h3>
+  <p>Alienation is the <strong>VoI + VoP composite</strong> (derive the incident, then allocate it by transfer), not a single primitive. It is the <em>necessary minimal pattern</em> for bringing any derived conventional incident into a holder&#x27;s hands: a derivation alone leaves the incident within the grantor&#x27;s holding, so at least one allocating transfer must follow. See <a href="#voi"><em>Variation of Incidents</em></a>, <a href="#vop"><em>Variation of Party</em></a>.</p>
+  <p class="see">Composed of: <a href="#voi">VoI (Variation of Incidents)</a> + <a href="#vop">VoP (Variation of Party)</a></p>
+  <p class="see">See also: <a href="#voi">VoI (Variation of Incidents)</a>, <a href="#vop">VoP (Variation of Party)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/alienation</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="allocated-incidents">
+  <h3>Allocated incidents <span class="cat">incident-type</span>
+    <a class="anchor" href="#allocated-incidents" title="Permalink">#</a></h3>
+  <p>Public-law authorisations (permits, licences, and time-limited approvals) vested by agencies exercising statutory powers. One of three incident types in the typology used by this paper, alongside <a href="#conventional-incidents"><em>conventional incidents</em></a> and <a href="#reserved-incidents"><em>reserved incidents</em></a>. In Hohfeldian terms, the issuing authority exercises a <a href="#power"><em>power</em></a> to vest a <a href="#privilege"><em>privilege</em></a> in the applicant from the authority&#x27;s own jural position. The applicant receives something; they do not recover something that was always theirs. Modelled as a VoI derivation with explicit parameterisation of effective period, conditions, and discharge triggers. See <a href="#derivation"><em>Derivation</em></a>, <a href="#voi"><em>Variation of Incidents</em></a>.</p>
+  <p class="see">Broader: <a href="#incident">Incident</a> &middot; Narrower: <a href="#permit">Permit</a> &middot; Contrast: <a href="#conventional-incidents">Conventional incidents</a>, <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="see">See also: <a href="#derivation">Derivation</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/allocated-incidents</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="amendment">
+  <h3>Amendment <span class="cat">transaction-operation</span>
+    <a class="anchor" href="#amendment" title="Permalink">#</a></h3>
+  <p>A change to the <em>terms</em> of an existing right relationship (a lease extension, a rent review, a change to an easement&#x27;s scope) where holder, land, and the right&#x27;s existence are unchanged. Modelled as a continuing version of the same right relationship under its durable identifier (not as absorption followed by a fresh derivation) so that continuity-dependent facts (commencement date, accrued priority, qualifying periods) survive.</p>
+  <p class="see">Broader: <a href="#voi">VoI (Variation of Incidents)</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/amendment</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="api">
+  <h3>API (Application Programming Interface) <span class="cat">technology</span>
+    <a class="anchor" href="#api" title="Permalink">#</a></h3>
+  <p>A defined contract through which one software service requests information or actions from another. An API-first design means authoritative services expose their data and functions through stable, documented, machine-readable interfaces that other systems can reliably consume.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/api</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="assessment">
+  <h3>Assessment <span class="cat">register-operation</span>
+    <a class="anchor" href="#assessment" title="Permalink">#</a></h3>
+  <p>The second write operation of the ecosystem, alongside transactional variation. The authorised determination of a <em>derived fact</em> about a land object (<em>value</em>, <em>use-class</em>, or <em>compliance/discharge status</em>) as at a date, on a stated basis, contestable through the dispute pathway. Assessment ascribes a fact; it does not change entitlement and it does not alter the land object.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/assessment</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="authoritative-custodian">
+  <h3>Authoritative custodian <span class="cat">governance-concept</span>
+    <a class="anchor" href="#authoritative-custodian" title="Permalink">#</a></h3>
+  <p>The agency with the mandate to define, maintain, publish, and correct a given dataset or service. Other agencies reference the custodian&#x27;s data rather than maintaining diverging local copies. See also: <a href="#once-only-principle"><em>once-only principle</em></a>, <a href="#shadow-infrastructure"><em>shadow infrastructure</em></a>.</p>
+  
+  <p class="see">See also: <a href="#once-only-principle">Once-only principle</a>, <a href="#shadow-infrastructure">Shadow infrastructure</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/authoritative-custodian</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-B">B</h2>
+<article class="term" id="bitemporality">
+  <h3>Bitemporality <span class="cat">register-concept</span>
+    <a class="anchor" href="#bitemporality" title="Permalink">#</a></h3>
+  <p>The recording of two independent timelines on every version of a right or derived fact: <em>valid time</em> (when the fact holds in reality which is the basis on which limitation and qualifying periods run) and <em>transaction time</em> (when the register recorded it which is the basis for audit and indemnity).</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/bitemporality</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="bpmn">
+  <h3>BPMN (Business Process Modelling Notation) <span class="cat">standard</span>
+    <a class="anchor" href="#bpmn" title="Permalink">#</a></h3>
+  <p>A standardised graphical notation for representing business processes. Used in this paper to illustrate the permit creation workflow and the agency interactions it depends upon.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/bpmn</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="bundle-of-rights">
+  <h3>Bundle of rights <span class="cat">analytical-framework</span>
+    <a class="anchor" href="#bundle-of-rights" title="Permalink">#</a></h3>
+  <p>The analysis of property ownership as a collection of separable jural incidents (to possess, use, manage, derive income, transmit, and hold residuary character) rather than a single, indivisible entitlement, following Honoré. These incidents normally travel together but can be separated, constrained, or reallocated individually. This paper uses <a href="#incident"><em>incident</em></a> as the preferred general term to capture this compound structure. See <a href="#conventional-incidents"><em>Conventional incidents</em></a>, <a href="#incident"><em>Incident</em></a>, <a href="#hohfeldian-analysis"><em>Hohfeldian analysis</em></a>.</p>
+  
+  <p class="see">See also: <a href="#conventional-incidents">Conventional incidents</a>, <a href="#incident">Incident</a>, <a href="#hohfeldian-analysis">Hohfeldian analysis</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/bundle-of-rights</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-C">C</h2>
+<article class="term" id="cadastral-index">
+  <h3>Cadastral index <span class="cat">platform-service</span>
+    <a class="anchor" href="#cadastral-index" title="Permalink">#</a></h3>
+  <p>A register of cadastral units providing stable identifiers, geometry, version history, and topology. The backbone service that all other workflows reference to identify unambiguously &quot;what land&quot; is involved in a transaction or permit.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/cadastral-index</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="cadastral-unit">
+  <h3>Cadastral unit (CU) <span class="cat">ladm-construct</span>
+    <a class="anchor" href="#cadastral-unit" title="Permalink">#</a></h3>
+  <p>The administrative object in LADM representing a parcel of land. It carries stable identifiers, is associated with spatial geometry, and provides the reference point for rights, restrictions, and transactions.</p>
+  <p class="see">Broader: <a href="#administrative-unit">Administrative unit</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/cadastral-unit</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="capability">
+  <h3>Capability <span class="cat">legal-concept</span>
+    <a class="anchor" href="#capability" title="Permalink">#</a></h3>
+  <p>&quot;Capability&quot; denotes the professional-competence aspect of <em>capacity</em> (the professional registration and certification of supporting parties (e.g., surveyors, conveyancers, certifying engineers)) required for a given transaction type. It is evaluated by the <a href="#capacity-principle"><em>capacity principle</em></a>. See <a href="#capacity-principle"><em>Capacity principle</em></a>.</p>
+  <p class="see">Broader: <a href="#capacity-principle">Capacity principle</a></p>
+  <p class="see">See also: <a href="#capacity-principle">Capacity principle</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/capability</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="capacity-principle">
+  <h3>Capacity principle <span class="cat">acceptance-principle</span>
+    <a class="anchor" href="#capacity-principle" title="Permalink">#</a></h3>
+  <p>One of the five acceptance criteria (a validity check). Requires that parties are legally and professionally capable of granting or receiving rights. Capacity has two limbs: <em>personal</em> competence (age, legal competence, inhibitions, sanctions, insolvency freezes and other restrictions on party capacity in the jurisdiction) and <em>professional</em> competence (the registration and certification requirements applicable to supporting parties). Professional &quot;capability&quot; is the second limb of this gate, not a separate criterion. See <a href="#capability"><em>Capability</em></a>.</p>
+  <p class="see">Broader: <a href="#acceptance-criteria">Acceptance criteria</a> &middot; Narrower: <a href="#capability">Capability</a></p>
+  <p class="see">See also: <a href="#capability">Capability</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/capacity-principle</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="claim-right">
+  <h3>Claim-right <span class="cat">jural-position</span>
+    <a class="anchor" href="#claim-right" title="Permalink">#</a></h3>
+  <p>In Hohfeldian analysis, the jural position of a holder who is entitled to a specific performance from a correlative duty-bearer. An entitlement enforceable against an identified party. Distinguished from a <a href="#privilege"><em>privilege</em></a>, which merely permits the holder to act without imposing a duty on others. In this paper, conventional private-law incidents (leases, mortgages, easements) create claim-rights in their holders; duty-correlative reserved incidents (planning obligations, restrictive covenants) instantiate the authority&#x27;s or beneficiary&#x27;s claim-right with the landowner&#x27;s duty as its correlative. See <a href="#hohfeldian-analysis"><em>Hohfeldian analysis</em></a>, <a href="#privilege"><em>Privilege</em></a>, <a href="#no-privilege"><em>No-privilege</em></a>.</p>
+  <p class="see">Contrast: <a href="#privilege">Privilege</a></p>
+  <p class="see">See also: <a href="#hohfeldian-analysis">Hohfeldian analysis</a>, <a href="#privilege">Privilege</a>, <a href="#no-privilege">No-privilege</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/claim-right</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="consent-principle">
+  <h3>Consent principle <span class="cat">acceptance-principle</span>
+    <a class="anchor" href="#consent-principle" title="Permalink">#</a></h3>
+  <p>One of the five acceptance criteria (a validity check). Requires that where private rights are affected the right-holder&#x27;s consent is demonstrated and validated, including verification of any authorised representation.</p>
+  <p class="see">Broader: <a href="#acceptance-criteria">Acceptance criteria</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/consent-principle</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="conventional-incidents">
+  <h3>Conventional incidents <span class="cat">incident-type</span>
+    <a class="anchor" href="#conventional-incidents" title="Permalink">#</a></h3>
+  <p>Private-law rights over land created and transferred through conveyancing (e.g., ownership, lease, easement, mortgage). Distinguished from <a href="#reserved-incidents"><em>reserved incidents</em></a>, which are public-law constraints imposed by the state.</p>
+  <p class="see">Broader: <a href="#incident">Incident</a> &middot; Narrower: <a href="#easement-servitude">Easement / servitude</a>, <a href="#praedial-right">Praedial right</a>, <a href="#security">Security</a>, <a href="#strata-title">Strata title</a> &middot; Contrast: <a href="#reserved-incidents">Reserved incidents</a>, <a href="#allocated-incidents">Allocated incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/conventional-incidents</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="conveyancing">
+  <h3>Conveyancing <span class="cat">legal-concept</span>
+    <a class="anchor" href="#conveyancing" title="Permalink">#</a></h3>
+  <p>The legal process of transferring, creating, or varying property rights between parties.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/conveyancing</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-D">D</h2>
+<article class="term" id="dealing">
+  <h3>Dealing <span class="cat">register-concept</span>
+    <a class="anchor" href="#dealing" title="Permalink">#</a></h3>
+  <p>Used in two distinct senses. (1) <em>Tradability sense</em>: an onward market transfer of a tradable right after its initial allocation: the subsequent independent trading of freehold, leasehold, mortgage, or strata interests. Every dealing is a transaction, but not every transaction is a dealing: the initial grant of a right is a transaction (alienation) but not a dealing in this sense. (2) <em>Land registration sense</em>: a registered act or instrument that alters an entry in the title register, the technical meaning in deeds and title-registration systems. Where context does not disambiguate, &quot;transaction&quot; is the preferred general term. See <a href="#tradable"><em>Tradable</em></a>, <a href="#transaction-primitive"><em>Transaction primitive</em></a>, <a href="#alienation"><em>Alienation</em></a>.</p>
+  
+  <p class="see">See also: <a href="#tradable">Tradable</a>, <a href="#transaction-primitive">Transaction primitive</a>, <a href="#alienation">Alienation</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/dealing</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="derivation">
+  <h3>Derivation <span class="cat">transaction-operation</span>
+    <a class="anchor" href="#derivation" title="Permalink">#</a></h3>
+  <p>One of the two directions of a <a href="#voi"><em>Variation of Incidents</em></a>: the establishment of a new jural incident from an authorised source. For conventional incidents, it carves a claim-right (lease, easement, security, strata interest) from a parent bundle, leaving a residual interest. For reserved incidents, it establishes a restriction or responsibility through a statutory or plan-making process. For allocated incidents, it creates a privilege through the exercise of statutory power. The counterpart of <a href="#termination"><em>termination</em></a>. Conventional derivation is recursive for certain incidents; allocated incidents are not (a permit cannot be sub-permitted).</p>
+  <p class="see">Broader: <a href="#voi">VoI (Variation of Incidents)</a> &middot; Counterpart of: <a href="#termination">Termination</a> &middot; Applies to: <a href="#conventional-incidents">Conventional incidents</a>, <a href="#reserved-incidents">Reserved incidents</a>, <a href="#allocated-incidents">Allocated incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/derivation</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="development-control">
+  <h3>Development control <span class="cat">legal-concept</span>
+    <a class="anchor" href="#development-control" title="Permalink">#</a></h3>
+  <p>The regulatory function governing what can be built or changed on land, typically administered through a permitting or planning system.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/development-control</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="divisible">
+  <h3>Divisible <span class="cat">type-property</span>
+    <a class="anchor" href="#divisible" title="Permalink">#</a></h3>
+  <p>A type-level property of a right: whether it can be held in undivided fractional shares (co-ownership), and therefore whether the fractional (part) form of a <a href="#vop"><em>Variation of Party</em></a> is available to it. Independent of <a href="#tradable"><em>tradable</em></a>: the shared areas of a real-estate complex are divisible (held in fractional shares) yet not tradable. Declared in the numerus clausus; restrictable per instance by a recorded term.</p>
+  <p class="see">Contrast: <a href="#tradable">Tradable</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/divisible</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="durable-identifier">
+  <h3>Durable identifier <span class="cat">register-concept</span>
+    <a class="anchor" href="#durable-identifier" title="Permalink">#</a></h3>
+  <p>A stable identity for a right or spatial unit that <em>persists across variations</em>. Versions of the entity hang from it, so that continuity-dependent facts (commencement date, accrued priority, qualifying periods) survive a variation. A variation produces a new version under the same durable identifier rather than a new entity.</p>
+  <p class="see">Broader: <a href="#identifier">Identifier</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/durable-identifier</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-E">E</h2>
+<article class="term" id="easement-servitude">
+  <h3>Easement / servitude <span class="cat">derivable-type</span>
+    <a class="anchor" href="#easement-servitude" title="Permalink">#</a></h3>
+  <p>A right to use another party&#x27;s land for a specific, defined purpose (e.g., access, drainage, utility corridor). Derived by a VoI and allocated once to the benefiting party by the alienation pattern; being appurtenant, it is referenceable but not tradable onward. Thereafter it runs with the land, moving only when the parcel it benefits is transferred.</p>
+  <p class="see">Broader: <a href="#conventional-incidents">Conventional incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/easement-servitude</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="encumbrance">
+  <h3>Encumbrance <span class="cat">legal-concept</span>
+    <a class="anchor" href="#encumbrance" title="Permalink">#</a></h3>
+  <p>A right held by a third party that limits (or burdens) a landowners property, limiting the owner&#x27;s freedom to use  it or transfer its title. While it does not stop the property from being sold, it can diminish its value or impose  ongoing obligations.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/encumbrance</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="event-driven-architecture">
+  <h3>Event-driven architecture <span class="cat">technology</span>
+    <a class="anchor" href="#event-driven-architecture" title="Permalink">#</a></h3>
+  <p>An integration pattern in which services publish notifications when their state changes, allowing subscribing systems to react without polling. Used in this strategy to propagate parcel changes, restriction updates, and rights events across the ecosystem.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/event-driven-architecture</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="extinguishment">
+  <h3>Extinguishment <span class="cat">transaction-operation</span>
+    <a class="anchor" href="#extinguishment" title="Permalink">#</a></h3>
+  <p>The public-law counterpart of <a href="#absorption"><em>absorption</em></a>: the cessation of a privilege (permit, licence, or time-limited approval) on expiry, revocation, or breach of conditions. Unlike absorption, extinguishment does not reintegrate anything into a parent bundle: the privilege simply ceases to exist in the holder&#x27;s hands, and the holder reverts to their prior position of no-privilege. The authority&#x27;s power to grant further authorisations is unaffected. See <a href="#absorption"><em>Absorption</em></a>, <a href="#allocated-incidents"><em>Allocated incidents</em></a>, <a href="#voi"><em>Variation of Incidents</em></a>.</p>
+  <p class="see">Broader: <a href="#termination">Termination</a> &middot; Counterpart of: <a href="#derivation">Derivation</a> &middot; Contrast: <a href="#absorption">Absorption</a>, <a href="#rescission">Rescission</a> &middot; Applies to: <a href="#allocated-incidents">Allocated incidents</a></p>
+  <p class="see">See also: <a href="#absorption">Absorption</a>, <a href="#allocated-incidents">Allocated incidents</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/extinguishment</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-G">G</h2>
+<article class="term" id="good-root-of-title">
+  <h3>Good root of title <span class="cat">register-concept</span>
+    <a class="anchor" href="#good-root-of-title" title="Permalink">#</a></h3>
+  <p>The point in a chain of transactions from which title is traced and on the basis of which subsequent dealings are validated. In a deeds-register tradition, the choice of root determines what the register guarantees; in a title-by-registration system, registration itself provides the root and a state guarantee displaces the need to trace further back. The two register traditions are two projections of one ordered transaction log differentiated by the position of good root of title. See <a href="#amendment"><em>Amendment</em></a>, <a href="#bitemporality"><em>Bitemporality</em></a>, <a href="#priority"><em>Priority</em></a>.</p>
+  
+  <p class="see">See also: <a href="#amendment">Amendment</a>, <a href="#bitemporality">Bitemporality</a>, <a href="#priority">Priority</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/good-root-of-title</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-H">H</h2>
+<article class="term" id="high-velocity-land-change">
+  <h3>High-velocity land change <span class="cat">operating-context</span>
+    <a class="anchor" href="#high-velocity-land-change" title="Permalink">#</a></h3>
+  <p>The operating condition of a large-scale programme in which frequent, overlapping subdivision, consolidation, and re-plotting of cadastral units must proceed simultaneously with high-volume permitting and the management of complex public-law constraints. The term defines the environment that motivates the ecosystem architecture and the transactional primitives (VoP, VoL, VoI) proposed in this paper. See <a href="#vol"><em>VoL</em></a>, <a href="#vop"><em>VoP</em></a>, <a href="#voi"><em>VoI</em></a>, <a href="#plr"><em>PLR</em></a>.</p>
+  
+  <p class="see">See also: <a href="#vol">VoL (Variation of Land)</a>, <a href="#vop">VoP (Variation of Party)</a>, <a href="#voi">VoI (Variation of Incidents)</a>, <a href="#plr">PLR (Public Law Restriction)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/high-velocity-land-change</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="hohfeldian-analysis">
+  <h3>Hohfeldian analysis <span class="cat">analytical-framework</span>
+    <a class="anchor" href="#hohfeldian-analysis" title="Permalink">#</a></h3>
+  <p>A framework for legal analysis, developed by Wesley Hohfeld, that decomposes legal relations into atomic units: claim-rights, privileges (liberties), powers, and immunities. Used in this paper to distinguish a <a href="#privilege"><em>privilege</em></a> (a freedom to act, owed to no other party) from a <a href="#claim-right"><em>claim-right</em></a> (an entitlement enforceable against another), and to characterise the legal nature of permits as privilege-allocations from the granting authority&#x27;s own jural position. See <a href="#claim-right"><em>Claim-right</em></a>, <a href="#immunity"><em>Immunity</em></a>, <a href="#no-privilege"><em>No-privilege</em></a>, <a href="#privilege"><em>Privilege</em></a>.</p>
+  
+  <p class="see">See also: <a href="#claim-right">Claim-right</a>, <a href="#immunity">Immunity</a>, <a href="#no-privilege">No-privilege</a>, <a href="#privilege">Privilege</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/hohfeldian-analysis</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-I">I</h2>
+<article class="term" id="iam">
+  <h3>IAM (Identity and Access Management) <span class="cat">technology</span>
+    <a class="anchor" href="#iam" title="Permalink">#</a></h3>
+  <p>The systems and processes governing digital identities, authentication (confirming who a party is), authorisation (defining what they may do), delegation and representation relationships, and the audit trail of actions taken under each identity. In this strategy, IAM is the recommended implementation vehicle for the <em>Party and Representation service</em>, covering representation chains, power-of-attorney delegation, company signatory verification, and audited access to transaction services.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/iam</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="identifier">
+  <h3>Identifier <span class="cat">register-concept</span>
+    <a class="anchor" href="#identifier" title="Permalink">#</a></h3>
+  <p>A stable, unique reference code assigned to an entity (party, parcel, restriction, permit) that persists across system updates and enables consistent, unambiguous cross-agency referencing.</p>
+  <p class="see">Narrower: <a href="#durable-identifier">Durable identifier</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/identifier</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="immunity">
+  <h3>Immunity <span class="cat">jural-position</span>
+    <a class="anchor" href="#immunity" title="Permalink">#</a></h3>
+  <p>In Hohfeldian analysis, the jural position that protects its holder from another party&#x27;s power. The correlative of a <em>disability</em> (the other party&#x27;s incapacity to alter that holder&#x27;s jural position). Distinct from a <a href="#privilege"><em>privilege</em></a> (freedom from a duty) and a <a href="#claim-right"><em>claim-right</em></a> (entitlement against a duty-bearer). Immunities arise in land administration contexts where legislative protections prevent an authority from unilaterally altering a registered right without due process. See <a href="#hohfeldian-analysis"><em>Hohfeldian analysis</em></a>, <a href="#claim-right"><em>Claim-right</em></a>, <a href="#privilege"><em>Privilege</em></a>.</p>
+  <p class="see">Contrast: <a href="#privilege">Privilege</a>, <a href="#claim-right">Claim-right</a></p>
+  <p class="see">See also: <a href="#hohfeldian-analysis">Hohfeldian analysis</a>, <a href="#claim-right">Claim-right</a>, <a href="#privilege">Privilege</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/immunity</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="incident">
+  <h3>Incident <span class="cat">incident-type</span>
+    <a class="anchor" href="#incident" title="Permalink">#</a></h3>
+  <p>The preferred general term in this paper for any jural position that attaches to, or is allocated over, land: adopted in preference to &quot;right&quot; to reflect the compound and separable structure of what land ownership involves. Three types are distinguished: <a href="#conventional-incidents"><em>conventional incidents</em></a> (private-law claim-rights created through conveyancing), <a href="#reserved-incidents"><em>reserved incidents</em></a> (public-law restrictions and responsibilities imposed by statute or plan-making), and <a href="#allocated-incidents"><em>allocated incidents</em></a> (public-law privileges vested by statutory authority). The term follows Honoré&#x27;s analysis of ownership as a bundle of separable standard incidents. See <a href="#bundle-of-rights"><em>Bundle of rights</em></a>, <a href="#conventional-incidents"><em>Conventional incidents</em></a>, <a href="#reserved-incidents"><em>Reserved incidents</em></a>, <a href="#allocated-incidents"><em>Allocated incidents</em></a>.</p>
+  <p class="see">Narrower: <a href="#allocated-incidents">Allocated incidents</a>, <a href="#conventional-incidents">Conventional incidents</a>, <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="see">See also: <a href="#bundle-of-rights">Bundle of rights</a>, <a href="#conventional-incidents">Conventional incidents</a>, <a href="#reserved-incidents">Reserved incidents</a>, <a href="#allocated-incidents">Allocated incidents</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/incident</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-L">L</h2>
+<article class="term" id="ladm">
+  <h3>LADM (Land Administration Domain Model) <span class="cat">standard</span>
+    <a class="anchor" href="#ladm" title="Permalink">#</a></h3>
+  <p>ISO 19152; an international standard providing a conceptual model and shared vocabulary for land administration systems. Supplies the Party--Right--Land framework underpinning the VoP/VoL/VoI transaction primitives used in this strategy.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/ladm</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="land-object">
+  <h3>Land object <span class="cat">ladm-construct</span>
+    <a class="anchor" href="#land-object" title="Permalink">#</a></h3>
+  <p>In LADM  the composite entity comprising an <a href="#administrative-unit"><em>administrative unit</em></a> (the rights package) and its associated <a href="#spatial-unit"><em>spatial unit</em></a> (geometry/extent). The term emphasises the spatial reference used when identifying what land is involved in a transaction or permit. <a href="#property-object"><em>Property object</em></a> refers to the same entity emphasised as the first-class holder of a rights bundle from which incidents are derived or into which they are absorbed. See <a href="#administrative-unit"><em>Administrative unit</em></a>, <a href="#spatial-unit"><em>Spatial unit</em></a>, <a href="#property-object"><em>Property object</em></a>.</p>
+  <p class="see">Contrast: <a href="#property-object">Property object</a> &middot; Composed of: <a href="#administrative-unit">Administrative unit</a> + <a href="#spatial-unit">Spatial unit</a></p>
+  <p class="see">See also: <a href="#administrative-unit">Administrative unit</a>, <a href="#spatial-unit">Spatial unit</a>, <a href="#property-object">Property object</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/land-object</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="land-object-index">
+  <h3>Land Object index <span class="cat">platform-service</span>
+    <a class="anchor" href="#land-object-index" title="Permalink">#</a></h3>
+  <p>A shared service that mints stable, persistent cross-agency identifiers for land objects and resolves any identifier to the authoritative service that owns it. It does not consolidate geometry; it provides a single resolution point so that rights and permits can unambiguously reference &quot;what land&quot; regardless of which custodian holds the authoritative geometry. New identifiers are published only after the relevant authority service has validated and committed the corresponding spatial change. See <a href="#cadastral-index"><em>Cadastral index</em></a>, <a href="#identifier"><em>Identifier</em></a>, <a href="#once-only-principle"><em>Once-only principle</em></a>.</p>
+  
+  <p class="see">See also: <a href="#cadastral-index">Cadastral index</a>, <a href="#identifier">Identifier</a>, <a href="#once-only-principle">Once-only principle</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/land-object-index</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="lifecycle-specification">
+  <h3>Lifecycle specification <span class="cat">type-property</span>
+    <a class="anchor" href="#lifecycle-specification" title="Permalink">#</a></h3>
+  <p>The set of properties on a jural incident that govern when it activates and when it terminates: an effective period, the conditions under which it activates, and the triggers (expiry, surrender, satisfaction of an obligation, a staged-release milestone, or statutory rescission) that cause termination. Treating lifecycle as a first-class property of each incident type means that leases, easements, securities, permits, and PLR zones share the same structural shape with different parameters, rather than requiring separate instrument logic for each. See <a href="#termination"><em>Termination</em></a>, <a href="#amendment"><em>Amendment</em></a>, <a href="#voi"><em>VoI</em></a>.</p>
+  
+  <p class="see">See also: <a href="#termination">Termination</a>, <a href="#amendment">Amendment</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/lifecycle-specification</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-M">M</h2>
+<article class="term" id="mandate">
+  <h3>Mandate <span class="cat">governance-concept</span>
+    <a class="anchor" href="#mandate" title="Permalink">#</a></h3>
+  <p>The legal authority conferred on an agency to perform a specific public function. In this strategy, agencies improve services within their existing mandate; no transfer of mandates between agencies is required.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/mandate</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-N">N</h2>
+<article class="term" id="no-privilege">
+  <h3>No-privilege <span class="cat">jural-position</span>
+    <a class="anchor" href="#no-privilege" title="Permalink">#</a></h3>
+  <p>In Hohfeldian analysis, the absence of a privilege: the jural position of a party that lacks the freedom to perform a given act. In this paper, no-privilege is the precise characterisation of a landowner&#x27;s position with respect to a restricted activity under a public-law constraint. The landowner does not hold a duty-not-to-develop (which would imply a claim-right in another party that could be released), but rather lacks the privilege to act in the first place. A permit does not lift a restriction; the issuing authority vests a privilege from its own jural position. See <a href="#privilege"><em>Privilege</em></a>, <a href="#hohfeldian-analysis"><em>Hohfeldian analysis</em></a>, <a href="#allocated-incidents"><em>Allocated incidents</em></a>, <a href="#reserved-incidents"><em>Reserved incidents</em></a>.</p>
+  
+  <p class="see">See also: <a href="#privilege">Privilege</a>, <a href="#hohfeldian-analysis">Hohfeldian analysis</a>, <a href="#allocated-incidents">Allocated incidents</a>, <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/no-privilege</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="numerus-clausus">
+  <h3>Numerus clausus <span class="cat">legal-concept</span>
+    <a class="anchor" href="#numerus-clausus" title="Permalink">#</a></h3>
+  <p>Latin for &quot;closed number.&quot; The principle that only a defined set of right types can be carved from a bundle and vested to third parties; parties cannot create novel incidents with the character of property by agreement alone. In this paper, the numerus clausus is the typed registry of derivable incident types for a jurisdiction, each carrying a Hohfeldian signature (jural position, correlative, divisibility, tradability). The <em>admissibility</em> gate checks that a proposed transaction produces an incident within this recognised set. See <a href="#admissibility-principle"><em>Admissibility principle</em></a>, <a href="#rights-ontology-service"><em>Rights Ontology service</em></a>, <a href="#voi"><em>VoI</em></a>.</p>
+  
+  <p class="see">See also: <a href="#admissibility-principle">Admissibility principle</a>, <a href="#rights-ontology-service">Rights Ontology service</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/numerus-clausus</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-O">O</h2>
+<article class="term" id="once-only-principle">
+  <h3>Once-only principle <span class="cat">design-principle</span>
+    <a class="anchor" href="#once-only-principle" title="Permalink">#</a></h3>
+  <p>The design principle that authoritative information should be recorded and maintained once by the responsible custodian and reused by other agencies through governed services, rather than re-entered or re-created in local copies that may diverge. See also: <a href="#authoritative-custodian"><em>authoritative custodian</em></a>, <a href="#shadow-infrastructure"><em>shadow infrastructure</em></a>.</p>
+  <p class="see">Contrast: <a href="#shadow-infrastructure">Shadow infrastructure</a></p>
+  <p class="see">See also: <a href="#authoritative-custodian">Authoritative custodian</a>, <a href="#shadow-infrastructure">Shadow infrastructure</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/once-only-principle</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-P">P</h2>
+<article class="term" id="party">
+  <h3>Party <span class="cat">ladm-construct</span>
+    <a class="anchor" href="#party" title="Permalink">#</a></h3>
+  <p>In LADM, an entity (e.g., natural person, legal person, or organisation) that can hold registerable rights or act in land transactions. Parties also possess <a href="#power"><em>powers</em></a> that determine what transactions they can lawfully initiate or consent to.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/party</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="pattern-library">
+  <h3>Pattern library <span class="cat">transaction-pattern</span>
+    <a class="anchor" href="#pattern-library" title="Permalink">#</a></h3>
+  <p>A collection of documented, reusable compositions of transaction primitives (VoP, VoL, VoI) covering recurring complex scenarios (e.g., real estate complexes, utility corridors, stacked rights in multi-use buildings). Patterns allow complex workflows to be assembled from known building blocks without expanding the underlying transaction surface.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/pattern-library</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="permit">
+  <h3>Permit <span class="cat">derivable-type</span>
+    <a class="anchor" href="#permit" title="Permalink">#</a></h3>
+  <p>A time-bound authorisation issued by a public authority, conferring on the holder a lawful permission to undertake an otherwise restricted activity on specified land, subject to defined conditions and an effective period.</p>
+  <p class="see">Broader: <a href="#allocated-incidents">Allocated incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/permit</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="plan-hierarchy">
+  <h3>Plan hierarchy <span class="cat">legal-concept</span>
+    <a class="anchor" href="#plan-hierarchy" title="Permalink">#</a></h3>
+  <p>The layered structure of planning and land regulation instruments (national policy, regional plan, local plan, site-level conditions) in which lower-tier instruments must conform with those above them. The admissibility gate applies at two levels: it checks that a proposed transaction conforms with applicable PLR constraints <em>and</em> that any plan-making instrument is consistent with the tier above it. See <a href="#admissibility-principle"><em>Admissibility principle</em></a>, <a href="#plr"><em>PLR</em></a>, <a href="#reserved-incidents"><em>Reserved incidents</em></a>.</p>
+  
+  <p class="see">See also: <a href="#admissibility-principle">Admissibility principle</a>, <a href="#plr">PLR (Public Law Restriction)</a>, <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/plan-hierarchy</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="plr">
+  <h3>PLR (Public Law Restriction) <span class="cat">derivable-type</span>
+    <a class="anchor" href="#plr" title="Permalink">#</a></h3>
+  <p>A restriction, constraint, or responsibility imposed on land or its use by legislation, regulation, or planning instrument (e.g., planning zones, heritage designations, environmental buffers, safety exclusion zones). Treated in this strategy as first-class, spatially queryable objects with defined authority, versioning, and applicability conditions. See also: <a href="#reserved-incidents"><em>reserved incidents</em></a>.</p>
+  <p class="see">Broader: <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="see">See also: <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/plr</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="poa">
+  <h3>PoA (Power of Attorney) <span class="cat">legal-concept</span>
+    <a class="anchor" href="#poa" title="Permalink">#</a></h3>
+  <p>A legal instrument by which a principal authorises a named attorney to act on their behalf for defined purposes. In this strategy, a PoA is a representation instrument: the attorney holds no independent power, so the power and capacity acceptance checks run against the <em>principal</em>. The <em>Party and Representation service</em> must verify that the PoA is valid, current, and covers the proposed transaction type; an enduring PoA additionally requires confirmation that capacity was present at execution. See <a href="#representation"><em>Representation</em></a>, <a href="#capacity-principle"><em>Capacity principle</em></a>, <a href="#power-principle"><em>Power principle</em></a>.</p>
+  <p class="see">Broader: <a href="#representation">Representation</a></p>
+  <p class="see">See also: <a href="#representation">Representation</a>, <a href="#capacity-principle">Capacity principle</a>, <a href="#power-principle">Power principle</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/poa</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="power">
+  <h3>Power (legal) <span class="cat">jural-position</span>
+    <a class="anchor" href="#power" title="Permalink">#</a></h3>
+  <p>The legal capacity to effect a specific change in a Party--Right--Land relationship. Private-law powers derive from rights held (a party can only grant what it has); public-law powers derive from legislative or regulatory authority. Verification of power is a prerequisite for any valid transaction.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/power</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="power-principle">
+  <h3>Power principle <span class="cat">acceptance-principle</span>
+    <a class="anchor" href="#power-principle" title="Permalink">#</a></h3>
+  <p>One of the five acceptance criteria (a validity check). Requires that every transaction be supported by the granter&#x27;s legal power, whether derived from rights held or from legislative empowerment.</p>
+  <p class="see">Broader: <a href="#acceptance-criteria">Acceptance criteria</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/power-principle</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="praedial-right">
+  <h3>Praedial right <span class="cat">derivable-type</span>
+    <a class="anchor" href="#praedial-right" title="Permalink">#</a></h3>
+  <p>A right that attaches to land rather than to a person, and runs with the land when it is transferred. A praedial relationship means that one parcel holds rights in another parcel, with those rights passing automatically to whoever owns the benefiting parcel.</p>
+  <p class="see">Broader: <a href="#conventional-incidents">Conventional incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/praedial-right</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="priority">
+  <h3>Priority <span class="cat">register-concept</span>
+    <a class="anchor" href="#priority" title="Permalink">#</a></h3>
+  <p>The ranking between competing rights over the same land object (typically securities). A property of the <em>relationship</em> between rights, not of any single right: the default order derives from valid time (first in time) and is overridden by explicit subordination, postponement, or tacking transactions. A change of priority is itself a first-class, validated transaction.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/priority</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="privilege">
+  <h3>Privilege <span class="cat">jural-position</span>
+    <a class="anchor" href="#privilege" title="Permalink">#</a></h3>
+  <p>In Hohfeldian analysis, a freedom to perform an act without owing a duty to any other party to refrain from it. Distinguished from a <a href="#claim-right"><em>claim-right</em></a>. In this paper, issuing a permit is characterised as the authority allocating a privilege from its own jural position to the applicant. It is not restoring a pre-existing entitlement to someone from whom it was withheld.</p>
+  <p class="see">Contrast: <a href="#claim-right">Claim-right</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/privilege</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="property-object">
+  <h3>Property object <span class="cat">ladm-construct</span>
+    <a class="anchor" href="#property-object" title="Permalink">#</a></h3>
+  <p>A legal construct comprising an administrative unit (the rights package) and its associated spatial unit (geometry). This is considered specifically as the first-class holder of a rights bundle. Distinguished from <a href="#land-object"><em>land object</em></a> (which emphasises the spatial reference) in contexts where rights are being derived from or absorbed back into the bundle: a VoI absorption takes a separated right back into the property object&#x27;s bundle rather than simply referencing the land&#x27;s spatial extent.</p>
+  <p class="see">Contrast: <a href="#land-object">Land object</a> &middot; Composed of: <a href="#administrative-unit">Administrative unit</a> + <a href="#spatial-unit">Spatial unit</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/property-object</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-R">R</h2>
+<article class="term" id="real-estate-complex">
+  <h3>Real estate complex <span class="cat">transaction-pattern</span>
+    <a class="anchor" href="#real-estate-complex" title="Permalink">#</a></h3>
+  <p>A multi-unit development (block of flats, mixed-use compound) in which individual units are separately owned and common areas are held collectively by unit owners. Modelled in this strategy as a documented composition of VoL, VoI and VoP transactions (see Appendix 1 of the conceptual foundation).</p>
+  <p class="see">Composed of: <a href="#vol">VoL (Variation of Land)</a> + <a href="#voi">VoI (Variation of Incidents)</a> + <a href="#vop">VoP (Variation of Party)</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/real-estate-complex</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="referenceable">
+  <h3>Referenceable <span class="cat">type-property</span>
+    <a class="anchor" href="#referenceable" title="Permalink">#</a></h3>
+  <p>The property, required of every first-class object (party, parcel, right, PLR, permit), of carrying a durable or at least trusted, authoritative, versioned identifier so that other services can depend on it. The foundation for the once-only principle.</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/referenceable</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="representation">
+  <h3>Representation <span class="cat">legal-concept</span>
+    <a class="anchor" href="#representation" title="Permalink">#</a></h3>
+  <p>The legally recognised authority of one party (agent, attorney, company signatory) to act on behalf of another in land transactions. The ecosystem must model and verify representation consistently so that &quot;who can act for whom?&quot; can be answered auditably at every submission.</p>
+  <p class="see">Narrower: <a href="#poa">PoA (Power of Attorney)</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/representation</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="rescission">
+  <h3>Rescission <span class="cat">transaction-operation</span>
+    <a class="anchor" href="#rescission" title="Permalink">#</a></h3>
+  <p>The termination form for reserved incidents: a PLR or other public-law restriction is brought to an end through the same statutory or regulatory process that created it. The counterpart of its derivation. Distinguished from <a href="#extinguishment"><em>extinguishment</em></a> (which applies to allocated incidents/privileges) and <a href="#absorption"><em>absorption</em></a> (which applies to conventional incidents). See <a href="#termination"><em>Termination</em></a>, <a href="#voi"><em>Variation of Incidents</em></a>.</p>
+  <p class="see">Broader: <a href="#termination">Termination</a> &middot; Counterpart of: <a href="#derivation">Derivation</a> &middot; Contrast: <a href="#absorption">Absorption</a>, <a href="#extinguishment">Extinguishment</a> &middot; Applies to: <a href="#reserved-incidents">Reserved incidents</a></p>
+  <p class="see">See also: <a href="#termination">Termination</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/rescission</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="reserved-incidents">
+  <h3>Reserved incidents <span class="cat">incident-type</span>
+    <a class="anchor" href="#reserved-incidents" title="Permalink">#</a></h3>
+  <p>Public-law constraints imposed by the state that limit what the holder of conventional property rights may do with land (e.g., planning controls, environmental restrictions). Permits may enable activities that would otherwise be restricted under reserved incidents. See also: <a href="#plr"><em>PLR</em></a>.</p>
+  <p class="see">Broader: <a href="#incident">Incident</a> &middot; Narrower: <a href="#plr">PLR (Public Law Restriction)</a> &middot; Contrast: <a href="#conventional-incidents">Conventional incidents</a>, <a href="#allocated-incidents">Allocated incidents</a></p>
+  <p class="see">See also: <a href="#plr">PLR (Public Law Restriction)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/reserved-incidents</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="responsibility">
+  <h3>Responsibility <span class="cat">legal-concept</span>
+    <a class="anchor" href="#responsibility" title="Permalink">#</a></h3>
+  <p>A positive duty (the holder must perform rather than merely refrain) that may run with land or party (e.g., a development contribution, an affordable-housing condition, a maintenance obligation). In Hohfeldian terms, a responsibility is the landowners&#x27; duty that results from a claim-right held by a third party; it differs from a <a href="#restriction"><em>restriction</em></a> only in the direction of the obligation (positive vs negative). A responsibility may arise as a component of a reserved incident (imposed by statutory or plan-making process) or a conventional incident (a positive covenant in a private instrument). Its discharge status is determined by <a href="#assessment"><em>assessment</em></a> and may be enforced as a charge on default. See <a href="#restriction"><em>Restriction</em></a>, <a href="#reserved-incidents"><em>Reserved incidents</em></a>, <a href="#hohfeldian-analysis"><em>Hohfeldian analysis</em></a>.</p>
+  <p class="see">Contrast: <a href="#restriction">Restriction</a></p>
+  <p class="see">See also: <a href="#restriction">Restriction</a>, <a href="#reserved-incidents">Reserved incidents</a>, <a href="#hohfeldian-analysis">Hohfeldian analysis</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/responsibility</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="restriction">
+  <h3>Restriction <span class="cat">legal-concept</span>
+    <a class="anchor" href="#restriction" title="Permalink">#</a></h3>
+  <p>A negative duty (the holder must refrain) imposed on land or its use. In Hohfeldian terms a restriction is the landowners&#x27; duty that results from a claim-right held by a third party; it differs from a <a href="#responsibility"><em>responsibility</em></a> only in the direction of the obligation (negative vs positive). A duty-correlative restriction (a restrictive covenant, a planning obligation owed to an identified body) is released when that holder waives or is satisfied; a disability-type restriction (a development right reserved to the authority) leaves the landowner in a position of <a href="#no-privilege"><em>no-privilege</em></a> that a permit does not lift but a privilege-allocation supplies. See <a href="#responsibility"><em>Responsibility</em></a>, <a href="#reserved-incidents"><em>Reserved incidents</em></a>, <a href="#no-privilege"><em>No-privilege</em></a>.</p>
+  <p class="see">Contrast: <a href="#responsibility">Responsibility</a></p>
+  <p class="see">See also: <a href="#responsibility">Responsibility</a>, <a href="#reserved-incidents">Reserved incidents</a>, <a href="#no-privilege">No-privilege</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/restriction</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="rights-ontology-service">
+  <h3>Rights Ontology service <span class="cat">platform-service</span>
+    <a class="anchor" href="#rights-ontology-service" title="Permalink">#</a></h3>
+  <p>A proposed platform service holding the typed <a href="#numerus-clausus"><em>numerus clausus</em></a> for a jurisdiction: the schema of permissible incident types, each with its Hohfeldian signature, the power requirements for each transaction type, capacity rules, and admissibility constraints. Separating the rules governing what rights <em>may</em> exist from the register recording what rights <em>do</em> exist allows the rule set to be versioned independently as legal regimes evolve. See <a href="#numerus-clausus"><em>Numerus clausus</em></a>, <a href="#admissibility-principle"><em>Admissibility principle</em></a>, <a href="#voi"><em>VoI</em></a>.</p>
+  
+  <p class="see">See also: <a href="#numerus-clausus">Numerus clausus</a>, <a href="#admissibility-principle">Admissibility principle</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/rights-ontology-service</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-S">S</h2>
+<article class="term" id="security">
+  <h3>Security <span class="cat">derivable-type</span>
+    <a class="anchor" href="#security" title="Permalink">#</a></h3>
+  <p>A right granted over land to secure a financial obligation (e.g., a mortgage or charge). Derived by a VoI; it is discharged and absorbed back into the parent cadastral unit when the underlying obligation is met.</p>
+  <p class="see">Broader: <a href="#conventional-incidents">Conventional incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/security</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="shadow-infrastructure">
+  <h3>Shadow infrastructure <span class="cat">governance-concept</span>
+    <a class="anchor" href="#shadow-infrastructure" title="Permalink">#</a></h3>
+  <p>Workaround systems or local data copies created by downstream agencies when authoritative services do not provide the identifier stability, versioning, or quality those agencies need. Shadow infrastructures diverge from the authoritative source over time and undermine the once-only principle.</p>
+  <p class="see">Contrast: <a href="#once-only-principle">Once-only principle</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/shadow-infrastructure</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="spatial-unit">
+  <h3>Spatial unit <span class="cat">ladm-construct</span>
+    <a class="anchor" href="#spatial-unit" title="Permalink">#</a></h3>
+  <p>In LADM, the geometric extent component of a land object. Combined with an administrative unit (the rights package), it fully represents what practitioners informally call a &quot;parcel.&quot;</p>
+  
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/spatial-unit</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="specificity-principle">
+  <h3>Specificity principle <span class="cat">acceptance-principle</span>
+    <a class="anchor" href="#specificity-principle" title="Permalink">#</a></h3>
+  <p>One of the five acceptance criteria, and the only <em>well-formedness</em> check (the others test validity). Requires that a transaction unambiguously identifies: the <em>subject</em> (the Party--Right--Land state being changed), the <em>transformation</em> (VoP, VoL, or VoI), and the <em>variables</em> (the parameters needed to evaluate and enact the change).</p>
+  <p class="see">Broader: <a href="#acceptance-criteria">Acceptance criteria</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/specificity-principle</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="strata-title">
+  <h3>Strata title <span class="cat">derivable-type</span>
+    <a class="anchor" href="#strata-title" title="Permalink">#</a></h3>
+  <p>A form of property ownership in multi-storey or multi-unit buildings in which individual units are separately owned and common areas are held collectively by unit owners. Modelled in this strategy as a VoI derivation from the principal cadastral unit.</p>
+  <p class="see">Broader: <a href="#conventional-incidents">Conventional incidents</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/strata-title</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-T">T</h2>
+<article class="term" id="termination">
+  <h3>Termination <span class="cat">transaction-operation</span>
+    <a class="anchor" href="#termination" title="Permalink">#</a></h3>
+  <p>The ending direction of a <a href="#voi"><em>Variation of Incidents</em></a>: the operation that closes an existing jural incident. Termination takes a form matched to the incident type. <a href="#absorption"><em>Absorption</em></a> applies to conventional incidents: the separated claim-right is reintegrated into its parent bundle (on expiry, surrender, or satisfaction of the obligation it secured). <a href="#extinguishment"><em>Extinguishment</em></a> applies to allocated incidents (public-law privileges): the privilege simply ceases to exist in the holder&#x27;s hands (on expiry, revocation, or breach of conditions), with nothing returning to any parent holding. <a href="#rescission"><em>Rescission</em></a> applies to reserved incidents: a PLR is brought to an end through the same statutory or regulatory process that created it. All three forms are first-class operations; recording a derivation without a termination pathway leaves dangling encumbrances. See <a href="#absorption"><em>Absorption</em></a>, <a href="#extinguishment"><em>Extinguishment</em></a>, <a href="#derivation"><em>Derivation</em></a>, <a href="#voi"><em>Variation of Incidents</em></a>.</p>
+  <p class="see">Broader: <a href="#voi">VoI (Variation of Incidents)</a> &middot; Narrower: <a href="#absorption">Absorption</a>, <a href="#extinguishment">Extinguishment</a>, <a href="#rescission">Rescission</a> &middot; Counterpart of: <a href="#derivation">Derivation</a> &middot; Applies to: <a href="#conventional-incidents">Conventional incidents</a>, <a href="#reserved-incidents">Reserved incidents</a>, <a href="#allocated-incidents">Allocated incidents</a></p>
+  <p class="see">See also: <a href="#absorption">Absorption</a>, <a href="#extinguishment">Extinguishment</a>, <a href="#derivation">Derivation</a>, <a href="#voi">VoI (Variation of Incidents)</a></p>
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/termination</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="tradable">
+  <h3>Tradable <span class="cat">type-property</span>
+    <a class="anchor" href="#tradable" title="Permalink">#</a></h3>
+  <p>A type-level property of a derived right: whether it can undergo <em>subsequent, independent</em> transfers on a market <em>after</em> its initial allocation. The conveyancing market transacts tradable rights (freehold, leasehold, strata, mortgage), which demands persistent, chain-traceable, priority-bearing identifiers. Tradability governs <em>onward</em> dealing only. Every derived right is allocated once by the alienation pattern regardless of tradability; a non-tradable right (an easement) is allocated at grant and thereafter passes appurtenant to its parent. Independent of <a href="#divisible"><em>divisible</em></a>; tradability implies referenceability, but not the reverse. Restrictable per instance by a recorded term (e.g., a non-assignability covenant).</p>
+  <p class="see">Contrast: <a href="#divisible">Divisible</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/tradable</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="transaction-primitive">
+  <h3>Transaction primitive <span class="cat">transaction-primitive</span>
+    <a class="anchor" href="#transaction-primitive" title="Permalink">#</a></h3>
+  <p>One of the three core, reusable state-change patterns (VoP, VoL, VoI) from which land administration workflows are composed. Each is a variation representing a subdivision or consolidation along one axis of the party--right--land triple. Treating these as primitives keeps the transaction service surface small and stable, while allowing complex scenarios to be built as documented compositions.</p>
+  <p class="see">Narrower: <a href="#voi">VoI (Variation of Incidents)</a>, <a href="#vol">VoL (Variation of Land)</a>, <a href="#vop">VoP (Variation of Party)</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/transaction-primitive</code> · term version 1.0.0</p>
+</article><h2 class="letter" id="sec-V">V</h2>
+<article class="term" id="voi">
+  <h3>VoI (Variation of Incidents) <span class="cat">transaction-primitive</span>
+    <a class="anchor" href="#voi" title="Permalink">#</a></h3>
+  <p>The primitive that creates, varies, or terminates any jural incident (conventional, reserved, or allocated) associated with a land object. Its two directions are <a href="#derivation"><em>derivation</em></a> (establishing a new incident from an authorised source) and <a href="#termination"><em>termination</em></a> (closing an existing incident). Termination form is matched to incident type: <a href="#absorption"><em>absorption</em></a> for conventional incidents, <a href="#extinguishment"><em>extinguishment</em></a> for allocated incidents, <a href="#rescission"><em>rescission</em></a> for reserved incidents. The recognised set covers the private-law <a href="#numerus-clausus"><em>numerus clausus</em></a>, the jurisdiction&#x27;s recognised PLR types, and its recognised statutory authorisation types. Conventional derivation is recursive; allocated incidents are not. For conventional incidents, VoI derivation is always followed by an allocating VoP (the <a href="#alienation"><em>alienation</em></a> pattern); for allocated incidents, derivation and transfer are a single act. VoI also separates jural content changes (its domain) from spatial extent changes (VoL&#x27;s domain).</p>
+  <p class="see">Broader: <a href="#transaction-primitive">Transaction primitive</a> &middot; Narrower: <a href="#amendment">Amendment</a>, <a href="#derivation">Derivation</a>, <a href="#termination">Termination</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/voi</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="vol">
+  <h3>VoL (Variation of Land) <span class="cat">transaction-primitive</span>
+    <a class="anchor" href="#vol" title="Permalink">#</a></h3>
+  <p>A generic transaction pattern that changes <em>what land</em> a right bundle describes through subdivision or consolidation of spatial units. Because VoL is generic, it applies to any spatially-defined right object: cadastral parcels, planning zones, environmental buffers, heritage areas, and other public-law restriction (PLR) objects. Any alteration to a PLR&#x27;s spatial extent (redrawing a zone boundary, extending a buffer, splitting a heritage area) is a VoL operation subject to the same acceptance criteria as a cadastral subdivision. <strong>A boundary determination that fixes, adjusts, or re-defines authoritative geometry is a VoL</strong>. VoL is the operational workhorse of high-velocity land change; it requires geometry integrity checks (no gaps or overlaps), recognised survey inputs, and versioned identifier management so that permits and rights always reference the correct spatial state.</p>
+  <p class="see">Broader: <a href="#transaction-primitive">Transaction primitive</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/vol</code> · term version 1.0.0</p>
+</article>
+<article class="term" id="vop">
+  <h3>VoP (Variation of Party) <span class="cat">transaction-primitive</span>
+    <a class="anchor" href="#vop" title="Permalink">#</a></h3>
+  <p>The primitive that varies who holds a right/incident. Where the right is <a href="#divisible"><em>divisible</em></a>, the holding is a fraction and a VoP may subdivide it (a part transfer creating co-ownership) or consolidate it (re-uniting co-owners&#x27; shares); for an indivisible right a VoP transfers the whole or nothing. The whole-or-part transfer of a holding from one party to another is its familiar pattern, the <em>transfer of party</em>. A VoP can act on a tradable right as an independent object; in addition, every derived right receives at least one allocating VoP at grant (the alienation pattern), even when it is not tradable thereafter.</p>
+  <p class="see">Broader: <a href="#transaction-primitive">Transaction primitive</a></p>
+  
+  <p class="meta">URI: <code>https://w3id.org/land-transactions/glossary/vop</code> · term version 1.0.0</p>
+</article>
+<footer><p class="meta">Licensed CC-BY-4.0. Generated 2026-06-10 from glossary v1.0.0.</p></footer>
+</body></html>

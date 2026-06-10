@@ -1,0 +1,38 @@
+# Term record: Derivation
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: derivation
+term: Derivation
+abbreviation: null
+alt_labels: []
+status: stable
+category: transaction-operation
+definition: >-
+  One of the two directions of a *Variation of Incidents*: the establishment of a new jural incident from
+  an authorised source. For conventional incidents, it carves a claim-right (lease, easement, security,
+  strata interest) from a parent bundle, leaving a residual interest. For reserved incidents, it establishes
+  a restriction or responsibility through a statutory or plan-making process. For allocated incidents,
+  it creates a privilege through the exercise of statutory power. The counterpart of *termination*. Conventional
+  derivation is recursive for certain incidents; allocated incidents are not (a permit cannot be sub-permitted).
+see_also: []
+broader: voi
+counterpart_of: termination
+contrasted_with: []
+composed_of: []
+applies_to:
+- conventional-incidents
+- reserved-incidents
+- allocated-incidents
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Operation vocabulary absent from LADM: creating an RRR instance is representable only as a new
+    versioned object, not as a typed operation with a source bundle and residual interest.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.
