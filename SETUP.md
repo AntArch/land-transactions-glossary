@@ -58,7 +58,7 @@ The 76 term records in `terms/` were generated from the Quarto annex. Before pub
 2. The included workflow (`.github/workflows/build-and-deploy.yml`) already builds and
    deploys on every push to `main`. Push any commit (or re-run the workflow under the
    **Actions** tab) and the site appears at
-   `https://YOUR-USERNAME.github.io/land-transactions-glossary/`.
+   `https://AntArch.github.io/land-transactions-glossary/`.
 3. Check that `…/index.html#allocated-incidents` and `…/allocated-incidents.html` both
    resolve — those are the two anchor forms other documents will link to.
 

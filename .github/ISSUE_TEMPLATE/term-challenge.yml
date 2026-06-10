@@ -1,0 +1,41 @@
+name: Term challenge
+description: Challenge or propose an amendment to an existing definition
+title: "[challenge] <term>: <one-line summary>"
+labels: ["term-challenge"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      description: The term id or display name being challenged (e.g. `allocated-incidents`)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Glossary version
+      description: The release you are challenging (e.g. v1.0.0)
+    validations:
+      required: true
+  - type: textarea
+    id: objection
+    attributes:
+      label: Objection
+      description: What is wrong, ambiguous, or in conflict — and with what (another term, ISO 19152, case law, jurisdictional practice…)?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed amendment (optional)
+      description: Suggested replacement or amended wording.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Which other terms or portfolio documents would be affected if this change were accepted?
+  - type: markdown
+    attributes:
+      value: |
+        Disposition (accepted / accepted-with-modification / declined / deferred) is recorded by the
+        custodian before the issue is closed — see [GOVERNANCE.md](../blob/main/GOVERNANCE.md).

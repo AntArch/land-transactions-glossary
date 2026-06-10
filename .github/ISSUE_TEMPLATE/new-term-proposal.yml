@@ -1,0 +1,29 @@
+name: New term proposal
+description: Propose a term that the glossary should define
+title: "[new term] <proposed term>"
+labels: ["new-term"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Proposed term
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Proposed definition
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why the glossary needs it
+      description: Where the portfolio currently uses this concept without a governed definition, or where its absence causes ambiguity.
+    validations:
+      required: true
+  - type: textarea
+    id: relations
+    attributes:
+      label: Relations
+      description: Related existing terms (see_also), Hohfeldian signature if applicable, and any ISO 19152 / LADM counterpart.
