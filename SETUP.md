@@ -46,7 +46,7 @@ The 76 term records in `terms/` were generated from the Quarto annex. Before pub
    git add .
    git commit -m "Glossary v1.0.0: initial migration from Quarto annex"
    git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/land-transactions-glossary.git
+   git remote add origin https://github.com/AntArch/land-transactions-glossary.git
    git push -u origin main
    ```
 3. Update `glossary.yaml: repository` and the URL in README.md to the real URL; commit
