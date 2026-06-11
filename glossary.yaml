@@ -13,7 +13,7 @@ custodian:
 # (see SETUP.md step 6) and update here if you choose a different path.
 base_uri: "https://w3id.org/land-transactions/glossary/"
 # Repository URL — update after you create the GitHub repository (SETUP.md step 2).
-repository: "https://github.com/YOUR-USERNAME/land-transactions-glossary"
+repository: "https://github.com/AntArch/land-transactions-glossary"
 license: "CC-BY-4.0"
 language: "en"
 # Citation keys in term records (citations field) resolve against the portfolio's
