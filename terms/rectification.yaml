@@ -1,0 +1,46 @@
+# Term record: Rectification
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: rectification
+term: Rectification
+abbreviation: null
+alt_labels: []
+status: draft
+category: register-operation
+definition: >-
+  A custodian-initiated correction of the register where a recorded entry is found to be mistaken and
+  the mistake prejudicially affects a registered party's position. Rectification is not a transaction:
+  no party exercises a power over an incident; the *authoritative custodian* exercises its *mandate* to
+  make the register conform to the underlying jural reality. Under *bitemporality* the erroneous entry
+  and its rectification both remain visible on the transaction timeline, preserving the audit trail and
+  any indemnity consequences of reliance on the error. Distinguished from *Amendment* (a party-initiated
+  variation of an incident's terms) and from *Correction* (routine custodian updates that prejudice no
+  one).
+see_also:
+- correction
+- amendment
+- bitemporality
+- authoritative-custodian
+- mandate
+broader: null
+counterpart_of: null
+contrasted_with:
+- amendment
+- correction
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: LADM has no register-write vocabulary; a rectification is visible only as a new version of the
+    affected object (VersionedObject, ISO 19152-1:2024, 6.3.1) with the evidencing decision recorded as
+    an administrative source (ISO 19152-2:2025). The prejudice/indemnity distinction is not modelled.
+citations: []
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

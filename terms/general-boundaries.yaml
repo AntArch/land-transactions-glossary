@@ -1,0 +1,41 @@
+# Term record: General boundaries
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: general-boundaries
+term: General boundaries
+abbreviation: null
+alt_labels:
+- Fixed boundaries
+status: draft
+category: register-concept
+definition: >-
+  A boundary-fixation policy under which the register records the approximate extent of a *spatial unit*:
+  the line shown on the mapbase indicates but does not determine the exact legal boundary, which remains
+  a matter of the underlying instruments and physical features. The alternative is fixed (coordinated)
+  boundaries, where the register's geometry is itself authoritative. The policy in force conditions what
+  *VoL* operations can claim and what the *cadastral index* warrants: under general boundaries the index's
+  geometry is a derived view of evidence, not the evidence itself.
+see_also:
+- vol
+- cadastral-index
+- spatial-unit
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Not a defined term, but structurally accommodated: LADM''s spatial unit package deliberately
+    supports representations from text-based and sketch descriptions through to fully coordinated topology,
+    which is the spectrum the general/fixed policy choice selects from.'
+citations: []
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

@@ -13,7 +13,9 @@ definition: >-
   an obligation, a staged-release milestone, or statutory rescission) that cause termination. Treating
   lifecycle as a first-class property of each incident type means that leases, easements, securities,
   permits, and PLR zones share the same structural shape with different parameters, rather than requiring
-  separate instrument logic for each. See *Termination*, *Amendment*, *VoI*.
+  separate instrument logic for each. See *Termination*, *Amendment*, *VoI*. Common-law future interests
+  — a *reversion* retained by the granter, a *remainder* vested in a third party — are the classic instances
+  of activation-conditioned incidents.
 see_also:
 - termination
 - amendment
@@ -37,3 +39,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: 'Clarifying addition: reversion and remainder named as canonical activation-conditioned incidents
+    (from LRC ontology). Proposed, pending disposition.'
+  issue: null

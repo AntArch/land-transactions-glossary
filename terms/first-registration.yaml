@@ -1,0 +1,40 @@
+# Term record: First registration
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: first-registration
+term: First registration
+abbreviation: null
+alt_labels:
+- First grant
+status: draft
+category: transaction-operation
+definition: >-
+  The originating *derivation* by which a land object and its rights bundle first enter the register —
+  by grant from the sovereign or state out of the radical title, by systematic adjudication, or by migration
+  of a deeds-evidenced title onto a title register. First registration is the bootstrap case that *good
+  root of title* presupposes: before it, validity rests on the instrument chain; after it, the register's
+  versioned record carries the burden.
+see_also:
+- derivation
+- good-root-of-title
+- cadastral-unit
+broader: derivation
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Not a defined term in Part 1; first-registration processes belong to the land-registration domain
+    of ISO 19152-2:2025 (coverage to verify against the published Part 2 text). In Part 1 terms it is
+    the creation of the initial versions of the BAUnit, spatial unit, and RRR objects.
+citations: []
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

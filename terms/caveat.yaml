@@ -1,0 +1,48 @@
+# Term record: Caveat
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: caveat
+term: Caveat
+abbreviation: null
+alt_labels:
+- Caution
+- Inhibition
+- Notice
+status: draft
+category: register-concept
+definition: >-
+  A register object lodged by a party claiming an interest in a *land object*, whose effect is to block
+  or condition the registration of subsequent dealings until the claim is resolved or the caveat lapses.
+  A caveat is not itself a jural incident in the land: it operates on the *admissibility* of later transactions
+  rather than conferring rights, protecting the caveator's claimed position while it is determined. Jurisdictional
+  names vary: caution, inhibition, notice.
+see_also:
+- admissibility-principle
+- priority
+- dealing
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: null
+  correlative: null
+  divisible: null
+  tradable: null
+  notes: 'Not a first-order incident: the caveat''s effect is a disability on the exercise of registration
+    powers over the affected land object pending determination of the caveator''s claim.'
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Not a defined term. A lodged caveat could be recorded as a restriction instance, but its essential
+    behaviour — gating the admissibility of subsequent registrations — is transactional and outside the
+    LADM content model.
+citations: []
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

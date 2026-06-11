@@ -1,0 +1,47 @@
+# Term record: Personal right
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: personal-right
+term: Personal right
+abbreviation: null
+alt_labels:
+- Right in personam
+status: draft
+category: legal-concept
+definition: >-
+  A right enforceable against a specific person rather than against the world (in personam): the buyer's
+  right against the seller under contract before completion, a creditor's unsecured claim [@gretton_steven_2017].
+  Personal rights are not registrable and sit outside the *numerus clausus*; conveyancing is, in one reading,
+  the machinery by which a personal right (the contract) is converted into a *real right* (the registered
+  incident). Contrast *Real right*.
+see_also:
+- real-right
+- conveyancing
+- numerus-clausus
+broader: null
+counterpart_of: null
+contrasted_with:
+- real-right
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: null
+  correlative: null
+  divisible: null
+  tradable: null
+  notes: 'A classification by enforceability scope: a claim-right/duty pair whose duty-bearer is a specific
+    person. Outside the register by design.'
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Out of LADM scope by design: LADM records registrable (real) rights. The personal right behind
+    a transaction is visible only through the administrative source evidencing the dealing (ISO 19152-2:2025).'
+citations:
+- gretton_steven_2017
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

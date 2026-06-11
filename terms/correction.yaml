@@ -1,0 +1,40 @@
+# Term record: Correction
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: correction
+term: Correction
+abbreviation: null
+alt_labels: []
+status: draft
+category: register-operation
+definition: >-
+  A custodian-initiated register write that brings the record up to date or repairs a clerical defect
+  without prejudicing any party's position — completing a cross-reference, conforming a name, updating
+  a derived attribute. Like *Rectification* it is performed by the *authoritative custodian* under its
+  *mandate* rather than by parties transacting; unlike rectification it alters no party's substantive
+  position and so carries no indemnity consequences. Both are recorded on the transaction timeline under
+  *bitemporality*.
+see_also:
+- rectification
+- bitemporality
+- authoritative-custodian
+broader: null
+counterpart_of: null
+contrasted_with:
+- rectification
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'As for rectification: representable only as a new object version with a source; the prejudicial/non-prejudicial
+    distinction between rectification and correction is not modelled in the ISO 19152 series.'
+citations: []
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

@@ -1,0 +1,50 @@
+# Term record: Separated ownership
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: separated-ownership
+term: Separated ownership
+abbreviation: null
+alt_labels:
+- Conventionally separated ownership
+- Severed estate
+status: draft
+category: legal-concept
+definition: >-
+  Ownership of immovable property held separately from ownership of the ground beneath or around it [@gretton_steven_2017]:
+  mineral estates, strata and sub-strata units, airspace parcels, separately held fishings. Separation
+  is effected through conveyancing — a *VoI*/*VoL* composition derives the new ownership object from the
+  principal unit — and the jurisdiction's *numerus clausus* determines which separations are recognised.
+  *Strata title* is the most common instance.
+see_also:
+- strata-title
+- numerus-clausus
+- real-estate-complex
+- voi
+- vol
+broader: conventional-incidents
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: claim-right
+  correlative: duty
+  divisible: null
+  tradable: true
+  notes: 'An ownership form: the separated estate is a principal object trading on the conveyancing market.
+    Which separations exist at all is a numerus clausus question.'
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY); condominium example:
+    ISO 19152-1:2024, 3.1.2, Example 2'
+  notes: LADM recognises the results by example (condominium BAUnits; legal space building units in ISO
+    19152:2012) without defining the general separation concept or its derivation pathway.
+citations:
+- gretton_steven_2017
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

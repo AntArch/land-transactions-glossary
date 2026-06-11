@@ -4,7 +4,8 @@
 id: absorption
 term: Absorption
 abbreviation: null
-alt_labels: []
+alt_labels:
+- Discharge
 status: stable
 category: transaction-operation
 definition: >-
@@ -26,8 +27,8 @@ ladm_mapping:
   relation: no-counterpart
   iso_19152_clause: null
   notes: 'LADM has no operation vocabulary: the ending of an RRR is expressed only as a closed version
-    (VersionedObject endLifespanVersion, ISO 19152-1:2024, 6.3.1). Absorption as reintegration into the
-    parent bundle is not representable as a concept.'
+    (VersionedObject endLifespanVersion, ISO 19152-1:2024, 6.3.1). Absorption — reintegration into the
+    parent bundle — is not representable as a concept.'
 citations: []
 source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
   portfolio.'
@@ -35,3 +36,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: Added 'Discharge' as alternative label (conveyancing name for absorption on satisfaction; from
+    LRC ontology dischargeOfRight). Proposed, pending disposition.
+  issue: null

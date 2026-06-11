@@ -10,7 +10,9 @@ category: ladm-construct
 definition: >-
   In LADM, an entity (e.g., natural person, legal person, or organisation) that can hold registerable
   rights or act in land transactions. Parties also possess *powers* that determine what transactions they
-  can lawfully initiate or consent to.
+  can lawfully initiate or consent to. Collective holders such as trusts act as a single party: the trust
+  (or its trustees in that capacity) holds the registered incidents, while beneficial interests behind
+  it remain off-register.
 see_also: []
 broader: null
 counterpart_of: null
@@ -32,3 +34,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: 'Clarifying addition: trusts as collective right-holding parties; legal/beneficial split stated
+    (from LRC ontology ''trust''). Proposed, pending disposition.'
+  issue: null

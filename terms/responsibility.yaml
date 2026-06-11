@@ -10,16 +10,19 @@ category: legal-concept
 definition: >-
   A positive duty (the holder must perform rather than merely refrain) that may run with land or party
   (e.g., a development contribution, an affordable-housing condition, a maintenance obligation). In Hohfeldian
-  terms, a responsibility is the landowners' duty that results from a claim-right held by a third
+  terms, a responsibility is the duty-pole of a jural relation whose claim-right pole is held by a third
   party; it differs from a *restriction* only in the direction of the obligation (positive vs negative).
   A responsibility may arise as a component of a reserved incident (imposed by statutory or plan-making
   process) or a conventional incident (a positive covenant in a private instrument). Its discharge status
   is determined by *assessment* and may be enforced as a charge on default. See *Restriction*, *Reserved
-  incidents*, *Hohfeldian analysis*.
+  incidents*, *Hohfeldian analysis*. Not all jurisdictions allow positive obligations to run with land
+  — Scots law, for example, does not admit affirmative real burdens — so the availability of responsibility-type
+  conventional incidents is itself a *numerus clausus* question.
 see_also:
 - restriction
 - reserved-incidents
 - hohfeldian-analysis
+- numerus-clausus
 broader: null
 counterpart_of: null
 contrasted_with:
@@ -31,7 +34,7 @@ hohfeldian_signature:
   correlative: claim-right
   divisible: null
   tradable: null
-  notes: Positive duty (must perform), taken from the burdened party's side; the claim-right 
+  notes: Positive duty-pole (must perform), taken from the burdened party's side; the claim-right pole
     is held by a third party. Differs from restriction only in the direction of the obligation.
 ladm_mapping:
   relation: refines
@@ -47,3 +50,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: 'Clarifying addition: positive obligations running with land are not universally recognised
+    (Scots affirmative burdens example, from LRC ontology). Proposed, pending disposition.'
+  issue: null

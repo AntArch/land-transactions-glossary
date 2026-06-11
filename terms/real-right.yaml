@@ -1,0 +1,49 @@
+# Term record: Real right
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: real-right
+term: Real right
+abbreviation: null
+alt_labels:
+- Right in rem
+status: draft
+category: legal-concept
+definition: >-
+  A right held directly in a thing and enforceable against the world (in rem) [@gretton_steven_2017].
+  Real rights are the subject matter of registration: the *numerus clausus* is a closed list of recognised
+  real right types, and the register's claims of completeness and *priority* are claims about real rights.
+  Contrast *Personal right*.
+see_also:
+- personal-right
+- numerus-clausus
+- priority
+- conventional-incidents
+broader: null
+counterpart_of: null
+contrasted_with:
+- personal-right
+composed_of: []
+applies_to: []
+hohfeldian_signature:
+  jural_position: null
+  correlative: null
+  divisible: null
+  tradable: null
+  notes: 'A classification of rights by enforceability scope, not a jural position: real rights are typically
+    claim-right/duty pairs whose duty-bearers are the world at large.'
+ladm_mapping:
+  relation: refines
+  iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY against full text;
+    ISO 19152:2012: 4.1.20)'
+  notes: LADM 'right' covers formal and informal entitlements without the in rem / in personam distinction;
+    the rights LADM registers are, in this vocabulary, real rights. Making the distinction explicit states
+    why personal rights do not enter the register.
+citations:
+- gretton_steven_2017
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null

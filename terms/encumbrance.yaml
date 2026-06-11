@@ -4,13 +4,13 @@
 id: encumbrance
 term: Encumbrance
 abbreviation: null
-alt_labels: []
+alt_labels:
+- Burden
 status: stable
 category: legal-concept
 definition: >-
-  A right held by a third party that limits (or burdens) a landowners property, limiting the owner's freedom to use 
-  it or transfer its title. While it does not stop the property from being sold, it can diminish its value or impose 
-  ongoing obligations.
+  A right held by a third party that limits the full exercise or transfer of property (e.g., a mortgage,
+  easement, or restrictive covenant).
 see_also: []
 broader: null
 counterpart_of: null
@@ -37,3 +37,7 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: Added 'Burden' as alternative label (Scots usage; from LRC ontology). Proposed, pending disposition.
+  issue: null

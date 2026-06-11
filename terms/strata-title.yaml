@@ -12,7 +12,7 @@ definition: >-
   owned and common areas are held collectively by unit owners. Modelled in this strategy as a VoI derivation
   from the principal cadastral unit.
 see_also: []
-broader: conventional-incidents
+broader: separated-ownership
 counterpart_of: null
 contrasted_with: []
 composed_of: []
@@ -39,3 +39,9 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: 'Re-parented: broader changed from ''conventional-incidents'' to the new general term ''separated-ownership''
+    (which itself sits under conventional-incidents), so the ancestry is preserved. Proposed, pending
+    disposition.'
+  issue: null

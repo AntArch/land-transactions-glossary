@@ -11,8 +11,11 @@ definition: >-
   The ranking between competing rights over the same land object (typically securities). A property of
   the *relationship* between rights, not of any single right: the default order derives from valid time
   (first in time) and is overridden by explicit subordination, postponement, or tacking transactions.
-  A change of priority is itself a first-class, validated transaction.
-see_also: []
+  A change of priority is itself a first-class, validated transaction. In registration practice, ranking
+  is commonly determined by the date and time of application for registration rather than of the instrument
+  itself, which is why presentation queues and *caveats* bear directly on priority.
+see_also:
+- caveat
 broader: null
 counterpart_of: null
 contrasted_with: []
@@ -32,3 +35,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-11'
+  change: 'Clarifying addition: application-date ranking mechanism and caveat cross-reference (from LRC
+    ontology ''application''). Proposed, pending disposition.'
+  issue: null

@@ -1,0 +1,41 @@
+# Term record: Transmission
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: transmission
+term: Transmission
+abbreviation: null
+alt_labels: []
+status: draft
+category: transaction-operation
+definition: >-
+  A *VoP* that occurs by operation of law rather than by consensual dealing: the holder's death (passing
+  to personal representatives or heirs), insolvency (vesting in a trustee or liquidator), or dissolution
+  of a corporate holder (passing as bona vacantia or under a court vesting order). Transmission qualifies
+  the *consent principle*: the authorisation for the variation is supplied by statute, court order, or
+  a personal representative rather than by the granting party. The incidents themselves are unchanged
+  — transmission moves the holder, not the content of the bundle.
+see_also:
+- vop
+- consent-principle
+- representation
+- capacity-principle
+broader: vop
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Not a defined concept: in LADM a transmission is visible only as successive versions of the
+    party–RRR association, indistinguishable from a consensual transfer except via the administrative
+    source (ISO 19152-2:2025) evidencing the confirmation, grant, or vesting order.'
+citations: []
+source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
+  v1.0.0.
+history:
+- version: 1.0.0
+  date: '2026-06-11'
+  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null
