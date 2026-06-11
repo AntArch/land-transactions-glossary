@@ -66,11 +66,23 @@ surviving any future re-hosting.
 
 1. Fork https://github.com/perma-id/w3id.org
 2. Create a directory `land-transactions/` containing two files:
- `README.md` — who you are and what the namespace is for (name, ORCID, contact email, one paragraph of purpose).
- `.htaccess`: ```apache Options +FollowSymLinks RewriteEngine on
- # SKOS / JSON exports RewriteRule ^glossary/glossary\.(ttl|json|md)$ https://YOUR-USERNAME.github.io/land-transactions-glossary/glossary.$1 [R=302,L]
- # Per-term URIs -> per-term redirect stubs on the site RewriteRule ^glossary/([a-z0-9-]+)$ https://YOUR-USERNAME.github.io/land-transactions-glossary/$1.html [R=302,L]
- # Namespace root -> glossary index RewriteRule ^glossary/?$ https://YOUR-USERNAME.github.io/land-transactions-glossary/ [R=302,L] ```
+	* `README.md` — who you are and what the namespace is for (name, ORCID, contact email, one paragraph of purpose).
+	* `.htaccess`: 
+
+```apache
+Options +FollowSymLinks
+RewriteEngine on
+
+# SKOS / JSON exports
+RewriteRule ^glossary/glossary\.(ttl|json|md)$ https://YOUR-USERNAME.github.io/land-transactions-glossary/glossary.$1 [R=302,L]
+
+# Per-term URIs -> per-term redirect stubs on the site
+RewriteRule ^glossary/([a-z0-9-]+)$ https://YOUR-USERNAME.github.io/land-transactions-glossary/$1.html [R=302,L]
+
+# Namespace root -> glossary index
+RewriteRule ^glossary/?$ https://YOUR-USERNAME.github.io/land-transactions-glossary/ [R=302,L]
+```
+
 3. Open a pull request against perma-id/w3id.org; a maintainer reviews and merges (usually days). Once merged, test `https://w3id.org/land-transactions/glossary/voi`.
 4. The `base_uri` in `glossary.yaml` already assumes this namespace; if you chose a different path, update it and rebuild.
 
