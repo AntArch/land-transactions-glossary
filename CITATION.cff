@@ -19,7 +19,7 @@ keywords:
   - LADM
   - ISO 19152
   - transactions
-# After the first Zenodo release, add:
-# identifiers:
-#   - type: doi
-#     value: 10.5281/zenodo.XXXXXXX   # the *concept* DOI (resolves to latest version)
+After the first Zenodo release, add:
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20632452   # the *concept* DOI (resolves to latest version)

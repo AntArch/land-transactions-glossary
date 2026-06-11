@@ -12,7 +12,7 @@ briefs — points here and never redefines a term locally.
 | Term URIs | `https://w3id.org/land-transactions/glossary/<term-id>` |
 | SKOS export | [`glossary.ttl`](https://w3id.org/land-transactions/glossary/glossary.ttl) |
 | JSON export | `glossary.json` |
-| Citable releases (DOI) | Zenodo — see Releases; cite e.g. *Glossary v1.0.0, DOI:10.5281/zenodo.XXXXXXX* |
+| Citable releases (DOI) | Zenodo — see Releases; cite e.g. *Glossary v1.0.0, DOI:10.5281/zenodo.20632452* |
 | Challenge a definition | [Open an issue](../../issues/new/choose) |
 | Change-control rule | [GOVERNANCE.md](GOVERNANCE.md) |
 
