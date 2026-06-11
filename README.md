@@ -16,6 +16,8 @@ This repository is the canonical, version-controlled home of the glossary.
 | Challenge a definition | [Open an issue](../../issues/new/choose) |
 | Change-control rule | [GOVERNANCE.md](GOVERNANCE.md) |
 
+You can visualise the glossary as SKOS at [SKOS Play](https://skos-play.sparna.fr/play/home?lang=en).
+
 ## Structure
 
 ```
