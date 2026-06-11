@@ -10,6 +10,7 @@ briefs — points here and never redefines a term locally.
 |---|---|
 | Human-readable glossary (per-term anchors) | https://w3id.org/land-transactions/glossary/ |
 | Term URIs | `https://w3id.org/land-transactions/glossary/<term-id>` |
+| Terms GitHub | `https://antarch.github.io/land-transactions-glossary/` |
 | SKOS export | [`glossary.ttl`](https://w3id.org/land-transactions/glossary/glossary.ttl) |
 | JSON export | `glossary.json` |
 | Citable releases (DOI) | Zenodo — see Releases; cite e.g. *Glossary v1.0.0, DOI:10.5281/zenodo.20632452* |
