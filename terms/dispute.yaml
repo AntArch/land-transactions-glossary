@@ -1,0 +1,43 @@
+# Term record: Dispute
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: dispute
+term: Dispute
+abbreviation: null
+alt_labels:
+- Dispute pathway
+- Objection
+status: draft
+category: legal-concept
+definition: >-
+  A transaction any affected party may submit against a specified party-incident-land position, routed
+  through the appropriate objection pathway (valuation appeal, planning appeal, boundary or title dispute).
+  A dispute requires no operation the algebra does not already contain: if upheld, the adjudicating body
+  is empowered to direct a *correction* (an adjudicated amendment), a *rectification* (adjudicator-directed
+  primitives with log-level voids as their instrument), or a directed *assessment*. The dispute pathway
+  is the second source of power in the change matrix: entitled actors change the world through the gates;
+  adjudicators change it through disputes.
+see_also:
+- correction
+- rectification
+- assessment
+- status-change
+- acceptance-criteria
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: Dispute processes are out of LADM scope; their outcomes surface as new versions and sources.
+    The single shared objection-and-adjudication service is a Reference Architecture concern.
+citations: []
+source: Proposed from the Conceptual Foundation (2026-06-12), the canonical document of the portfolio.
+history:
+- version: 1.0.0
+  date: '2026-06-12'
+  change: Proposed addition from the Conceptual Foundation; status draft pending custodian disposition.
+  issue: null

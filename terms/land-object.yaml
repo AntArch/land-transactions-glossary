@@ -8,7 +8,7 @@ alt_labels: []
 status: stable
 category: ladm-construct
 definition: >-
-  In LADM  the composite entity comprising an *administrative unit* (the rights package)
+  In LADM and this paper, the composite entity comprising an *administrative unit* (the rights package)
   and its associated *spatial unit* (geometry/extent). The term emphasises the spatial reference used
   when identifying what land is involved in a transaction or permit. *Property object* refers to the same
   entity emphasised as the first-class holder of a rights bundle from which incidents are derived or into

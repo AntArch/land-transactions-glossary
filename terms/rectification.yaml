@@ -8,20 +8,25 @@ alt_labels: []
 status: draft
 category: register-operation
 definition: >-
-  A custodian-initiated correction of the register where a recorded entry is found to be mistaken and
-  the mistake prejudicially affects a registered party's position. Rectification is not a transaction:
-  no party exercises a power over an incident; the *authoritative custodian* exercises its *mandate* to
-  make the register conform to the underlying jural reality. Under *bitemporality* the erroneous entry
-  and its rectification both remain visible on the transaction timeline, preserving the audit trail and
-  any indemnity consequences of reliance on the error. Distinguished from *Amendment* (a party-initiated
-  variation of an incident's terms) and from *Correction* (routine custodian updates that prejudice no
-  one).
+  A dispute outcome in which an adjudicator determines that the party-incident-land triple itself is wrongly
+  stated — the wrong holder registered, an incident existing that should not, a transaction in the chain
+  void or procured by fraud — and restores the lawful position. Rectification operates through two instruments
+  under the adjudicator's power: voiding the wrongly registered transactions (a *status change* on the
+  log) and directing new *VoP*, *VoL*, or *VoI* primitives until the register reflects the position the
+  law recognises as correct. It is therefore not an amendment but an adjudicator-directed sequence of
+  ordinary primitives, bounded by the *dispute* pathway and the adjudicator's empowerment. Its bitemporal
+  signature: rectification does not itself move valid time, though the primitives it directs may establish
+  a new valid-time state. Distinguished from *Correction* (triple intact; content restated) and *Amendment*
+  (party-driven; terms change; valid time moves).
 see_also:
 - correction
 - amendment
+- dispute
+- status-change
 - bitemporality
-- authoritative-custodian
-- mandate
+- voi
+- vop
+- vol
 broader: null
 counterpart_of: null
 contrasted_with:
@@ -33,14 +38,15 @@ hohfeldian_signature: null
 ladm_mapping:
   relation: no-counterpart
   iso_19152_clause: null
-  notes: LADM has no register-write vocabulary; a rectification is visible only as a new version of the
-    affected object (VersionedObject, ISO 19152-1:2024, 6.3.1) with the evidencing decision recorded as
-    an administrative source (ISO 19152-2:2025). The prejudice/indemnity distinction is not modelled.
+  notes: LADM has no dispute-outcome vocabulary; the voids and directed primitives of a rectification
+    are visible only as status-annotated versions and new versioned objects (ISO 19152-1:2024, 6.3.1),
+    with the adjudication recorded as an administrative source (ISO 19152-2:2025).
 citations: []
 source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
   v1.0.0.
 history:
 - version: 1.0.0
   date: '2026-06-11'
-  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  change: Drafted from LRC ontology review; REDRAFTED to the Conceptual Foundation's change matrix (adjudication-driven,
+    triple changes, voids + directed primitives; severity is not the discriminator). Pending disposition.
   issue: null

@@ -4,7 +4,8 @@
 id: rights-ontology-service
 term: Rights Ontology service
 abbreviation: null
-alt_labels: []
+alt_labels:
+- Incidents Ontology service
 status: stable
 category: platform-service
 definition: >-
@@ -36,3 +37,9 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-12'
+  change: 'Alternative label ''Incidents Ontology service'' added: the Conceptual Foundation uses the
+    incident-first name. A retitle would be a major-version rename under GOVERNANCE.md; deferred to custodian
+    decision. Proposed, pending disposition.'
+  issue: null

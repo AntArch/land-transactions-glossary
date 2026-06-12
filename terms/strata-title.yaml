@@ -20,6 +20,7 @@ applies_to: []
 hohfeldian_signature:
   jural_position: claim-right
   correlative: duty
+  in_rem: true
   divisible: true
   tradable: true
   notes: The unit estate trades on the conveyancing market. The accompanying fractional share in common
@@ -44,4 +45,9 @@ history:
   change: 'Re-parented: broader changed from ''conventional-incidents'' to the new general term ''separated-ownership''
     (which itself sits under conventional-incidents), so the ancestry is preserved. Proposed, pending
     disposition.'
+  issue: null
+- version: 1.1.0
+  date: '2026-06-12'
+  change: in_rem added to the Hohfeldian signature per the Conceptual Foundation's typed numerus clausus
+    (signature now includes proprietary vs personal binding). Proposed, pending disposition.
   issue: null

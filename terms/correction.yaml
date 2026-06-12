@@ -8,33 +8,41 @@ alt_labels: []
 status: draft
 category: register-operation
 definition: >-
-  A custodian-initiated register write that brings the record up to date or repairs a clerical defect
-  without prejudicing any party's position — completing a cross-reference, conforming a name, updating
-  a derived attribute. Like *Rectification* it is performed by the *authoritative custodian* under its
-  *mandate* rather than by parties transacting; unlike rectification it alters no party's substantive
-  position and so carries no indemnity consequences. Both are recorded on the transaction timeline under
-  *bitemporality*.
+  A dispute outcome in which an adjudicator determines that the record's content was wrong from the start
+  and restates it as the content the law recognises as having held all along. The party-incident-land
+  triple is retained; the corrected version re-states the same valid-time interval and supersedes the
+  erroneous version in transaction time only. The error may be trivial or substantive — a misspelt name
+  and a lease recorded as 25 years that was granted for 99 are both corrections, because in each case
+  the triple is intact and the true position always held; the register simply said otherwise. Severity
+  determines which adjudicator is empowered, not which operation runs: a correction becomes a *Rectification*
+  only when the triple itself is wrongly stated. Distinguished from *Amendment*, which is party-driven,
+  changes the terms, and moves valid time.
 see_also:
 - rectification
+- amendment
+- dispute
+- status-change
 - bitemporality
-- authoritative-custodian
 broader: null
 counterpart_of: null
 contrasted_with:
 - rectification
+- amendment
 composed_of: []
 applies_to: []
 hohfeldian_signature: null
 ladm_mapping:
   relation: no-counterpart
   iso_19152_clause: null
-  notes: 'As for rectification: representable only as a new object version with a source; the prejudicial/non-prejudicial
-    distinction between rectification and correction is not modelled in the ISO 19152 series.'
+  notes: 'As for rectification: representable only as a superseding version of the object with the adjudication
+    as its source; the valid-time-restated / transaction-time-superseded signature requires Edition II''s
+    bi-temporal VersionedObject (ISO 19152-1:2024, 6.3.1).'
 citations: []
 source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
   v1.0.0.
 history:
 - version: 1.0.0
   date: '2026-06-11'
-  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  change: Drafted from LRC ontology review; REDRAFTED to the Conceptual Foundation's change matrix (adjudication-driven,
+    triple retained, valid time restated; the prejudicial/clerical framing is withdrawn). Pending disposition.
   issue: null

@@ -11,19 +11,22 @@ status: draft
 category: legal-concept
 definition: >-
   Rights held and administered under the customs of a community — frequently communal, often unwritten,
-  and in a growing number of jurisdictions carrying formal legal status — as distinct from the statutory
-  tenure forms this framework's *conventional incidents* presuppose. Customary and informal tenure is
-  expressly within the scope of LADM but outside the scope of this glossary's transaction model, which
-  assumes a register, a *numerus clausus*, and instrument-based dealing. The term is defined here to make
-  that boundary deliberate and visible rather than accidental.
+  and in a growing number of jurisdictions carrying formal legal status. The transaction model accommodates
+  customary tenure rather than excluding it: *VoL* is tenure-agnostic and operates on non-crisp spatial
+  units defined relationally, by sketch, or by text (as LADM's social-tenure profile allows), and *first
+  registration* formalises an existing customary or possessory holding through an ordinary *VoI* derivation
+  whose authorised source is the formalisation statute or the proven prior holding. The scope boundary
+  therefore falls not at customary tenure as such but at un-formalised dealings conducted outside the
+  register, which the algebra cannot see until a formalisation pathway brings them in.
 see_also:
 - conventional-incidents
+- first-registration
+- vol
 - numerus-clausus
 - ladm
 broader: null
 counterpart_of: null
-contrasted_with:
-- conventional-incidents
+contrasted_with: []
 composed_of: []
 applies_to: []
 hohfeldian_signature:
@@ -37,14 +40,17 @@ ladm_mapping:
   relation: refines
   iso_19152_clause: 'ISO 19152-1:2024, 3.1, term ''right'' (sub-clause >3.1.10, VERIFY; ISO 19152:2012:
     4.1.20 — ''formal or informal entitlement'')'
-  notes: 'A deliberate scope divergence: LADM expressly admits informal and customary tenure within ''right'';
-    this glossary''s transaction model does not, and says so. The divergence is one to surface explicitly
-    in the SWG mapping.'
+  notes: 'LADM expressly admits informal and customary tenure within ''right'', and its social-tenure
+    profile supplies the non-crisp spatial units. The framework consumes both: the divergence recorded
+    in an earlier draft (scope exclusion) is withdrawn — the boundary is formalisation status, not tenure
+    type.'
 citations: []
 source: Proposed from review of the Land Registration Concepts ontology (Beck, 2024) against Glossary
   v1.0.0.
 history:
 - version: 1.0.0
   date: '2026-06-11'
-  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  change: 'Drafted from LRC ontology review; REDRAFTED per the Conceptual Foundation: customary tenure
+    is in scope via the formalisation pathway and tenure-agnostic VoL; the scope-exclusion framing is
+    withdrawn. Pending disposition.'
   issue: null

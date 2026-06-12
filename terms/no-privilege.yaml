@@ -38,9 +38,9 @@ hohfeldian_signature:
 ladm_mapping:
   relation: no-counterpart
   iso_19152_clause: null
-  notes: 'Hohfeldian analytic layer. LADM would record the underlying situation as a restriction; the no-privilege
-    characterisation (and its consequence: a permit supplies a privilege rather than lifting a restriction)
-    is this portfolio''s analysis.'
+  notes: Hohfeldian analytic layer. LADM would record the underlying situation as a restriction; the no-privilege
+    characterisation (and its consequence — a permit supplies a privilege rather than lifting a restriction)
+    is this portfolio's analysis.
 citations: []
 source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
   portfolio.'

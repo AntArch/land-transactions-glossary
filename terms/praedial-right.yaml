@@ -10,7 +10,10 @@ category: derivable-type
 definition: >-
   A right that attaches to land rather than to a person, and runs with the land when it is transferred.
   A praedial relationship means that one parcel holds rights in another parcel, with those rights passing
-  automatically to whoever owns the benefiting parcel.
+  automatically to whoever owns the benefiting parcel. The cadastral unit holding the right carries no
+  independent legal standing: exercise is delegated to the head right holder — the registered proprietor
+  of the dominant tenement — who holds the appurtenant right by virtue of holding the head right over
+  that unit, not by personal grant.
 see_also: []
 broader: conventional-incidents
 counterpart_of: null
@@ -20,6 +23,7 @@ applies_to: []
 hohfeldian_signature:
   jural_position: claim-right
   correlative: duty
+  in_rem: true
   divisible: false
   tradable: false
   notes: Held by whoever owns the benefiting parcel; the servient parcel's owner bears the duty. Not independently
@@ -38,3 +42,13 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-12'
+  change: Head-right-holder exercise mechanism added per the Conceptual Foundation §2.1. Proposed, pending
+    disposition.
+  issue: null
+- version: 1.1.0
+  date: '2026-06-12'
+  change: in_rem added to the Hohfeldian signature per the Conceptual Foundation's typed numerus clausus
+    (signature now includes proprietary vs personal binding). Proposed, pending disposition.
+  issue: null

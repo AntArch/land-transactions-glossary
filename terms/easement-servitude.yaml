@@ -23,6 +23,7 @@ applies_to: []
 hohfeldian_signature:
   jural_position: claim-right
   correlative: duty
+  in_rem: true
   divisible: false
   tradable: false
   notes: 'Servient owner bears the correlative duty (to suffer the use / not interfere). Appurtenant:
@@ -41,3 +42,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-12'
+  change: in_rem added to the Hohfeldian signature per the Conceptual Foundation's typed numerus clausus
+    (signature now includes proprietary vs personal binding). Proposed, pending disposition.
+  issue: null

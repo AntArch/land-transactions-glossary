@@ -27,7 +27,7 @@ ladm_mapping:
   relation: refines
   iso_19152_clause: ISO 19152-5:2025 (plan unit / plan block / plan group)
   notes: Part 5 models the structural hierarchy of spatial plans. This term adds the normative rule the
-    structure exists to enforce (lower-tier instruments must conform with those above) and routes that
+    structure exists to enforce — lower-tier instruments must conform with those above — and routes that
     rule through the admissibility gate.
 citations: []
 source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions

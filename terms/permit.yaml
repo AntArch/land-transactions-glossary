@@ -20,16 +20,20 @@ applies_to: []
 hohfeldian_signature:
   jural_position: privilege
   correlative: no-right
+  in_rem: false
   divisible: false
   tradable: false
-  notes: Privilege vested by the authority exercising a statutory power from its own jural position. Personal
-    to the holder by default; ends by extinguishment, not absorption.
+  notes: 'Privilege vested by the authority exercising a statutory power from its own jural position.
+    Personal to the holder by default; ends by extinguishment, not absorption. In rem: false — the privilege
+    binds as between authority and holder (personal/administrative), not against the world; the Conceptual
+    Foundation notes a statutory extraction licence is personal whereas an alienated heritable tenement
+    is fully registerable.'
 ladm_mapping:
   relation: refines
   iso_19152_clause: ISO 19152-5:2025, term 'permit'
   notes: 'Part 5 defines permit as something granted to a party giving permission to undertake an otherwise
     restricted activity. This term refines it: issued by a public authority, time-bound, condition-bearing,
-    with an effective period. Aligning the LADM Part 5 concept with the allocated-incident lifecycle
+    with an effective period — aligning the LADM Part 5 concept with the allocated-incident lifecycle
     model.'
 citations: []
 source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
@@ -38,3 +42,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-12'
+  change: in_rem added to the Hohfeldian signature per the Conceptual Foundation's typed numerus clausus
+    (signature now includes proprietary vs personal binding). Proposed, pending disposition.
+  issue: null
