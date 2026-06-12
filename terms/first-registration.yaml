@@ -7,21 +7,29 @@ abbreviation: null
 alt_labels:
 - First grant
 status: draft
-category: transaction-operation
+category: transaction-pattern
 definition: >-
-  The originating *derivation* by which a land object and its rights bundle first enter the register —
-  by grant from the sovereign or state out of the radical title, by systematic adjudication, or by migration
-  of a deeds-evidenced title onto a title register. First registration is the bootstrap case that *good
-  root of title* presupposes: before it, validity rests on the instrument chain; after it, the register's
-  versioned record carries the burden.
+  The composite by which a land object and its initial incident first enter the register: a *VoL* originates
+  the spatial unit, followed by the operation the incident's jural source determines. Where the state
+  is the effective prior holder (state land disposed of in a planned development), the second step is
+  a *VoP* from the state's own holding, the state's disposition supplying both power and consent. Where
+  a holder already exists under customary, possessory, or informal tenure, the second step is a *VoI*
+  derivation whose authorised source is the formalisation statute or the proven prior holding, derivation
+  and vesting collapsing into a single act in the existing holder's hands. The absence of a prior registered
+  holder does not mean the land is unowned; what varies is the jural source of the initial incident, not
+  the primitives. First registration is the bootstrap that *good root of title* presupposes: before it,
+  validity rests on the instrument chain; after it, the register's versioned record carries the burden.
 see_also:
 - derivation
 - good-root-of-title
 - cadastral-unit
-broader: derivation
+broader: null
 counterpart_of: null
 contrasted_with: []
-composed_of: []
+composed_of:
+- vol
+- vop
+- voi
 applies_to: []
 hohfeldian_signature: null
 ladm_mapping:
@@ -36,5 +44,7 @@ source: Proposed from review of the Land Registration Concepts ontology (Beck, 2
 history:
 - version: 1.0.0
   date: '2026-06-11'
-  change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  change: 'Drafted from LRC ontology review; REDRAFTED per the Conceptual Foundation stress test: a VoL-first
+    composite whose second step (VoP from the state''s holding, or formalising VoI) is determined by the
+    jural source. Pending disposition.'
   issue: null

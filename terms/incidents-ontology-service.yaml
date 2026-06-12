@@ -1,0 +1,38 @@
+# Term record: Incidents Ontology service
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: incidents-ontology-service
+term: Incidents Ontology service
+abbreviation: null
+alt_labels: []
+status: stable
+category: platform-service
+definition: >-
+  A proposed platform service holding the typed *numerus clausus* for a jurisdiction: the schema of permissible
+  incident types, each with its Hohfeldian signature, the power requirements for each transaction type,
+  capacity rules, and admissibility constraints. Separating the rules governing what rights *may* exist
+  from the register recording what rights *do* exist allows the rule set to be versioned independently
+  as legal regimes evolve. See *Numerus clausus*, *Admissibility principle*, *VoI*.
+see_also:
+- numerus-clausus
+- admissibility-principle
+- voi
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: 'Service concept. Its content corresponds to a much-enriched version of LADM''s RRR-type code
+    lists (Annex C): typed incidents with Hohfeldian signatures, power requirements, capacity rules and
+    admissibility constraints, versioned independently of the register.'
+citations: []
+source: 'Beck, A. (2026). Glossary and definitions: the single-source terminology for the land-transactions
+  portfolio.'
+history:
+- version: 1.0.0
+  date: '2026-06-10'
+  change: Initial release.

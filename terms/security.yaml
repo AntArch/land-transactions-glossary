@@ -20,6 +20,7 @@ applies_to: []
 hohfeldian_signature:
   jural_position: claim-right
   correlative: duty
+  in_rem: true
   divisible: null
   tradable: true
   notes: Creditor's claim-right carved from the parent bundle to secure performance of an obligation;
@@ -41,3 +42,8 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-12'
+  change: in_rem added to the Hohfeldian signature per the Conceptual Foundation's typed numerus clausus
+    (signature now includes proprietary vs personal binding). Proposed, pending disposition.
+  issue: null

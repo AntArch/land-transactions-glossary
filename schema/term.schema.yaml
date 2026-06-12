@@ -67,6 +67,7 @@ properties:
     properties:
       jural_position: { enum: [claim-right, privilege, power, immunity, duty, no-right, no-privilege, liability, disability, null] }
       correlative:    { enum: [claim-right, privilege, power, immunity, duty, no-right, no-privilege, liability, disability, null] }
+      in_rem:         { type: [boolean, "null"], description: "True if the incident binds the world at large (proprietary, in rem); false if it binds only specific parties (in personam). Per the Conceptual Foundation's typed numerus clausus signature." }
       divisible:      { type: [boolean, "null"] }
       tradable:       { type: [boolean, "null"] }
       notes:          { type: [string, "null"] }

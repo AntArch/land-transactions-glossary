@@ -29,6 +29,7 @@ applies_to: []
 hohfeldian_signature:
   jural_position: claim-right
   correlative: duty
+  in_rem: true
   divisible: null
   tradable: true
   notes: 'An ownership form: the separated estate is a principal object trading on the conveyancing market.
@@ -47,4 +48,9 @@ history:
 - version: 1.0.0
   date: '2026-06-11'
   change: Proposed addition from LRC ontology review; status draft pending custodian disposition.
+  issue: null
+- version: 1.1.0
+  date: '2026-06-12'
+  change: in_rem added to the Hohfeldian signature per the Conceptual Foundation's typed numerus clausus
+    (signature now includes proprietary vs personal binding). Proposed, pending disposition.
   issue: null

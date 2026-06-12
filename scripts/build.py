@@ -34,10 +34,8 @@ BASE = meta["base_uri"].rstrip("/") + "/"
 schema = yaml.safe_load((ROOT / "schema" / "term.schema.yaml").read_text())
 
 # ---------- load + validate ----------------------------------------------
-print('Load terms')
 terms, errors = [], []
 for f in sorted(TERMS_DIR.glob("*.yaml")):
-    print(f"{f.name}")
     rec = yaml.safe_load(f.read_text())
     if rec.get("id") != f.stem:
         errors.append(f"{f.name}: id '{rec.get('id')}' does not match filename")
@@ -48,7 +46,6 @@ for f in sorted(TERMS_DIR.glob("*.yaml")):
             errors.append(f"{f.name}: {e.message}")
     terms.append(rec)
 
-print('Validate terms')
 ids = [t["id"] for t in terms]
 dupes = {i for i in ids if ids.count(i) > 1}
 if dupes:
@@ -72,8 +69,6 @@ for t in terms:
             errors.append(f"{t['id']}: {field} references unknown id '{ref}'")
     if t.get("status") == "deprecated" and not t.get("replaced_by"):
         errors.append(f"{t['id']}: deprecated but no replaced_by")
-
-print('Hierarchy Check')
 
 # broader hierarchy must be acyclic
 parent = {t["id"]: t.get("broader") for t in terms}

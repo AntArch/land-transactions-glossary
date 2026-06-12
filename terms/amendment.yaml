@@ -4,7 +4,8 @@
 id: amendment
 term: Amendment
 abbreviation: null
-alt_labels: []
+alt_labels:
+- Modification
 status: stable
 category: transaction-operation
 definition: >-
@@ -12,9 +13,15 @@ definition: >-
   to an easement's scope) where holder, land, and the right's existence are unchanged. Modelled as a continuing
   version of the same right relationship under its durable identifier (not as absorption followed by a
   fresh derivation) so that continuity-dependent facts (commencement date, accrued priority, qualifying
-  periods) survive.
-see_also: []
-broader: voi
+  periods) survive. An amendment is one of the three world-state operations alongside variation and assessment
+  — changing the terms of an existing incident is an amendment, not a *VoI* — and its bitemporal signature
+  distinguishes it from the dispute outcomes: an amendment is party-driven, runs the normal gates, and
+  moves valid time; a *correction* restates valid time; a *rectification* changes the triple.
+see_also:
+- correction
+- rectification
+- assessment
+broader: null
 counterpart_of: null
 contrasted_with: []
 composed_of: []
@@ -33,3 +40,9 @@ history:
 - version: 1.0.0
   date: '2026-06-10'
   change: Initial release.
+- version: 1.1.0
+  date: '2026-06-12'
+  change: Hierarchy corrected (no longer narrower than VoI — the Conceptual Foundation states terms-changes
+    are amendments, not VoI); 'Modification' added as alternative label; bitemporal-signature distinction
+    added. Proposed, pending disposition.
+  issue: null

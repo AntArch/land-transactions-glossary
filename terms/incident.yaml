@@ -36,8 +36,8 @@ ladm_mapping:
   relation: extends
   iso_19152_clause: 'ISO 19152-1:2024, 3.1.2, Note 6 (RRR); ISO 19152-1:2024, 3.1, term ''right'' (sub-clause
     >3.1.10, VERIFY against full text; ISO 19152:2012: 4.1.20)'
-  notes: Plays the role of LADM's collective 'RRR' (rights, restrictions, responsibilities) but reframes
-    it on Honoré/Hohfeld and adds a third public-law class (allocated incidents (privileges)) that the
+  notes: Plays the role of LADM's collective 'RRR' (rights, restrictions, responsibilities) but re-founds
+    it on Honoré/Hohfeld and adds a third public-law class — allocated incidents (privileges) — that the
     RRR triple does not distinguish from rights.
 citations:
 - honore_ownership_1961

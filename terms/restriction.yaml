@@ -9,7 +9,7 @@ status: stable
 category: legal-concept
 definition: >-
   A negative duty (the holder must refrain) imposed on land or its use. In Hohfeldian terms a restriction
-  is the landowners' duty that results from a claim-right held by a third party; it differs from
+  is the duty-pole of a jural relation whose claim-right pole is held by a third party; it differs from
   a *responsibility* only in the direction of the obligation (negative vs positive). A duty-correlative
   restriction (a restrictive covenant, a planning obligation owed to an identified body) is released when
   that holder waives or is satisfied; a disability-type restriction (a development right reserved to the
@@ -30,7 +30,7 @@ hohfeldian_signature:
   correlative: claim-right
   divisible: null
   tradable: null
-  notes: 'Negative duty (must refrain), taken from the burdened party''s side, for the duty-correlative
+  notes: 'Negative duty-pole (must refrain), taken from the burdened party''s side, for the duty-correlative
     form. Disability-type restrictions are not duties at all: the landowner is in no-privilege and the
     authority holds the reserved position.'
 ladm_mapping:

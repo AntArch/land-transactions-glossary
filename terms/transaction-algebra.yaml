@@ -1,0 +1,47 @@
+# Term record: Transaction algebra
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: transaction-algebra
+term: Transaction algebra
+abbreviation: null
+alt_labels: []
+status: draft
+category: analytical-framework
+definition: >-
+  The framework's answer to how party-incident-land relationships change: three interdependent layers
+  forming a transactional grammar. Transaction principles (the *acceptance criteria*) constrain what is
+  permissible; *transaction primitives* (VoP, VoL, VoI) express what is possible; *pattern libraries*
+  demonstrate what is practical. The algebra distinguishes three world-state operations — variation (changes
+  the triple), *amendment* (terms only, same durable identifier), and *assessment* (ascribes a derived
+  fact) — which are exhaustive at the level of the world-state, plus log-level *status changes* directed
+  through the *dispute* pathway. LADM tells you what exists; the algebra specifies how changes to that
+  state must be formed and governed.
+see_also:
+- transaction-primitive
+- acceptance-criteria
+- pattern-library
+- amendment
+- assessment
+- dispute
+- status-change
+- ladm
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: extends
+  iso_19152_clause: ISO 19152 series (the algebra is constructed over the LADM ontological foundation)
+  notes: 'The load-bearing distinction stated in the Conceptual Foundation: LADM supplies the ontology
+    (parties, rights, land objects); the algebra is the operational layer specifying how those entities
+    are transformed, verified, and recorded. Candidate input to the SWG as exactly the transaction layer
+    the content model lacks.'
+citations: []
+source: Proposed from the Conceptual Foundation (2026-06-12), the canonical document of the portfolio.
+history:
+- version: 1.0.0
+  date: '2026-06-12'
+  change: Proposed addition from the Conceptual Foundation; status draft pending custodian disposition.
+  issue: null

@@ -9,7 +9,7 @@ alt_labels:
 status: stable
 category: transaction-primitive
 definition: >-
-  The primitive that varies who holds a right/incident. Where the right is *divisible*, the holding is a fraction
+  The primitive that varies who holds a right. Where the right is *divisible*, the holding is a fraction
   and a VoP may subdivide it (a part transfer creating co-ownership) or consolidate it (re-uniting co-owners'
   shares); for an indivisible right a VoP transfers the whole or nothing. The whole-or-part transfer of
   a holding from one party to another is its familiar pattern, the *transfer of party*. A VoP can act

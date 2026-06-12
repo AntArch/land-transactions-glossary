@@ -1,0 +1,41 @@
+# Term record: Status change
+# Schema: see /schema/term.schema.yaml. ladm_mapping.relation must be one of:
+#   equivalent | refines | extends | conflicts-with | no-counterpart
+id: status-change
+term: Status change
+abbreviation: null
+alt_labels: []
+status: draft
+category: register-concept
+definition: >-
+  An annotation applied to a recorded transaction or version on the transaction log — effective, disputed,
+  void, superseded, corrected, rectified — that asserts nothing new about the world-state. A status change
+  is never a deletion: a void does not itself change who holds what; it declares that the recorded transaction
+  never validly changed anything in the first place. Status changes are not submitted through the acceptance
+  gates; they are directed by the *dispute* pathway against records already in the log. They are the log-level
+  complement of the three world-state operations (variation, *amendment*, *assessment*).
+see_also:
+- dispute
+- rectification
+- correction
+- bitemporality
+- good-root-of-title
+broader: null
+counterpart_of: null
+contrasted_with: []
+composed_of: []
+applies_to: []
+hohfeldian_signature: null
+ladm_mapping:
+  relation: no-counterpart
+  iso_19152_clause: null
+  notes: LADM versions objects but defines no status vocabulary for log entries; the nearest hook is the
+    lifespan-closure of a version. The effective/disputed/void/superseded/corrected/rectified set is this
+    framework's addition, enabled by the bi-temporal VersionedObject (ISO 19152-1:2024, 6.3.1).
+citations: []
+source: Proposed from the Conceptual Foundation (2026-06-12), the canonical document of the portfolio.
+history:
+- version: 1.0.0
+  date: '2026-06-12'
+  change: Proposed addition from the Conceptual Foundation; status draft pending custodian disposition.
+  issue: null
